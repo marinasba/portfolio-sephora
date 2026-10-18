@@ -48,7 +48,8 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--papier);color:var(--encre);font-family:var(--f-texte);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-h1,h2,h3,p,ol,ul{margin:0}
+h1,h2,h3,p{margin:0}
+ol,ul{margin:0;padding:0}
 h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pretty}
 .inner{padding-left:var(--gutter-l);padding-right:var(--gutter-r);max-width:var(--maxw);margin-inline:auto}
 .lead{color:var(--encre-2);max-width:62ch}
@@ -82,7 +83,6 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 /* ---------- parties et notices ---------- */
 .part{padding-top:var(--partie);padding-bottom:40px;scroll-margin-top:64px}
 .part h2{font-size:clamp(2.6rem,6vw,4.2rem);font-weight:300;line-height:1}
-.part h2::before{content:"";display:block;width:44px;height:1px;background:var(--or-2);margin-bottom:22px}
 .part .lead{margin-top:14px}
 .notice{display:grid;grid-template-columns:var(--marge) 1fr;gap:24px 40px;padding-block:calc(var(--bloc)/2)}
 .notice h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:14px;max-width:22ch}
@@ -91,6 +91,11 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .items{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 32px}
 .items p{font-size:.98rem}
 .items .rubrique{margin-bottom:6px;font-size:1.1rem}
+
+/* qui suis-je : texte à gauche, formation à droite */
+.qui{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;padding-block:calc(var(--bloc)/2)}
+.qui h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:14px}
+.qui .rubrique{margin-bottom:16px}
 
 /* timeline verticale (formation) */
 .vtl{list-style:none;display:grid;gap:22px}
@@ -239,6 +244,7 @@ img.ph::before,img.ph::after{content:none}
   .mono-l{width:64px;height:64px;margin-bottom:16px}
   .ph-portrait{max-width:320px}
   .notice,.envers-head{grid-template-columns:1fr;gap:8px}
+  .qui{grid-template-columns:1fr;gap:32px}
   .tl-prog{grid-column:1}
   .items{grid-template-columns:1fr}
   .board{grid-template-columns:repeat(2,1fr)}
