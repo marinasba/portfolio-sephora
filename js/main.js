@@ -83,12 +83,12 @@
     document.querySelectorAll('[data-pull]').forEach(function (sec) {
       var stick = sec.querySelector('.stick');
       if (!stick) return;
-      var top = stick.getBoundingClientRect().top, bottom = top;
+      var sr = stick.getBoundingClientRect(), bottom = sr.top;
       Array.prototype.forEach.call(stick.children, function (c) {
         var r = c.getBoundingClientRect();
         if (r.bottom > bottom) bottom = r.bottom;
       });
-      var empty = stick.clientHeight - (bottom - top);
+      var empty = sr.bottom - bottom; // vide sous le contenu, une fois la section passée
       sec.style.marginBottom = (empty > 56 ? -(empty - 56) : 0) + 'px';
     });
   }
