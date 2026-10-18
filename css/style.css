@@ -91,7 +91,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 /* ---------- parties et notices ---------- */
 .part{padding-top:var(--partie);padding-bottom:40px;scroll-margin-top:64px}
 .part h2{font-size:clamp(2.6rem,6vw,4.2rem);font-weight:300;line-height:1}
-.part .lead{margin-top:14px}
+.part .lead{margin-top:14px;max-width:none}
 .notice{display:grid;grid-template-columns:var(--marge) 1fr;gap:24px 40px;padding-block:calc(var(--bloc)/2)}
 .notice h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:14px;max-width:22ch}
 .notice h3.small,.notice .items h3{font-size:1.35rem;margin-bottom:4px}
