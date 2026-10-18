@@ -290,7 +290,12 @@ img.ph::before,img.ph::after{content:none}
   .qui-row{grid-template-columns:1fr;gap:32px}
   .ph-qui{justify-self:start;max-width:320px}
   .items{grid-template-columns:1fr}
-  .photos3{grid-template-columns:1fr}
+  /* sur mobile, les galeries défilent horizontalement (on voit le bord de la photo suivante) */
+  .photos3,.grid4,.hob-gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:4px;margin-left:calc(-1 * var(--gutter-l));margin-right:calc(-1 * var(--gutter-r));padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+  .photos3::-webkit-scrollbar,.grid4::-webkit-scrollbar,.hob-gal::-webkit-scrollbar{display:none}
+  .photos3 > *,.hob-gal > *{flex:0 0 72vw;scroll-snap-align:start}
+  .grid4 > .fiche{flex:0 0 72vw;scroll-snap-align:start;text-align:left}
+  .hob-gal{max-width:none;margin-bottom:16px}
   .galerie .ph{flex-basis:calc((100% - 16px)/2)}
   .fleche{width:38px;height:38px}
   .fleche.prev{left:calc(var(--gutter-l) - 10px)}
@@ -302,9 +307,6 @@ img.ph::before,img.ph::after{content:none}
   .tl{padding-left:var(--gutter-l)}
   .hob{padding-block:170px 80px}
   .hob-gal{grid-template-columns:1fr;gap:12px}
-}
-@media (max-width:480px){
-  .grid4{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion: reduce){
   *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
