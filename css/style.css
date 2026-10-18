@@ -107,12 +107,13 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .items .rubrique{margin-bottom:6px;font-size:1.1rem}
 
 /* qui suis-je : texte à gauche, formation à droite */
-.qui{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;padding-block:calc(var(--bloc)/2) var(--partie)}
-.qui .comp{margin-top:40px;margin-bottom:14px}
+.qui{display:grid;gap:72px;padding-block:calc(var(--bloc)/2) var(--partie)}
+.qui-row{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.ph-qui{aspect-ratio:4/5;max-width:380px;justify-self:end;width:100%}
 .skills{list-style:none;display:grid;gap:18px}
 .skills li{display:grid;grid-template-columns:34px 1fr;gap:16px;align-items:start}
 .skills .pic-s{width:28px;height:28px;margin:4px 0 0}
-.skills h3{font-size:1.3rem;margin-bottom:2px}
+.qui .skills h3{font-size:1.35rem;margin-bottom:2px}
 .skills p{color:var(--encre-2);font-size:.98rem}
 .qui h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:14px}
 .qui .rubrique{margin-bottom:16px}
@@ -275,7 +276,9 @@ img.ph::before,img.ph::after{content:none}
   .mono-l{width:64px;height:64px;margin-bottom:16px}
   .ph-portrait{max-width:320px}
   .notice h3,.dep h3,.envers-head h3{font-size:1.9rem}
-  .qui{grid-template-columns:1fr;gap:32px}
+  .qui{gap:40px}
+  .qui-row{grid-template-columns:1fr;gap:32px}
+  .ph-qui{justify-self:start;max-width:320px}
   .items{grid-template-columns:1fr}
   .photos3{grid-template-columns:1fr}
   .board{grid-template-columns:repeat(2,1fr)}
