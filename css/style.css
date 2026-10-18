@@ -237,7 +237,7 @@ img.ph::before,img.ph::after{content:none}
 .mono-m{width:64px;height:64px;color:var(--or-2)}
 
 /* ---------- les hobbies (bande de velours) ---------- */
-.velours{background:var(--velours);color:var(--ivoire);position:relative;overflow:hidden;margin-top:-1px}
+.velours{background:var(--velours);color:var(--ivoire);position:relative;overflow:hidden;border-top:1px solid var(--or)}
 .velours .inner{position:relative;z-index:1}
 .lustre{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(520px,90%);height:150px;pointer-events:none}
 .lustre::before{content:"";position:absolute;left:50%;top:0;width:1px;height:18px;background:rgba(232,220,196,.4)}
