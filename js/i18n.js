@@ -82,7 +82,7 @@ window.I18N = {
     sk3_h: "Savoir-être",
     sk3_p: "Organisation et rigueur, relation avec les vendeurs, experts et acheteurs, encadrement et transmission.",
     ct_sub: "Charenton-le-Pont (94) · Permis&nbsp;B",
-    sp_p: "Et j'ai travaillé avec d'autres types d'objets.",
+    sp_p: "Et j'ai travaillé avec de nombreux autres types d'objets.",
     cv: "assets/cv-fr.pdf"
   },
 
@@ -166,7 +166,7 @@ window.I18N = {
     sk3_h: "Soziale Kompetenzen",
     sk3_p: "Organisation und Sorgfalt, Umgang mit Einlieferern, Experten und Käufern, Anleitung und Wissensvermittlung.",
     ct_sub: "Charenton-le-Pont (94) · Führerschein Klasse&nbsp;B",
-    sp_p: "Und ich habe mit weiteren Arten von Objekten gearbeitet.",
+    sp_p: "Und ich habe mit vielen weiteren Arten von Objekten gearbeitet.",
     cv: "assets/cv-de.pdf"
   },
 
@@ -250,7 +250,7 @@ window.I18N = {
     sk3_h: "Soft skills",
     sk3_p: "Organisation and rigour, relations with consignors, specialists and buyers, mentoring and knowledge transfer.",
     ct_sub: "Charenton-le-Pont (94) · Driving licence&nbsp;B",
-    sp_p: "And I have worked with other types of objects.",
+    sp_p: "And I have worked with many other types of objects.",
     cv: "assets/cv-en.pdf"
   }
 };
