@@ -78,6 +78,22 @@
   }
   sizeEnvers();
 
+  // sections collantes : récupérer le vide sous leur contenu pour rapprocher la section suivante
+  function pullNext() {
+    document.querySelectorAll('[data-pull]').forEach(function (sec) {
+      var stick = sec.querySelector('.stick');
+      if (!stick) return;
+      var top = stick.getBoundingClientRect().top, bottom = top;
+      Array.prototype.forEach.call(stick.children, function (c) {
+        var r = c.getBoundingClientRect();
+        if (r.bottom > bottom) bottom = r.bottom;
+      });
+      var empty = stick.clientHeight - (bottom - top);
+      sec.style.marginBottom = (empty > 56 ? -(empty - 56) : 0) + 'px';
+    });
+  }
+  pullNext();
+
   function onScroll() {
     var vh = window.innerHeight;
 
@@ -109,7 +125,7 @@
   window.addEventListener('scroll', function () {
     if (!ticking) { requestAnimationFrame(function () { onScroll(); ticking = false; }); ticking = true; }
   }, { passive: true });
-  window.addEventListener('resize', function () { sizeEnvers(); onScroll(); });
-  window.addEventListener('load', function () { sizeEnvers(); onScroll(); });
+  window.addEventListener('resize', function () { sizeEnvers(); pullNext(); onScroll(); });
+  window.addEventListener('load', function () { sizeEnvers(); pullNext(); onScroll(); });
   onScroll();
 })();
