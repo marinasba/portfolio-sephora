@@ -208,7 +208,7 @@ img.ph::before,img.ph::after{content:none}
 
 /* ---------- organiser une vente : timeline horizontale ---------- */
 .envers{position:relative;--tl-w:380px;--tl-gap:32px}
-.envers .stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;gap:32px;overflow:hidden}
+.envers .stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:flex-start;gap:32px;overflow:hidden;padding-top:64px}
 .envers-head{text-align:center;width:100%}
 .envers-head h3{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:14px;max-width:44ch;margin-inline:auto;text-wrap:balance}
 .envers-head .lead{margin-inline:auto}
@@ -222,9 +222,9 @@ img.ph::before,img.ph::after{content:none}
 .tl li p{color:var(--encre-2);font-size:.95rem}
 
 /* ---------- le bal (bande de nuit) ---------- */
-.nuit{background:linear-gradient(180deg,var(--papier) 0%,var(--nuit) 14%,var(--nuit) 88%,var(--papier) 100%);color:var(--ivoire);position:relative;overflow:hidden;margin-top:24px}
+.nuit{background:var(--nuit);color:var(--ivoire);position:relative;overflow:hidden;margin-top:40px}
 .nuit .inner{position:relative}
-.lustre{position:absolute;left:50%;top:14%;transform:translateX(-50%);width:min(520px,90%);height:150px;pointer-events:none}
+.lustre{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(520px,90%);height:150px;pointer-events:none}
 .lustre::before{content:"";position:absolute;left:50%;top:0;width:1px;height:18px;background:rgba(232,220,196,.4)}
 .lustre i{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--champagne);box-shadow:0 0 12px 3px rgba(232,220,196,.55),0 0 40px 10px rgba(201,162,75,.18);opacity:0;transition:opacity 1.2s}
 .lustre.in i{opacity:1}
@@ -234,7 +234,7 @@ img.ph::before,img.ph::after{content:none}
 .lustre i:nth-child(6){left:44%;top:96px;transition-delay:.6s}.lustre i:nth-child(7){left:56%;top:96px;transition-delay:.65s}
 .lustre i:nth-child(8){left:14%;top:120px;transition-delay:.85s;width:4px;height:4px}.lustre i:nth-child(9){left:86%;top:120px;transition-delay:.9s;width:4px;height:4px}
 .lustre i:nth-child(10){left:34%;top:136px;transition-delay:1s;width:4px;height:4px}.lustre i:nth-child(11){left:66%;top:136px;transition-delay:1.05s;width:4px;height:4px}
-.bal{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:34vh 22vh}
+.bal{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:200px 120px}
 .bal .rubrique{color:var(--ivoire-dim)}
 .bal h3{font-style:italic;font-size:clamp(2.4rem,5vw,4rem);margin:8px 0 22px;line-height:1.05;color:var(--champagne)}
 .temps{list-style:none;margin-bottom:24px;display:grid;gap:10px}
@@ -300,9 +300,9 @@ img.ph::before,img.ph::after{content:none}
   .pv{height:200vh}
   .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
   .envers{--tl-w:min(78vw,340px);--tl-gap:18px}
-  .envers .stick{gap:18px}
+  .envers .stick{gap:18px;padding-top:40px}
   .tl{padding-left:var(--gutter-l)}
-  .bal{grid-template-columns:1fr;padding-block:30vh 18vh}
+  .bal{grid-template-columns:1fr;padding-block:180px 96px}
 }
 @media (max-width:480px){
   .grid4{grid-template-columns:1fr}
