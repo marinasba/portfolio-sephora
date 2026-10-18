@@ -57,6 +57,9 @@ p{margin:0}
   padding:14px var(--gutter-r) 14px var(--gutter-l);border-bottom:1px solid var(--or-25);
   font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 .top b{color:var(--ivoire);font-weight:500}
+.menu{display:flex;gap:22px;text-transform:none;letter-spacing:.06em;font-size:.82rem}
+.menu a{color:var(--dim);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
+.menu a:hover,.menu a:focus-visible{color:var(--ivoire);border-bottom-color:var(--or-55);outline:none}
 .ed{display:flex;gap:16px;text-transform:none;letter-spacing:.08em;font-size:.8rem}
 .ed button{background:none;border:0;border-bottom:1px solid transparent;color:var(--dim);font:inherit;cursor:pointer;padding:0 0 2px;letter-spacing:inherit}
 .ed button[aria-pressed="true"]{color:var(--or);border-bottom-color:var(--or)}
@@ -66,11 +69,8 @@ p{margin:0}
 .hero{padding-block:72px 16px;max-width:var(--maxw)}
 .hero h1{font-family:var(--f-titre);font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.02;letter-spacing:0;margin:0 0 20px;max-width:16ch}
 .hero h1 em{font-style:italic;color:var(--or)}
-.hero .sub{font-family:var(--f-titre);font-size:clamp(1.25rem,2.4vw,1.7rem);font-style:italic;color:var(--ivoire);max-width:34ch;margin-bottom:14px}
+.hero .sub{font-family:var(--f-titre);font-size:clamp(1.25rem,2.4vw,1.7rem);font-style:italic;color:var(--ivoire);line-height:1.25;margin-bottom:16px}
 .hero .lead{margin-bottom:22px}
-.cue{margin-top:48px;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--or);opacity:.7}
-.cue::after{content:"";display:block;width:1px;height:34px;margin-top:10px;background:currentColor;animation:cue 1.8s ease-in-out infinite;transform-origin:top}
-@keyframes cue{0%,100%{transform:scaleY(.3)}50%{transform:scaleY(1)}}
 
 /* ---------- paravent au scroll ---------- */
 .pv{height:240vh;position:relative}
@@ -103,14 +103,24 @@ p{margin:0}
 .pv .side.verso{position:absolute;inset:0;opacity:0}
 .pv.half .side.recto{opacity:0}
 .pv.half .side.verso{opacity:1}
-.pv h2{font-family:var(--f-titre);font-size:clamp(1.9rem,3.8vw,3rem);margin:10px 0 12px;line-height:1.1}
+.pv .h-big{font-size:clamp(1.9rem,3.8vw,3rem);margin:10px 0 12px;line-height:1.1}
 .pv .big{font-family:var(--f-titre);font-size:clamp(3rem,7vw,5.4rem);color:var(--or);letter-spacing:0;line-height:1;margin:6px 0 16px;font-variant-numeric:tabular-nums}
 .pv .lead + .lead{margin-top:10px}
 
+/* ---------- parties ---------- */
+.part{padding-block:96px 8px;scroll-margin-top:60px}
+.part .mono{margin-bottom:10px}
+.part h2{font-family:var(--f-titre);font-size:clamp(2.6rem,6vw,4.4rem);line-height:1;margin-bottom:12px}
+.part .lead{margin-top:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.h-big{font-family:var(--f-titre);font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:1.15;margin-bottom:12px}
+.it{font-style:italic}
+.formation .mono{margin-bottom:6px}
+
 /* ---------- lots ---------- */
 .lot{border-top:1px solid var(--or-25);padding-block:72px}
-.lot h2{font-family:var(--f-titre);font-size:clamp(2rem,3.8vw,2.8rem);margin-bottom:14px}
 .lot h3{font-family:var(--f-titre);font-size:1.45rem;margin-bottom:6px}
+.lot h3.h-big{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:12px}
 .lot p{color:var(--dim);font-size:.95rem}
 
 /* tableau d'affichage 2022 → 2026 */
@@ -146,7 +156,7 @@ img.ph::before,img.ph::after{content:none}
 
 /* le tirage qui se développe */
 .dev{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;border-top:1px solid var(--or-25);padding-block:72px}
-.dev h2{font-family:var(--f-titre);font-size:clamp(1.9rem,3.4vw,2.6rem);margin:10px 0 14px}
+.dev .h-big{margin:10px 0 14px}
 .bath{aspect-ratio:4/5;max-width:100%;position:relative;overflow:hidden;border:1px solid rgba(201,162,75,.35);background:#D9D2C4}
 .bath .print{position:absolute;inset:0;background-image:var(--nadar),
   radial-gradient(ellipse 55% 45% at 50% 42%, rgba(243,237,226,.55), transparent 65%),
@@ -165,7 +175,7 @@ img.ph::before,img.ph::after{content:none}
 .envers{border-top:1px solid var(--or-25);position:relative;--tl-w:400px;--tl-gap:28px}
 .envers .stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;gap:28px;overflow:hidden}
 .envers-head{display:grid;grid-template-columns:1fr;gap:0;width:100%}
-.envers-head h2{font-family:var(--f-titre);font-size:clamp(2rem,3.8vw,2.8rem);margin-bottom:10px}
+.envers-head .h-big{margin-bottom:10px}
 .tl-prog{height:1px;background:var(--or-25);position:relative;margin-top:10px}
 .tl-prog span{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--or)}
 .tl{list-style:none;margin:0;padding:0 var(--gutter-r) 0 calc(var(--gutter-l) + max(0px,(100vw - var(--maxw))/2));display:flex;gap:var(--tl-gap);will-change:transform;width:max-content}
@@ -192,7 +202,7 @@ img.ph::before,img.ph::after{content:none}
 .lustre i:nth-child(8){left:14%;top:120px;transition-delay:.85s;width:4px;height:4px}.lustre i:nth-child(9){left:86%;top:120px;transition-delay:.9s;width:4px;height:4px}
 .lustre i:nth-child(10){left:34%;top:136px;transition-delay:1s;width:4px;height:4px}.lustre i:nth-child(11){left:66%;top:136px;transition-delay:1.05s;width:4px;height:4px}
 .bal{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:200px 110px;min-height:80vh}
-.bal h2{font-family:var(--f-titre);font-style:italic;font-size:clamp(2.4rem,5vw,4rem);margin:10px 0 24px;line-height:1.05;color:var(--champagne)}
+.bal .h-big{font-size:clamp(2.4rem,5vw,4rem);margin:10px 0 24px;line-height:1.05;color:var(--champagne)}
 .temps{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:12px}
 .temps li{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:baseline;font-size:1rem;transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
 .temps li b{font-family:var(--f-titre);font-weight:400;font-size:1.7rem;color:var(--or)}
@@ -234,7 +244,10 @@ img.ph::before,img.ph::after{content:none}
   .ph-portrait{max-width:320px}
   .pv{height:200vh}
   .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
-  .dev,.bal{grid-template-columns:1fr}
+  .dev,.bal,.two{grid-template-columns:1fr}
+  .two{gap:32px}
+  .menu{display:none}
+  .part{padding-top:64px}
   .lot{padding-block:56px}
   .envers{--tl-w:min(78vw,340px);--tl-gap:18px}
   .envers .stick{gap:18px}
