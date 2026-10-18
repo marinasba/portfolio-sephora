@@ -233,7 +233,8 @@ img.ph::before,img.ph::after{content:none}
 .tampon.in{transform:rotate(-8deg) scale(1);opacity:1}
 
 /* ---------- les hobbies (bande de velours, fil d'or au scroll) ---------- */
-.velours{background:linear-gradient(180deg,var(--vert) 0,#0C1E19 50px,#120F12 120px,#24121A 190px,var(--velours) 250px,var(--velours) 100%);color:var(--ivoire);position:relative;overflow:hidden}
+.velours{background:linear-gradient(180deg,#0F3D2E 0px,#0F3C2D 10px,#0F3A2C 21px,#0F3629 31px,#103126 42px,#102B23 52px,#10261F 62px,#10201B 73px,#101A18 83px,#111515 94px,#111112 104px,#110F11 115px,#110E10 125px,#120E10 135px,#140F11 146px,#180F12 156px,#1C1014 167px,#211116 177px,#261218 188px,#2B1319 198px,#30141B 208px,#34151D 219px,#38151E 229px,#3A161F 240px,#3B161F 250px,var(--velours) 251px,var(--velours) 100%);color:var(--ivoire);position:relative;overflow:hidden}
+.velours::before{content:"";position:absolute;left:0;right:0;top:0;height:270px;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
 .velours .inner{position:relative;z-index:1}
 .lustre{position:absolute;left:50%;top:150px;transform:translateX(-50%);width:min(520px,90%);height:150px;pointer-events:none}
 .lustre::before{content:"";position:absolute;left:50%;top:0;width:1px;height:18px;background:rgba(232,220,196,.4)}
