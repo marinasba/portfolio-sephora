@@ -119,8 +119,8 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 
 /* timeline verticale (formation) */
 .vtl{list-style:none;display:grid;gap:22px}
-.vtl li{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:baseline}
-.vtl .an{font-family:var(--f-titre);font-size:1.3rem;color:var(--vermillon);font-variant-numeric:tabular-nums}
+.vtl li{display:grid;grid-template-columns:118px 1fr;gap:20px;align-items:baseline}
+.vtl .an{font-family:var(--f-titre);font-size:1.25rem;color:var(--vermillon);font-variant-numeric:tabular-nums;white-space:nowrap}
 .vtl h3{font-size:1.35rem;margin-bottom:2px}
 .vtl p{font-size:.98rem}
 
@@ -252,6 +252,7 @@ img.ph::before,img.ph::after{content:none}
 .contact-line{margin-top:30px;color:var(--encre-2);display:flex;justify-content:center;flex-wrap:wrap;gap:6px 22px}
 .contact-line a{color:var(--encre);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--or-2)}
 .contact-line .sep{display:none}
+.contact-sub{margin-top:14px;color:var(--gris);font-size:.9rem}
 .foot{padding-block:0 28px;font-size:.8rem;color:var(--gris);text-align:center}
 
 /* ---------- responsive ---------- */
