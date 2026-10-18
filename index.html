@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Séphora N. — Organisation de ventes aux enchères</title>
+<meta name="description" content="Séphora N., organisatrice de ventes aux enchères à Paris : livres anciens, lettres autographes, photographies anciennes, art asiatique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-l">
+    <b data-i18n="name">Séphora N.</b>
+    <span class="sep">·</span>
+    <span data-i18n="title">Organisation de ventes aux enchères</span>
+    <span class="sep">·</span>
+    <span>Paris</span>
+  </div>
+  <nav class="ed" aria-label="Langue">
+    <button type="button" data-lang="fr" aria-pressed="true">Français</button>
+    <button type="button" data-lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero inner">
+    <div class="mono" data-i18n="hero_k">LOT 0 — L'ORGANISATRICE</div>
+    <h1 data-i18n="hero_h">Recto, la salle.<br><em>Verso, mon métier.</em></h1>
+    <p class="lead" data-i18n="hero_p">Livres anciens, lettres autographes, photographies anciennes et art asiatique. Une vente se gagne avant le premier coup de marteau.</p>
+    <div class="mono" data-i18n="hero_c">Sciences Po · École du Louvre · Oger Blanchet, quartier Drouot</div>
+    <div class="cue" data-i18n="cue">Faire défiler</div>
+  </section>
+
+  <!-- ===== LOT 1 — PARAVENT (scroll) ===== -->
+  <section class="pv inner" id="pv">
+    <div class="stick">
+      <div class="scene">
+        <div class="screen" id="screen">
+          <div class="face front"><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div></div>
+          <div class="face back"><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div></div>
+        </div>
+      </div>
+      <div class="txt">
+        <div class="side recto">
+          <div class="mono" data-i18n="pv_k1">LOT 1 — RECTO</div>
+          <h2 data-i18n="pv_h1">Paravent de Pham Hau, laque et or.</h2>
+          <div class="big">1 000 000 €</div>
+          <p class="lead" data-i18n="pv_p1">Adjugé le 1er octobre 2026 à l'Hôtel Drouot. Deuxième résultat de l'histoire de l'étude.</p>
+        </div>
+        <div class="side verso">
+          <div class="mono" data-i18n="pv_k2">LOT 1 — VERSO</div>
+          <h2 data-i18n="pv_h2">Décoré sur ses deux faces. Comme une vente.</h2>
+          <p class="lead" data-i18n="pv_p2">Derrière le chiffre : les experts réunis, le catalogue supervisé, la séance photo, le graphiste, le transport des lots, la scénographie de la salle, le procès-verbal, les bordereaux.</p>
+          <p class="lead" data-i18n="pv_p3">Le recto, c'est la salle. Le verso, c'est mon métier.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOT 2 — DÉPARTEMENT ===== -->
+  <section class="lot inner">
+    <div class="n">LOT 2</div>
+    <div>
+      <h2 class="rv" data-i18n="dep_h">Le département art asiatique, 2022 → 2026</h2>
+      <p class="lead rv" data-i18n="dep_p">Créé en 2022 avec Guillaume Lemoine, chez Oger Blanchet. Première vente : 30 000 € d'estimation totale. Aujourd'hui, les ventes se tiennent à l'Hôtel Drouot. De l'Inde à l'Extrême-Orient, du Viêt Nam au Laos, de l'Antiquité à nos jours.</p>
+      <div class="board" id="board">
+        <div><small>2022</small><b>30 000 €</b><span data-i18n="b_est">estimation totale</span></div>
+        <div><small>2023</small><b>—</b><span data-i18n="b_tbd">à compléter</span></div>
+        <div><small>2024</small><b>—</b><span data-i18n="b_tbd2">à compléter</span></div>
+        <div><small>2025</small><b>Drouot</b><span data-i18n="b_drouot">ventes à l'Hôtel Drouot</span></div>
+        <div><small data-i18n="b_date">1er oct. 2026</small><b>1 000 000 €</b><span data-i18n="b_rec">paravent Pham Hau</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOT 3 — SPÉCIALITÉS ===== -->
+  <section class="lot inner">
+    <div class="n">LOT 3</div>
+    <div>
+      <h2 class="rv" data-i18n="sp_h">Quatre spécialités</h2>
+      <div class="grid4">
+        <article class="fiche rv">
+          <div class="ph ph-livres" data-slot="assets/livres.jpg"></div>
+          <h3 data-i18n="sp1_h">Livres anciens</h3>
+          <p data-i18n="sp1_p">Manuscrits, incunables, éditions originales, reliures. Rassembler, décrire, faire expertiser, cataloguer.</p>
+        </article>
+        <article class="fiche rv">
+          <div class="ph ph-lettres" data-slot="assets/lettres.jpg"></div>
+          <h3 data-i18n="sp2_h">Lettres autographes</h3>
+          <p data-i18n="sp2_p">Correspondances, manuscrits signés, documents historiques. Lecture, identification, provenance.</p>
+        </article>
+        <article class="fiche rv">
+          <div class="ph ph-asie" data-slot="assets/asie.jpg"></div>
+          <h3 data-i18n="sp3_h">Art asiatique</h3>
+          <p data-i18n="sp3_p">Laques, bronzes, céramiques, peintures, de l'Inde au Japon, du Viêt Nam au Laos. Le département que j'ai contribué à créer.</p>
+        </article>
+        <article class="fiche rv">
+          <div class="ph ph-photo" data-slot="assets/nadar.jpg"></div>
+          <h3 data-i18n="sp4_h">Photographies anciennes</h3>
+          <p data-i18n="sp4_p">Tirages d'époque, albums, daguerréotypes. Une photographie prise pendant la Commune de Paris par Nadar ne se vend pas sans son histoire.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LE TIRAGE (scroll) ===== -->
+  <section class="dev inner">
+    <div class="bath" id="bath" data-slot="assets/nadar.jpg">
+      <div class="print"></div>
+      <div class="lbl">NADAR — PARIS, 1871 — TIRAGE D'ÉPOQUE</div>
+    </div>
+    <div>
+      <div class="mono rv" data-i18n="dv_k">PHOTOGRAPHIES ANCIENNES</div>
+      <h2 class="rv" data-i18n="dv_h">Un tirage se révèle dans le bain. Une notice aussi.</h2>
+      <p class="lead rv" data-i18n="dv_p">Identifier, décrire, dater, faire expertiser. Mettre en relation le vendeur, l'expert et l'acheteur. Écrire la notice qui donne à l'objet sa place dans l'histoire.</p>
+    </div>
+  </section>
+
+  <!-- ===== LOT 4 — L'ENVERS D'UNE VENTE (timeline) ===== -->
+  <section class="lot inner" id="envers">
+    <div class="n">LOT 4</div>
+    <div>
+      <h2 class="rv" data-i18n="tl_h">L'envers d'une vente</h2>
+      <p class="lead rv" data-i18n="tl_p">Dix étapes, de la première estimation au dernier bordereau. Toutes tenues de bout en bout.</p>
+      <ol class="tl" id="tl">
+        <li class="rv"><b>I</b><div><h3 data-i18n="t1_h">Rassembler les lots</h3><p data-i18n="t1_p">Prospection, rendez-vous, prise en dépôt, fiches descriptives.</p></div></li>
+        <li class="rv"><b>II</b><div><h3 data-i18n="t2_h">Faire venir les experts</h3><p data-i18n="t2_p">Choix de l'expert, organisation des examens, validation des estimations.</p></div></li>
+        <li class="rv"><b>III</b><div><h3 data-i18n="t3_h">Superviser le catalogue</h3><p data-i18n="t3_p">Notices, ordre des lots, relecture, cohérence des estimations.</p></div></li>
+        <li class="rv"><b>IV</b><div><h3 data-i18n="t4_h">Diriger la séance photo</h3><p data-i18n="t4_p">Sélection des lots, prises de vue, retouches, droits.</p></div></li>
+        <li class="rv"><b>V</b><div><h3 data-i18n="t5_h">Travailler avec le graphiste</h3><p data-i18n="t5_p">Maquette du catalogue, couverture, épreuves, bon à tirer.</p></div></li>
+        <li class="rv"><b>VI</b><div><h3 data-i18n="t6_h">Organiser le transport</h3><p data-i18n="t6_p">Transporteurs, emballage, assurance, arrivée des lots le jour J.</p></div></li>
+        <li class="rv"><b>VII</b><div><h3 data-i18n="t7_h">Mettre en scène la salle</h3><p data-i18n="t7_p">Scénographie, accrochage, vitrines, location de matériel.</p></div></li>
+        <li class="rv"><b>VIII</b><div><h3 data-i18n="t8_h">Tenir le procès-verbal</h3><p data-i18n="t8_p">Enregistrement des adjudications pendant la séance.</p></div></li>
+        <li class="rv"><b>IX</b><div><h3 data-i18n="t9_h">Facturer</h3><p data-i18n="t9_p">Factures acheteurs, décomptes vendeurs, suivi des règlements.</p></div></li>
+        <li class="rv"><b>X</b><div><h3 data-i18n="t10_h">Assurer l'après-vente</h3><p data-i18n="t10_p">Bordereaux d'achat, retrait des lots, relation avec les acheteurs.</p></div></li>
+      </ol>
+      <aside class="encart rv">
+        <div class="mono" data-i18n="inv_k">HORS VENTE — INVENTAIRES</div>
+        <p data-i18n="inv_p">Inventaires de succession, de tutelle et volontaires : fiches descriptives, estimations, déménagement des lots, rendez-vous et supervision des transporteurs.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== LOT 5 — ENCADRER ===== -->
+  <section class="lot inner">
+    <div class="n">LOT 5</div>
+    <div>
+      <h2 class="rv" data-i18n="rh_h">Encadrer</h2>
+      <div class="grid3">
+        <div class="rv"><h3 data-i18n="rh1_h">Recruter</h3><p data-i18n="rh1_p">Rédaction et publication des annonces, sélection, entretiens.</p></div>
+        <div class="rv"><h3 data-i18n="rh2_h">Intégrer</h3><p data-i18n="rh2_p">Onboarding des stagiaires, prise en main des outils et des usages de l'étude.</p></div>
+        <div class="rv"><h3 data-i18n="rh3_h">Former</h3><p data-i18n="rh3_p">Formation et encadrement au quotidien, du catalogue à la salle.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HORS CATALOGUE — INTERLUDE BAL ===== -->
+  <section class="nuit">
+    <div class="inner">
+      <div class="lustre" id="lustre"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="bal">
+        <div>
+          <div class="mono" data-i18n="bal_k">HORS CATALOGUE</div>
+          <h2 data-i18n="bal_h">Ce qui ne passe pas en vente.</h2>
+          <ol class="temps" id="temps">
+            <li><b data-i18n="un">Un.</b><span data-i18n="bal1">Marraine du Bal des Parisiennes 2027, après y avoir dansé en 2026.</span></li>
+            <li><b data-i18n="deux">deux.</b><span data-i18n="bal2">Une robe de bal cousue à la main, à la maison, le soir.</span></li>
+            <li><b data-i18n="trois">trois.</b><span data-i18n="bal3">La valse, les musées, les livres.</span></li>
+            <li><b data-i18n="un2">Un.</b><span data-i18n="bal4">Un bal, c'est une salle qu'on met en scène, un tempo qu'on tient.</span></li>
+            <li><b data-i18n="deux2">deux.</b><span data-i18n="bal5">Des invités qu'on accueille et qu'on fait revenir.</span></li>
+            <li><b data-i18n="trois2">trois.</b><span data-i18n="bal6">Exactement ce qu'exige une vente.</span></li>
+          </ol>
+          <p class="lien"><span data-i18n="bal_ig">Atelier couture :</span> <a href="https://www.instagram.com/" target="_blank" rel="noopener">@compte.couture</a></p>
+        </div>
+        <div class="robe-wrap">
+          <div class="robe" id="robe"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMATION & LANGUES ===== -->
+  <section class="lot inner">
+    <div class="n" data-i18n="fo_k">PROVENANCE</div>
+    <div>
+      <h2 class="rv" data-i18n="fo_h">Formation &amp; langues</h2>
+      <div class="grid3">
+        <div class="rv"><h3>Sciences Po</h3><p data-i18n="fo1_p">Paris.</p></div>
+        <div class="rv"><h3>École du Louvre</h3><p data-i18n="fo2_p">Histoire de l'art.</p></div>
+        <div class="rv"><h3 data-i18n="fo3_h">Trois langues</h3><p data-i18n="fo3_p">Français, allemand, anglais. Ce site existe dans les trois.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="adjs inner" id="contact">
+    <span class="word" data-i18n="adj">Adjugé.</span>
+    <p class="contact-line">
+      <a href="mailto:prenom.nom@email.com">prenom.nom@email.com</a>
+      <span class="sep">·</span>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="sep">·</span>
+      <a href="assets/cv-fr.pdf" data-cv>CV (PDF)</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="foot inner">
+  <span data-i18n="foot">© 2026 Séphora N. — Paris</span>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
