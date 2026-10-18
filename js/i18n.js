@@ -17,7 +17,7 @@ window.I18N = {
     pv_p3: "Une vente se gagne avant le premier coup de marteau.",
     dep_h: "J'ai co-créé le département d'art asiatique de la maison Oger&nbsp;Blanchet.",
     dep_p: "Avec mon collègue Guillaume&nbsp;Lemoine. La première vente avait une estimation totale de 30&nbsp;000&nbsp;euros. Aujourd'hui, deux ans plus tard, nous avons atteint le million. Nous y vendons des objets issus de toute l'Asie, de l'Antiquité à nos jours.",
-    sp_h: "Quatre spécialités",
+    sp_h: "Je suis aussi experte en livres anciens",
     sp1_h: "Livres anciens", sp1_p: "Manuscrits, incunables, éditions originales, reliures. Rassembler, décrire, faire expertiser, cataloguer.",
     sp2_h: "L'un de mes domaines d'expertise&nbsp;: l'art asiatique", sp2_p: "Correspondances, manuscrits signés, documents historiques. Lecture, identification, provenance.",
     sp3_h: "Art asiatique", sp3_p: "Laques, bronzes, céramiques, peintures, de l'Inde au Japon, du Viêt&nbsp;Nam au Laos. Le département que j'ai contribué à créer.",
@@ -82,6 +82,7 @@ window.I18N = {
     sk3_h: "Savoir-être",
     sk3_p: "Organisation et rigueur, relation avec les vendeurs, experts et acheteurs, encadrement et transmission.",
     ct_sub: "Charenton-le-Pont (94) · Permis&nbsp;B",
+    sp_p: "Et j'ai travaillé avec d'autres types d'objets.",
     cv: "assets/cv-fr.pdf"
   },
 
@@ -100,7 +101,7 @@ window.I18N = {
     pv_p3: "Eine Versteigerung wird vor dem ersten Hammerschlag gewonnen.",
     dep_h: "Ich habe die Abteilung Asiatische Kunst des Hauses Oger&nbsp;Blanchet mitgegründet.",
     dep_p: "Gemeinsam mit meinem Kollegen Guillaume&nbsp;Lemoine. Die erste Auktion hatte eine Gesamtschätzung von 30&nbsp;000&nbsp;Euro. Heute, zwei Jahre später, haben wir die Million erreicht. Wir versteigern dort Objekte aus ganz Asien, von der Antike bis heute.",
-    sp_h: "Vier Spezialgebiete",
+    sp_h: "Ich bin auch Expertin für alte Bücher",
     sp1_h: "Alte Bücher", sp1_p: "Handschriften, Inkunabeln, Erstausgaben, Einbände. Zusammentragen, beschreiben, begutachten lassen, katalogisieren.",
     sp2_h: "Eines meiner Fachgebiete: asiatische Kunst", sp2_p: "Briefwechsel, signierte Manuskripte, historische Dokumente. Lesen, identifizieren, Provenienz klären.",
     sp3_h: "Asiatische Kunst", sp3_p: "Lackarbeiten, Bronzen, Keramik, Malerei, von Indien bis Japan, von Vietnam bis Laos. Die Abteilung, die ich mit aufgebaut habe.",
@@ -165,6 +166,7 @@ window.I18N = {
     sk3_h: "Soziale Kompetenzen",
     sk3_p: "Organisation und Sorgfalt, Umgang mit Einlieferern, Experten und Käufern, Anleitung und Wissensvermittlung.",
     ct_sub: "Charenton-le-Pont (94) · Führerschein Klasse&nbsp;B",
+    sp_p: "Und ich habe mit weiteren Arten von Objekten gearbeitet.",
     cv: "assets/cv-de.pdf"
   },
 
@@ -183,7 +185,7 @@ window.I18N = {
     pv_p3: "A sale is won before the first strike of the hammer.",
     dep_h: "I co-founded the Asian Art department of Oger&nbsp;Blanchet.",
     dep_p: "With my colleague Guillaume&nbsp;Lemoine. The first sale carried a total estimate of €30,000. Today, two years on, we have reached the million. We sell objects from all over Asia, from antiquity to the present day.",
-    sp_h: "Four specialities",
+    sp_h: "I am also a specialist in rare books",
     sp1_h: "Rare books", sp1_p: "Manuscripts, incunabula, first editions, bindings. Consign, describe, have appraised, catalogue.",
     sp2_h: "One of my fields of expertise: Asian art", sp2_p: "Correspondence, signed manuscripts, historical documents. Reading, identification, provenance.",
     sp3_h: "Asian art", sp3_p: "Lacquer, bronzes, ceramics, paintings, from India to Japan, from Vietnam to Laos. The department I helped create.",
@@ -248,6 +250,7 @@ window.I18N = {
     sk3_h: "Soft skills",
     sk3_p: "Organisation and rigour, relations with consignors, specialists and buyers, mentoring and knowledge transfer.",
     ct_sub: "Charenton-le-Pont (94) · Driving licence&nbsp;B",
+    sp_p: "And I have worked with other types of objects.",
     cv: "assets/cv-en.pdf"
   }
 };
