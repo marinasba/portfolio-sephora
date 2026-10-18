@@ -86,7 +86,6 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
   --encre:var(--ivoire);--encre-2:var(--ivoire-dim);--gris:#7F9088;--papier-2:var(--vert-2);--or-2:var(--or);--vermillon:var(--or)}
 .band.vert h2,.band.vert h3{color:var(--champagne)}
 .band.vert .rubrique{color:var(--ivoire-dim)}
-.band.vert .board{border-top-color:var(--or)}
 .band .part{padding-top:0;padding-bottom:36px}
 .band .ph::before{color:var(--ivoire-dim)}
 .band .ph::after{color:var(--or)}
@@ -137,13 +136,6 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .photos3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
 .photos3 .ph{aspect-ratio:16/10}
 
-/* tableau 2022 → 2026 */
-.board{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:40px;text-align:left;border-top:1px solid var(--encre);padding-top:16px}
-.board div{min-width:0}
-.board small{display:block;font-size:.85rem;color:var(--gris);margin-bottom:4px}
-.board b{display:block;font-family:var(--f-titre);font-weight:400;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.1;font-variant-numeric:tabular-nums;white-space:nowrap}
-.board span{display:block;font-size:.85rem;color:var(--encre-2);margin-top:4px}
-.board div:last-child b{color:var(--vermillon)}
 
 /* spécialités */
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 24px;text-align:center}
@@ -281,7 +273,6 @@ img.ph::before,img.ph::after{content:none}
   .ph-qui{justify-self:start;max-width:320px}
   .items{grid-template-columns:1fr}
   .photos3{grid-template-columns:1fr}
-  .board{grid-template-columns:repeat(2,1fr)}
   .pv{height:200vh}
   .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
   .envers{--tl-w:min(78vw,340px);--tl-gap:18px}
