@@ -46,9 +46,20 @@
   var pv = document.getElementById('pv');
   var screen = document.getElementById('screen');
   var robe = document.getElementById('robe');
+  var envers = document.getElementById('envers');
   var tl = document.getElementById('tl');
+  var tlprog = document.getElementById('tlprog');
+  var tlDist = 0;
 
   function clamp(v) { return Math.min(1, Math.max(0, v)); }
+
+  // hauteur de la section = ce qu'il faut défiler pour voir toute la piste
+  function sizeEnvers() {
+    if (!envers || !tl) return;
+    tlDist = Math.max(0, tl.scrollWidth - window.innerWidth + 40);
+    envers.style.height = (window.innerHeight + tlDist) + 'px';
+  }
+  sizeEnvers();
 
   function onScroll() {
     var vh = window.innerHeight;
@@ -62,11 +73,12 @@
       pv.classList.toggle('half', deg > 90);
     }
 
-    // timeline : le fil d'or se dessine en descendant
-    if (tl) {
-      var t = tl.getBoundingClientRect();
-      var tp = clamp((vh * 0.75 - t.top) / t.height);
-      tl.style.setProperty('--tl-p', tp);
+    // timeline horizontale : la piste glisse vers la gauche pendant le défilement
+    if (envers && tl) {
+      var e = envers.getBoundingClientRect();
+      var ep = clamp(-e.top / Math.max(1, e.height - vh));
+      tl.style.transform = 'translateX(' + (-ep * tlDist) + 'px)';
+      if (tlprog) tlprog.style.width = (ep * 100) + '%';
     }
 
     // robe de bal : tourne avec le défilement
@@ -80,6 +92,7 @@
   window.addEventListener('scroll', function () {
     if (!ticking) { requestAnimationFrame(function () { onScroll(); ticking = false; }); ticking = true; }
   }, { passive: true });
-  window.addEventListener('resize', onScroll);
+  window.addEventListener('resize', function () { sizeEnvers(); onScroll(); });
+  window.addEventListener('load', function () { sizeEnvers(); onScroll(); });
   onScroll();
 })();

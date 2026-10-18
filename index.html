@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Séphora N. — Organisation de ventes aux enchères</title>
-<meta name="description" content="Séphora N., organisatrice de ventes aux enchères à Paris : livres anciens, lettres autographes, photographies anciennes, art asiatique.">
+<title>Séphora Nowicki — Organisation de ventes aux enchères</title>
+<meta name="description" content="Séphora Nowicki, organisatrice de ventes aux enchères à Paris : livres anciens, lettres autographes, photographies anciennes, art asiatique.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="top">
   <div class="top-l">
-    <b data-i18n="name">Séphora N.</b>
+    <b data-i18n="name">Séphora Nowicki</b>
     <span class="sep">·</span>
     <span data-i18n="title">Organisation de ventes aux enchères</span>
     <span class="sep">·</span>
@@ -31,9 +31,9 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero inner">
-    <div class="mono" data-i18n="hero_k">LOT 0 — L'ORGANISATRICE</div>
-    <h1 data-i18n="hero_h">Recto, la salle.<br><em>Verso, mon métier.</em></h1>
-    <p class="lead" data-i18n="hero_p">Livres anciens, lettres autographes, photographies anciennes et art asiatique. Une vente se gagne avant le premier coup de marteau.</p>
+    <h1>Séphora Nowicki</h1>
+    <p class="sub" data-i18n="hero_sub">Organisatrice de ventes aux enchères à Paris</p>
+    <p class="lead" data-i18n="hero_p">Livres anciens, lettres autographes, photographies anciennes et art asiatique. De la première estimation au dernier bordereau, chez Oger Blanchet, quartier Drouot.</p>
     <div class="mono" data-i18n="hero_c">Sciences Po · École du Louvre · Oger Blanchet, quartier Drouot</div>
     <div class="cue" data-i18n="cue">Faire défiler</div>
   </section>
@@ -49,13 +49,13 @@
       </div>
       <div class="txt">
         <div class="side recto">
-          <div class="mono" data-i18n="pv_k1">LOT 1 — RECTO</div>
+          <div class="mono" data-i18n="pv_k1">RECTO</div>
           <h2 data-i18n="pv_h1">Paravent de Pham Hau, laque et or.</h2>
           <div class="big">1 000 000 €</div>
           <p class="lead" data-i18n="pv_p1">Adjugé le 1er octobre 2026 à l'Hôtel Drouot. Deuxième résultat de l'histoire de l'étude.</p>
         </div>
         <div class="side verso">
-          <div class="mono" data-i18n="pv_k2">LOT 1 — VERSO</div>
+          <div class="mono" data-i18n="pv_k2">VERSO</div>
           <h2 data-i18n="pv_h2">Décoré sur ses deux faces. Comme une vente.</h2>
           <p class="lead" data-i18n="pv_p2">Derrière le chiffre : les experts réunis, le catalogue supervisé, la séance photo, le graphiste, le transport des lots, la scénographie de la salle, le procès-verbal, les bordereaux.</p>
           <p class="lead" data-i18n="pv_p3">Le recto, c'est la salle. Le verso, c'est mon métier.</p>
@@ -66,7 +66,6 @@
 
   <!-- ===== LOT 2 — DÉPARTEMENT ===== -->
   <section class="lot inner">
-    <div class="n">LOT 2</div>
     <div>
       <h2 class="rv" data-i18n="dep_h">Le département art asiatique, 2022 → 2026</h2>
       <p class="lead rv" data-i18n="dep_p">Créé en 2022 avec Guillaume Lemoine, chez Oger Blanchet. Première vente : 30 000 € d'estimation totale. Aujourd'hui, les ventes se tiennent à l'Hôtel Drouot. De l'Inde à l'Extrême-Orient, du Viêt Nam au Laos, de l'Antiquité à nos jours.</p>
@@ -82,7 +81,6 @@
 
   <!-- ===== LOT 3 — SPÉCIALITÉS ===== -->
   <section class="lot inner">
-    <div class="n">LOT 3</div>
     <div>
       <h2 class="rv" data-i18n="sp_h">Quatre spécialités</h2>
       <div class="grid4">
@@ -124,23 +122,32 @@
   </section>
 
   <!-- ===== LOT 4 — L'ENVERS D'UNE VENTE (timeline) ===== -->
-  <section class="lot inner" id="envers">
-    <div class="n">LOT 4</div>
-    <div>
-      <h2 class="rv" data-i18n="tl_h">L'envers d'une vente</h2>
-      <p class="lead rv" data-i18n="tl_p">Dix étapes, de la première estimation au dernier bordereau. Toutes tenues de bout en bout.</p>
+  <section class="envers" id="envers">
+    <div class="stick">
+      <div class="inner envers-head">
+        <div>
+          <h2 data-i18n="tl_h">L'envers d'une vente</h2>
+          <p class="lead" data-i18n="tl_p">Dix étapes, de la première estimation au dernier bordereau. Toutes tenues de bout en bout.</p>
+        </div>
+        <div class="tl-prog"><span id="tlprog"></span></div>
+      </div>
       <ol class="tl" id="tl">
-        <li class="rv"><b>I</b><div><h3 data-i18n="t1_h">Rassembler les lots</h3><p data-i18n="t1_p">Prospection, rendez-vous, prise en dépôt, fiches descriptives.</p></div></li>
-        <li class="rv"><b>II</b><div><h3 data-i18n="t2_h">Faire venir les experts</h3><p data-i18n="t2_p">Choix de l'expert, organisation des examens, validation des estimations.</p></div></li>
-        <li class="rv"><b>III</b><div><h3 data-i18n="t3_h">Superviser le catalogue</h3><p data-i18n="t3_p">Notices, ordre des lots, relecture, cohérence des estimations.</p></div></li>
-        <li class="rv"><b>IV</b><div><h3 data-i18n="t4_h">Diriger la séance photo</h3><p data-i18n="t4_p">Sélection des lots, prises de vue, retouches, droits.</p></div></li>
-        <li class="rv"><b>V</b><div><h3 data-i18n="t5_h">Travailler avec le graphiste</h3><p data-i18n="t5_p">Maquette du catalogue, couverture, épreuves, bon à tirer.</p></div></li>
-        <li class="rv"><b>VI</b><div><h3 data-i18n="t6_h">Organiser le transport</h3><p data-i18n="t6_p">Transporteurs, emballage, assurance, arrivée des lots le jour J.</p></div></li>
-        <li class="rv"><b>VII</b><div><h3 data-i18n="t7_h">Mettre en scène la salle</h3><p data-i18n="t7_p">Scénographie, accrochage, vitrines, location de matériel.</p></div></li>
-        <li class="rv"><b>VIII</b><div><h3 data-i18n="t8_h">Tenir le procès-verbal</h3><p data-i18n="t8_p">Enregistrement des adjudications pendant la séance.</p></div></li>
-        <li class="rv"><b>IX</b><div><h3 data-i18n="t9_h">Facturer</h3><p data-i18n="t9_p">Factures acheteurs, décomptes vendeurs, suivi des règlements.</p></div></li>
-        <li class="rv"><b>X</b><div><h3 data-i18n="t10_h">Assurer l'après-vente</h3><p data-i18n="t10_p">Bordereaux d'achat, retrait des lots, relation avec les acheteurs.</p></div></li>
+        <li><div class="ph ph-e1" data-slot="assets/etape-01.jpg"></div><b>I</b><h3 data-i18n="t1_h">Rassembler les lots</h3><p data-i18n="t1_p">Prospection, rendez-vous, prise en dépôt, fiches descriptives.</p></li>
+        <li><div class="ph ph-e2" data-slot="assets/etape-02.jpg"></div><b>II</b><h3 data-i18n="t2_h">Faire venir les experts</h3><p data-i18n="t2_p">Choix de l'expert, organisation des examens, validation des estimations.</p></li>
+        <li><div class="ph ph-e3" data-slot="assets/etape-03.jpg"></div><b>III</b><h3 data-i18n="t3_h">Superviser le catalogue</h3><p data-i18n="t3_p">Notices, ordre des lots, relecture, cohérence des estimations.</p></li>
+        <li><div class="ph ph-e4" data-slot="assets/etape-04.jpg"></div><b>IV</b><h3 data-i18n="t4_h">Diriger la séance photo</h3><p data-i18n="t4_p">Sélection des lots, prises de vue, retouches, droits.</p></li>
+        <li><div class="ph ph-e5" data-slot="assets/etape-05.jpg"></div><b>V</b><h3 data-i18n="t5_h">Travailler avec le graphiste</h3><p data-i18n="t5_p">Maquette du catalogue, couverture, épreuves, bon à tirer.</p></li>
+        <li><div class="ph ph-e6" data-slot="assets/etape-06.jpg"></div><b>VI</b><h3 data-i18n="t6_h">Organiser le transport</h3><p data-i18n="t6_p">Transporteurs, emballage, assurance, arrivée des lots le jour J.</p></li>
+        <li><div class="ph ph-e7" data-slot="assets/etape-07.jpg"></div><b>VII</b><h3 data-i18n="t7_h">Mettre en scène la salle</h3><p data-i18n="t7_p">Scénographie, accrochage, vitrines, location de matériel.</p></li>
+        <li><div class="ph ph-e8" data-slot="assets/etape-08.jpg"></div><b>VIII</b><h3 data-i18n="t8_h">Tenir le procès-verbal</h3><p data-i18n="t8_p">Enregistrement des adjudications pendant la séance.</p></li>
+        <li><div class="ph ph-e9" data-slot="assets/etape-09.jpg"></div><b>IX</b><h3 data-i18n="t9_h">Facturer</h3><p data-i18n="t9_p">Factures acheteurs, décomptes vendeurs, suivi des règlements.</p></li>
+        <li><div class="ph ph-e10" data-slot="assets/etape-10.jpg"></div><b>X</b><h3 data-i18n="t10_h">Assurer l'après-vente</h3><p data-i18n="t10_p">Bordereaux d'achat, retrait des lots, relation avec les acheteurs.</p></li>
       </ol>
+    </div>
+  </section>
+
+  <section class="lot inner">
+    <div>
       <aside class="encart rv">
         <div class="mono" data-i18n="inv_k">HORS VENTE — INVENTAIRES</div>
         <p data-i18n="inv_p">Inventaires de succession, de tutelle et volontaires : fiches descriptives, estimations, déménagement des lots, rendez-vous et supervision des transporteurs.</p>
@@ -150,7 +157,6 @@
 
   <!-- ===== LOT 5 — ENCADRER ===== -->
   <section class="lot inner">
-    <div class="n">LOT 5</div>
     <div>
       <h2 class="rv" data-i18n="rh_h">Encadrer</h2>
       <div class="grid3">
@@ -188,7 +194,6 @@
 
   <!-- ===== FORMATION & LANGUES ===== -->
   <section class="lot inner">
-    <div class="n" data-i18n="fo_k">PROVENANCE</div>
     <div>
       <h2 class="rv" data-i18n="fo_h">Formation &amp; langues</h2>
       <div class="grid3">
@@ -214,7 +219,7 @@
 </main>
 
 <footer class="foot inner">
-  <span data-i18n="foot">© 2026 Séphora N. — Paris</span>
+  <span data-i18n="foot">© 2026 Séphora Nowicki — Paris</span>
 </footer>
 
 <script src="js/i18n.js"></script>
