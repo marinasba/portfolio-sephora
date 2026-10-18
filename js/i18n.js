@@ -3,10 +3,10 @@
    DE et EN : à faire relire par un natif du milieu avant mise en ligne. */
 window.I18N = {
   fr: {
-    _html_title: "Séphora Nowicki — Organisation de ventes aux enchères",
+    _html_title: "Séphora Nowicki — Administration de ventes aux enchères",
     name: "Séphora Nowicki",
-    title: "Organisation de ventes aux enchères",
-    hero_sub: "Organisatrice de ventes aux enchères à Paris",
+    title: "Administration de ventes aux enchères",
+    hero_sub: "Administratrice de ventes aux enchères à Paris",
     hero_p: "Du premier contact à la finalisation de la vente, je prends soin de vos objets pour que leur passage en salle soit fluide, de bout en bout.",
     pv_k1: "La vente record",
     pv_h1: "Paravent de Pham&nbsp;Hau, laque et or.",
@@ -87,10 +87,10 @@ window.I18N = {
   },
 
   de: {
-    _html_title: "Séphora Nowicki — Organisation von Auktionen",
+    _html_title: "Séphora Nowicki — Auktionsadministration",
     name: "Séphora Nowicki",
     title: "Organisation von Auktionen",
-    hero_sub: "Auktionsorganisatorin in Paris",
+    hero_sub: "Auktionsadministratorin in Paris",
     hero_p: "Vom ersten Kontakt bis zum Abschluss der Auktion kümmere ich mich sorgfältig um Ihre Objekte, damit ihr Verkauf reibungslos verläuft, von Anfang bis Ende.",
     pv_k1: "Der Rekordzuschlag",
     pv_h1: "Stellschirm von Pham&nbsp;Hau, Lack und Gold.",
@@ -171,10 +171,10 @@ window.I18N = {
   },
 
   en: {
-    _html_title: "Séphora Nowicki — Auction Sale Coordination",
+    _html_title: "Séphora Nowicki — Auction Administration",
     name: "Séphora Nowicki",
     title: "Auction sale coordination",
-    hero_sub: "Auction sale coordinator in Paris",
+    hero_sub: "Auction administrator in Paris",
     hero_p: "From first contact to the close of the sale, I take care of your objects so that their journey to the saleroom is seamless, from start to finish.",
     pv_k1: "The record sale",
     pv_h1: "Screen by Pham&nbsp;Hau, lacquer and gold.",
