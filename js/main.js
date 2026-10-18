@@ -40,7 +40,7 @@
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
   }, { threshold: 0.3 });
-  document.querySelectorAll('.rv, .board, .bath, .adjs, .lustre, .temps').forEach(function (el) { io.observe(el); });
+  document.querySelectorAll('.rv, .board, .adjs, .lustre, .temps').forEach(function (el) { io.observe(el); });
 
   /* ---------- effets liés à la position de scroll ---------- */
   var pv = document.getElementById('pv');

@@ -11,7 +11,6 @@ Chaque rectangle vide du site porte son étiquette « Photo de … » et le nom 
 | `lettres.jpg` | Une lettre autographe ou un manuscrit | 900 × 1200 px |
 | `asie.jpg` | Un objet d'art asiatique (laque, bronze, céramique) | 900 × 1200 px |
 | `photo-ancienne.jpg` | Un tirage ancien (album, daguerréotype…) | 900 × 1200 px |
-| `nadar.jpg` | Le tirage de Nadar pris pendant la Commune (vérifier les droits) | 1600 × 2000 px |
 | `etape-01.jpg` | Lots rassemblés à l'étude | 1600 × 1000 px |
 | `etape-02.jpg` | Un expert examinant un lot | 1600 × 1000 px |
 | `etape-03.jpg` | Un catalogue de vente de l'étude, ouvert | 1600 × 1000 px |

@@ -28,10 +28,8 @@
   /* Emplacements photos : décommenter quand les fichiers sont dans assets/ */
   /* --pv-recto:url("../assets/paravent-recto.jpg"); */
   /* --pv-verso:url("../assets/paravent-verso.jpg"); */
-  /* --nadar:url("../assets/nadar.jpg"); */
   --pv-recto:none;
   --pv-verso:none;
-  --nadar:none;
   color-scheme:dark;
 }
 
@@ -115,7 +113,18 @@ p{margin:0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .h-big{font-family:var(--f-titre);font-size:clamp(1.9rem,3.4vw,2.6rem);line-height:1.15;margin-bottom:12px}
 .it{font-style:italic}
-.formation .mono{margin-bottom:6px}
+/* timeline verticale (formation) */
+.vtl{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:22px;position:relative}
+.vtl::before{content:"";position:absolute;left:62px;top:6px;bottom:6px;width:1px;background:var(--or-25)}
+.vtl li{display:grid;grid-template-columns:48px 1fr;gap:28px;align-items:start}
+.vtl .an{font-family:var(--f-titre);font-size:1.25rem;color:var(--or);font-variant-numeric:tabular-nums;position:relative}
+.vtl .an::after{content:"";position:absolute;right:-18px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--or);box-shadow:0 0 0 4px var(--laque)}
+.vtl h3{font-family:var(--f-titre);font-size:1.3rem;margin-bottom:2px}
+.vtl p{color:var(--dim);font-size:.92rem}
+/* listes de compétences */
+.liste{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
+.liste li{padding-left:16px;position:relative;font-size:.95rem}
+.liste li::before{content:"";position:absolute;left:0;top:.65em;width:6px;height:1px;background:var(--or)}
 
 /* ---------- lots ---------- */
 .lot{border-top:1px solid var(--or-25);padding-block:72px}
@@ -153,21 +162,6 @@ img.ph::before,img.ph::after{content:none}
 .hero{display:grid;grid-template-columns:1.3fr .9fr;gap:48px;align-items:center}
 .bal-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;max-width:420px}
 .bal-photos .ph{aspect-ratio:4/5;margin:0}
-
-/* le tirage qui se développe */
-.dev{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;border-top:1px solid var(--or-25);padding-block:72px}
-.dev .h-big{margin:10px 0 14px}
-.bath{aspect-ratio:4/5;max-width:100%;position:relative;overflow:hidden;border:1px solid rgba(201,162,75,.35);background:#D9D2C4}
-.bath .print{position:absolute;inset:0;background-image:var(--nadar),
-  radial-gradient(ellipse 55% 45% at 50% 42%, rgba(243,237,226,.55), transparent 65%),
-  linear-gradient(180deg,#3E3630 0%,#1B1613 55%,#0E0C0A 100%);background-size:cover;background-position:center;
-  filter:contrast(.1) brightness(2.4) sepia(.6);transition:filter 3.2s cubic-bezier(.3,0,.2,1)}
-.bath .print::after{content:"";position:absolute;inset:0;background:
-  repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,0,0,.05) 3px 4px),
-  linear-gradient(90deg,rgba(0,0,0,.25),transparent 20% 80%,rgba(0,0,0,.25))}
-.bath.in .print{filter:contrast(1) brightness(.95) sepia(.45)}
-.bath.has-photo .ph-tag{display:none}
-.bath .lbl{position:absolute;left:12px;bottom:10px;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.1em;color:rgba(243,237,226,.85);mix-blend-mode:difference}
 
 /* timeline horizontale — l'envers d'une vente
    La section est haute ; son contenu reste collé à l'écran et la piste
@@ -244,7 +238,7 @@ img.ph::before,img.ph::after{content:none}
   .ph-portrait{max-width:320px}
   .pv{height:200vh}
   .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
-  .dev,.bal,.two{grid-template-columns:1fr}
+  .bal,.two{grid-template-columns:1fr}
   .two{gap:32px}
   .menu{display:none}
   .part{padding-top:64px}
@@ -263,6 +257,5 @@ img.ph::before,img.ph::after{content:none}
   *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
   .js .rv:not(.in),.js .board:not(.in) div,.js .temps:not(.in) li{opacity:1;transform:none}
   .lustre i{opacity:1}
-  .bath .print{filter:contrast(1) brightness(.95) sepia(.45)}
-  .adjs .word::after{transform:scaleX(1)}
+    .adjs .word::after{transform:scaleX(1)}
 }
