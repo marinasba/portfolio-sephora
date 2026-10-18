@@ -40,3 +40,4 @@ Ajouts :
 | `asie-salle.jpg` | Une vente d'art asiatique à l'Hôtel Drouot (la salle, le public) | 1600 × 1000 px |
 | `asie-lots.jpg` | Lots d'art asiatique exposés avant la vente | 1600 × 1000 px |
 | `asie-catalogue.jpg` | Catalogue d'une vente d'art asiatique | 1600 × 1000 px |
+| `sephora-travail.jpg` | Séphora au travail (en salle de vente, à l'étude ou devant un lot) | 1200 × 1500 px |
