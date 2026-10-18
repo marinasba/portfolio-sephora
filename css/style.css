@@ -98,7 +98,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .band.vert .trait{background:var(--or)}
 .notice{text-align:center;padding-block:calc(var(--bloc)/2)}
 .notice > .rubrique{margin-bottom:12px}
-.notice h3{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px}
+.notice h3{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px;max-width:26ch;margin-inline:auto;text-wrap:balance}
 .notice .lead{margin-inline:auto}
 .notice .items,.notice .grid4{margin-top:36px}
 .notice h3.small,.notice .items h3{font-size:1.35rem;margin-bottom:4px}
@@ -106,14 +106,16 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .items{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 32px;text-align:center}
 .items p{font-size:.98rem}
 .items .rubrique{margin-bottom:6px;font-size:1.1rem}
+.pic{width:26px;height:26px;color:var(--or-2);margin:0 auto 10px;display:block}
+.band.vert .pic{color:var(--or)}
 
 /* qui suis-je : texte à gauche, formation à droite */
 .qui{display:grid;gap:72px;padding-block:calc(var(--bloc)/2) var(--partie)}
 .qui-row{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
 .ph-qui{aspect-ratio:4/5;max-width:380px;justify-self:end;width:100%}
 .skills{list-style:none;display:grid;gap:18px}
-.skills li{display:grid;grid-template-columns:34px 1fr;gap:16px;align-items:start}
-.skills .pic-s{width:28px;height:28px;margin:4px 0 0}
+.skills li{display:grid;grid-template-columns:28px 1fr;gap:14px;align-items:start}
+.skills .pic-s{width:22px;height:22px;margin:5px 0 0}
 .qui .skills h3{font-size:1.35rem;margin-bottom:2px}
 .skills p{color:var(--encre-2);font-size:.98rem}
 .qui h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:14px}
@@ -208,8 +210,7 @@ img.ph::before,img.ph::after{content:none}
 .envers{position:relative;--tl-w:380px;--tl-gap:32px}
 .envers .stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;gap:32px;overflow:hidden}
 .envers-head{text-align:center;width:100%}
-.envers-head .rubrique{margin-bottom:12px}
-.envers-head h3{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:14px}
+.envers-head h3{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:14px;max-width:26ch;margin-inline:auto;text-wrap:balance}
 .envers-head .lead{margin-inline:auto}
 .tl-prog{height:1px;background:var(--papier-2);position:relative;margin-top:28px}
 .tl-prog span{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--encre)}
