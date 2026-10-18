@@ -232,8 +232,22 @@ img.ph::before,img.ph::after{content:none}
 .tampon{font-family:var(--f-titre);font-style:italic;font-size:2.4rem;color:var(--vermillon);border:2px solid var(--vermillon);border-radius:4px;padding:6px 22px 10px;line-height:1;transform:rotate(-8deg) scale(1.8);opacity:0;transition:transform .35s cubic-bezier(.2,1.3,.4,1),opacity .2s;box-shadow:inset 0 0 0 3px var(--papier),inset 0 0 0 4px var(--vermillon)}
 .tampon.in{transform:rotate(-8deg) scale(1);opacity:1}
 
-/* ---------- les hobbies (bande de velours, fil d'or au scroll) ---------- */
-.velours{background:var(--velours);color:var(--ivoire);position:relative;overflow:hidden}
+/* ---------- le rideau : le velours descend sur le vert au scroll ---------- */
+.rideau{height:170vh;background:var(--vert);position:relative}
+.rideau .stick{position:sticky;top:0;height:100vh;overflow:hidden}
+.drape{position:absolute;left:0;right:0;top:0;height:calc(100% + 44px);transform:translateY(-100%);will-change:transform;
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,.22) 0 14px, rgba(0,0,0,0) 34px 70px, rgba(255,255,255,.035) 84px 96px, rgba(0,0,0,0) 110px 140px),
+    var(--velours)}
+/* ourlet festonné avec galon d'or */
+.drape::after{content:"";position:absolute;left:0;right:0;bottom:0;height:44px;
+  background:
+    radial-gradient(circle at 50% 0, var(--velours) 0 29px, transparent 30px) 0 0/70px 44px repeat-x,
+    radial-gradient(circle at 50% 0, var(--or) 0 31px, transparent 32px) 0 0/70px 44px repeat-x}
+.drape::before{content:"";position:absolute;left:0;right:0;bottom:44px;height:1px;background:var(--or);opacity:.6}
+
+/* ---------- les hobbies (bande de velours) ---------- */
+.velours{background:var(--velours);color:var(--ivoire);position:relative;overflow:hidden;margin-top:-1px}
 .velours .inner{position:relative;z-index:1}
 .lustre{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(520px,90%);height:150px;pointer-events:none}
 .lustre::before{content:"";position:absolute;left:50%;top:0;width:1px;height:18px;background:rgba(232,220,196,.4)}
@@ -303,6 +317,9 @@ img.ph::before,img.ph::after{content:none}
 }
 @media (prefers-reduced-motion: reduce){
   *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .rideau{height:auto}
+  .rideau .stick{height:220px}
+  .drape{transform:none!important}
   .lustre i{opacity:1}
   .adjs .word::after{transform:scaleX(1)}
 }

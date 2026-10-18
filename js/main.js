@@ -94,8 +94,18 @@
     return clamp((top - r.top) / Math.max(1, r.height - stick.offsetHeight));
   }
 
+  var rideau = document.getElementById('rideau');
+  var drape = document.getElementById('drape');
+
   function onScroll() {
     var vh = window.innerHeight;
+
+    // rideau : descend sur la bande verte au rythme du défilement
+    if (rideau && drape) {
+      var rr0 = rideau.getBoundingClientRect();
+      var rp = clamp(-rr0.top / Math.max(1, rr0.height - vh));
+      drape.style.transform = 'translateY(' + ((rp - 1) * 100) + '%)';
+    }
 
     // paravent : 0° → 180°
     if (pv && pvStick && screen) {
