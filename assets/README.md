@@ -34,3 +34,9 @@ Chaque rectangle vide du site porte son étiquette « Photo de … » et le nom 
 
 Avant mise en ligne : droits sur les photos des lots (étude / photographe),
 accord d'Oger Blanchet pour citer les résultats et le nom de Guillaume Lemoine.
+
+Ajouts :
+
+| `asie-salle.jpg` | Une vente d'art asiatique à l'Hôtel Drouot (la salle, le public) | 1600 × 1000 px |
+| `asie-lots.jpg` | Lots d'art asiatique exposés avant la vente | 1600 × 1000 px |
+| `asie-catalogue.jpg` | Catalogue d'une vente d'art asiatique | 1600 × 1000 px |

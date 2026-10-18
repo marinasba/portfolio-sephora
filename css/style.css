@@ -107,7 +107,8 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .items .rubrique{margin-bottom:6px;font-size:1.1rem}
 
 /* qui suis-je : texte à gauche, formation à droite */
-.qui{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;padding-block:calc(var(--bloc)/2)}
+.qui{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;padding-block:calc(var(--bloc)/2) var(--partie)}
+.qui .comp{margin-top:40px}
 .qui h3{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:14px}
 .qui .rubrique{margin-bottom:16px}
 
@@ -126,6 +127,9 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .dep{padding-block:calc(var(--bloc)/2);text-align:center}
 .dep h3{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px}
 .dep .lead{max-width:70ch;margin-inline:auto}
+
+.photos3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.photos3 .ph{aspect-ratio:16/10}
 
 /* tableau 2022 → 2026 */
 .board{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:40px;text-align:left;border-top:1px solid var(--encre);padding-top:16px}
@@ -268,6 +272,7 @@ img.ph::before,img.ph::after{content:none}
   .notice h3,.dep h3,.envers-head h3{font-size:1.9rem}
   .qui{grid-template-columns:1fr;gap:32px}
   .items{grid-template-columns:1fr}
+  .photos3{grid-template-columns:1fr}
   .board{grid-template-columns:repeat(2,1fr)}
   .pv{height:200vh}
   .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
