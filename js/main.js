@@ -95,51 +95,8 @@
     return clamp((top - r.top) / Math.max(1, r.height - stick.offsetHeight));
   }
 
-  /* ---------- fil d'or : se coud à travers les hobbies au rythme du défilement ---------- */
-  var velours = document.getElementById('velours');
-  var filPath = document.getElementById('filPath');
-  var aiguille = document.getElementById('aiguille');
-  var filLen = 0;
-  function buildFil() {
-    if (!velours || !filPath) return;
-    var W = velours.clientWidth, H = velours.clientHeight;
-    var inner = velours.querySelector('.inner');
-    var L = inner ? inner.getBoundingClientRect().left - velours.getBoundingClientRect().left : 40;
-    var R = W - L;                     // bords du contenu : le fil ondule dans les marges et derrière
-    var d = 'M ' + (L + 20) + ' 0';
-    var y = 0, step = 180, side = 1;
-    // boucles de valse : une courbe qui traverse la section en s'enroulant sur elle-même
-    while (y < H - step) {
-      var x = side > 0 ? R - 60 : L + 60;
-      var cx = side > 0 ? W + 120 : -120;
-      d += ' C ' + (W / 2) + ' ' + (y + step * 0.2) + ', ' + cx + ' ' + (y + step * 0.45) + ', ' + x + ' ' + (y + step * 0.75);
-      d += ' c ' + (side * 70) + ' 40, ' + (side * -40) + ' 70, ' + (side * -90) + ' 10';   // la boucle
-      y += step; side = -side;
-    }
-    d += ' C ' + (W / 2) + ' ' + (y + 60) + ', ' + (W / 2) + ' ' + H + ', ' + (W / 2) + ' ' + H;
-    filPath.setAttribute('d', d);
-    filLen = filPath.getTotalLength();
-    filPath.style.strokeDasharray = filLen;
-    filPath.style.strokeDashoffset = filLen;
-  }
-  buildFil();
-  function drawFil() {
-    if (!velours || !filPath || !filLen) return;
-    var r = velours.getBoundingClientRect(), vh = window.innerHeight;
-    var p = clamp((vh * 0.85 - r.top) / (r.height + vh * 0.5));
-    filPath.style.strokeDashoffset = filLen * (1 - p);
-    if (aiguille) {
-      var pt = filPath.getPointAtLength(filLen * p);
-      var pt2 = filPath.getPointAtLength(Math.min(filLen, filLen * p + 2));
-      var ang = Math.atan2(pt2.y - pt.y, pt2.x - pt.x) * 180 / Math.PI;
-      aiguille.setAttribute('transform', 'translate(' + pt.x + ' ' + pt.y + ') rotate(' + ang + ')');
-      aiguille.setAttribute('opacity', p > 0.01 && p < 0.995 ? '1' : '0');
-    }
-  }
-
   function onScroll() {
     var vh = window.innerHeight;
-    drawFil();
 
     // paravent : 0° → 180°
     if (pv && pvStick && screen) {
@@ -161,7 +118,7 @@
   window.addEventListener('scroll', function () {
     if (!ticking) { requestAnimationFrame(function () { onScroll(); ticking = false; }); ticking = true; }
   }, { passive: true });
-  window.addEventListener('resize', function () { layout(); buildFil(); onScroll(); });
-  window.addEventListener('load', function () { layout(); buildFil(); onScroll(); });
+  window.addEventListener('resize', function () { layout(); onScroll(); });
+  window.addEventListener('load', function () { layout(); onScroll(); });
   onScroll();
 })();
