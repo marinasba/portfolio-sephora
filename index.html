@@ -31,11 +31,14 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero inner">
+    <div class="hero-txt">
     <h1>Séphora Nowicki</h1>
     <p class="sub" data-i18n="hero_sub">Organisatrice de ventes aux enchères à Paris</p>
     <p class="lead" data-i18n="hero_p">Livres anciens, lettres autographes, photographies anciennes et art asiatique. De la première estimation au dernier bordereau, chez Oger Blanchet, quartier Drouot.</p>
     <div class="mono" data-i18n="hero_c">Sciences Po · École du Louvre · Oger Blanchet, quartier Drouot</div>
     <div class="cue" data-i18n="cue">Faire défiler</div>
+    </div>
+    <div class="ph ph-portrait" data-photo="Photo de Séphora — portrait sobre, lumière naturelle, idéalement en salle de vente" data-slot="assets/portrait.jpg"></div>
   </section>
 
   <!-- ===== LOT 1 — PARAVENT (scroll) ===== -->
@@ -43,8 +46,8 @@
     <div class="stick">
       <div class="scene">
         <div class="screen" id="screen">
-          <div class="face front"><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div></div>
-          <div class="face back"><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div></div>
+          <div class="face front"><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="ph-tag" data-photo="Photo du paravent Pham Hau — face recto (HD, fond neutre)" data-slot="assets/paravent-recto.jpg"></div></div>
+          <div class="face back"><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="ph-tag" data-photo="Photo du paravent Pham Hau — face verso" data-slot="assets/paravent-verso.jpg"></div></div>
         </div>
       </div>
       <div class="txt">
@@ -85,22 +88,22 @@
       <h2 class="rv" data-i18n="sp_h">Quatre spécialités</h2>
       <div class="grid4">
         <article class="fiche rv">
-          <div class="ph ph-livres" data-slot="assets/livres.jpg"></div>
+          <div class="ph" data-photo="Photo d'un livre ancien ou d'une reliure vendu(e) par l'étude" data-slot="assets/livres.jpg"></div>
           <h3 data-i18n="sp1_h">Livres anciens</h3>
           <p data-i18n="sp1_p">Manuscrits, incunables, éditions originales, reliures. Rassembler, décrire, faire expertiser, cataloguer.</p>
         </article>
         <article class="fiche rv">
-          <div class="ph ph-lettres" data-slot="assets/lettres.jpg"></div>
+          <div class="ph" data-photo="Photo d'une lettre autographe ou d'un manuscrit" data-slot="assets/lettres.jpg"></div>
           <h3 data-i18n="sp2_h">Lettres autographes</h3>
           <p data-i18n="sp2_p">Correspondances, manuscrits signés, documents historiques. Lecture, identification, provenance.</p>
         </article>
         <article class="fiche rv">
-          <div class="ph ph-asie" data-slot="assets/asie.jpg"></div>
+          <div class="ph" data-photo="Photo d'un objet d'art asiatique (laque, bronze, céramique)" data-slot="assets/asie.jpg"></div>
           <h3 data-i18n="sp3_h">Art asiatique</h3>
           <p data-i18n="sp3_p">Laques, bronzes, céramiques, peintures, de l'Inde au Japon, du Viêt Nam au Laos. Le département que j'ai contribué à créer.</p>
         </article>
         <article class="fiche rv">
-          <div class="ph ph-photo" data-slot="assets/nadar.jpg"></div>
+          <div class="ph" data-photo="Photo d'un tirage ancien (album, daguerréotype…)" data-slot="assets/photo-ancienne.jpg"></div>
           <h3 data-i18n="sp4_h">Photographies anciennes</h3>
           <p data-i18n="sp4_p">Tirages d'époque, albums, daguerréotypes. Une photographie prise pendant la Commune de Paris par Nadar ne se vend pas sans son histoire.</p>
         </article>
@@ -112,6 +115,7 @@
   <section class="dev inner">
     <div class="bath" id="bath" data-slot="assets/nadar.jpg">
       <div class="print"></div>
+      <div class="ph-tag" data-photo="Photo du tirage de Nadar pris pendant la Commune de Paris (vérifier les droits)" data-slot="assets/nadar.jpg"></div>
       <div class="lbl">NADAR — PARIS, 1871 — TIRAGE D'ÉPOQUE</div>
     </div>
     <div>
@@ -132,16 +136,16 @@
         <div class="tl-prog"><span id="tlprog"></span></div>
       </div>
       <ol class="tl" id="tl">
-        <li><div class="ph ph-e1" data-slot="assets/etape-01.jpg"></div><b>I</b><h3 data-i18n="t1_h">Rassembler les lots</h3><p data-i18n="t1_p">Prospection, rendez-vous, prise en dépôt, fiches descriptives.</p></li>
-        <li><div class="ph ph-e2" data-slot="assets/etape-02.jpg"></div><b>II</b><h3 data-i18n="t2_h">Faire venir les experts</h3><p data-i18n="t2_p">Choix de l'expert, organisation des examens, validation des estimations.</p></li>
-        <li><div class="ph ph-e3" data-slot="assets/etape-03.jpg"></div><b>III</b><h3 data-i18n="t3_h">Superviser le catalogue</h3><p data-i18n="t3_p">Notices, ordre des lots, relecture, cohérence des estimations.</p></li>
-        <li><div class="ph ph-e4" data-slot="assets/etape-04.jpg"></div><b>IV</b><h3 data-i18n="t4_h">Diriger la séance photo</h3><p data-i18n="t4_p">Sélection des lots, prises de vue, retouches, droits.</p></li>
-        <li><div class="ph ph-e5" data-slot="assets/etape-05.jpg"></div><b>V</b><h3 data-i18n="t5_h">Travailler avec le graphiste</h3><p data-i18n="t5_p">Maquette du catalogue, couverture, épreuves, bon à tirer.</p></li>
-        <li><div class="ph ph-e6" data-slot="assets/etape-06.jpg"></div><b>VI</b><h3 data-i18n="t6_h">Organiser le transport</h3><p data-i18n="t6_p">Transporteurs, emballage, assurance, arrivée des lots le jour J.</p></li>
-        <li><div class="ph ph-e7" data-slot="assets/etape-07.jpg"></div><b>VII</b><h3 data-i18n="t7_h">Mettre en scène la salle</h3><p data-i18n="t7_p">Scénographie, accrochage, vitrines, location de matériel.</p></li>
-        <li><div class="ph ph-e8" data-slot="assets/etape-08.jpg"></div><b>VIII</b><h3 data-i18n="t8_h">Tenir le procès-verbal</h3><p data-i18n="t8_p">Enregistrement des adjudications pendant la séance.</p></li>
-        <li><div class="ph ph-e9" data-slot="assets/etape-09.jpg"></div><b>IX</b><h3 data-i18n="t9_h">Facturer</h3><p data-i18n="t9_p">Factures acheteurs, décomptes vendeurs, suivi des règlements.</p></li>
-        <li><div class="ph ph-e10" data-slot="assets/etape-10.jpg"></div><b>X</b><h3 data-i18n="t10_h">Assurer l'après-vente</h3><p data-i18n="t10_p">Bordereaux d'achat, retrait des lots, relation avec les acheteurs.</p></li>
+        <li><div class="ph" data-photo="Photo de lots rassemblés à l'étude (tables, caisses, objets en attente)" data-slot="assets/etape-01.jpg"></div><b>I</b><h3 data-i18n="t1_h">Rassembler les lots</h3><p data-i18n="t1_p">Prospection, rendez-vous, prise en dépôt, fiches descriptives.</p></li>
+        <li><div class="ph" data-photo="Photo d'un expert examinant un lot (loupe, gants)" data-slot="assets/etape-02.jpg"></div><b>II</b><h3 data-i18n="t2_h">Faire venir les experts</h3><p data-i18n="t2_p">Choix de l'expert, organisation des examens, validation des estimations.</p></li>
+        <li><div class="ph" data-photo="Photo d'un catalogue de vente de l'étude, ouvert" data-slot="assets/etape-03.jpg"></div><b>III</b><h3 data-i18n="t3_h">Superviser le catalogue</h3><p data-i18n="t3_p">Notices, ordre des lots, relecture, cohérence des estimations.</p></li>
+        <li><div class="ph" data-photo="Photo de la séance photo (studio, lot sous les lumières)" data-slot="assets/etape-04.jpg"></div><b>IV</b><h3 data-i18n="t4_h">Diriger la séance photo</h3><p data-i18n="t4_p">Sélection des lots, prises de vue, retouches, droits.</p></li>
+        <li><div class="ph" data-photo="Photo d'une maquette de catalogue ou d'épreuves chez le graphiste" data-slot="assets/etape-05.jpg"></div><b>V</b><h3 data-i18n="t5_h">Travailler avec le graphiste</h3><p data-i18n="t5_p">Maquette du catalogue, couverture, épreuves, bon à tirer.</p></li>
+        <li><div class="ph" data-photo="Photo du transport des lots (caisses, camion, emballage)" data-slot="assets/etape-06.jpg"></div><b>VI</b><h3 data-i18n="t6_h">Organiser le transport</h3><p data-i18n="t6_p">Transporteurs, emballage, assurance, arrivée des lots le jour J.</p></li>
+        <li><div class="ph" data-photo="Photo de la salle de vente scénographiée à l'Hôtel Drouot" data-slot="assets/etape-07.jpg"></div><b>VII</b><h3 data-i18n="t7_h">Mettre en scène la salle</h3><p data-i18n="t7_p">Scénographie, accrochage, vitrines, location de matériel.</p></li>
+        <li><div class="ph" data-photo="Photo du marteau ou du commissaire-priseur pendant la séance" data-slot="assets/etape-08.jpg"></div><b>VIII</b><h3 data-i18n="t8_h">Tenir le procès-verbal</h3><p data-i18n="t8_p">Enregistrement des adjudications pendant la séance.</p></li>
+        <li><div class="ph" data-photo="Photo d'un bordereau ou du bureau de facturation" data-slot="assets/etape-09.jpg"></div><b>IX</b><h3 data-i18n="t9_h">Facturer</h3><p data-i18n="t9_p">Factures acheteurs, décomptes vendeurs, suivi des règlements.</p></li>
+        <li><div class="ph" data-photo="Photo du retrait des lots ou d'un acheteur après la vente" data-slot="assets/etape-10.jpg"></div><b>X</b><h3 data-i18n="t10_h">Assurer l'après-vente</h3><p data-i18n="t10_p">Bordereaux d'achat, retrait des lots, relation avec les acheteurs.</p></li>
       </ol>
     </div>
   </section>
@@ -183,6 +187,10 @@
             <li><b data-i18n="deux2">deux.</b><span data-i18n="bal5">Des invités qu'on accueille et qu'on fait revenir.</span></li>
             <li><b data-i18n="trois2">trois.</b><span data-i18n="bal6">Exactement ce qu'exige une vente.</span></li>
           </ol>
+          <div class="bal-photos">
+            <div class="ph" data-photo="Photo de Séphora au Bal des Parisiennes 2026" data-slot="assets/bal.jpg"></div>
+            <div class="ph" data-photo="Photo d'une robe ou pièce cousue main (atelier couture)" data-slot="assets/couture.jpg"></div>
+          </div>
           <p class="lien"><span data-i18n="bal_ig">Atelier couture :</span> <a href="https://www.instagram.com/" target="_blank" rel="noopener">@compte.couture</a></p>
         </div>
         <div class="robe-wrap">

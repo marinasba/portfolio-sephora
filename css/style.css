@@ -128,13 +128,21 @@ p{margin:0}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 22px;margin-top:8px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 22px;margin-top:8px}
 .fiche{min-width:0}
-.ph{aspect-ratio:3/4;max-width:100%;border:1px solid var(--or-25);margin-bottom:14px;background:linear-gradient(160deg,#241E19,#0F0D0B);position:relative}
-.ph::after{content:attr(data-slot);position:absolute;left:10px;bottom:8px;font-family:var(--f-mono);font-size:.6rem;color:var(--dim);letter-spacing:.06em}
-.ph-livres{background:linear-gradient(90deg,#4A3324 0 9%,#E9E1D0 9% 91%,#4A3324 91%)}
-.ph-lettres{background:#E6DFCD repeating-linear-gradient(0deg, transparent 0 22px, rgba(43,43,43,.18) 22px 23px)}
-.ph-lettres::after,.ph-livres::after{color:#4A3324}
-.ph-asie{background:radial-gradient(ellipse 60% 50% at 50% 55%, rgba(201,162,75,.35), transparent 70%),linear-gradient(170deg,#1A1511,#0B0907)}
-.ph-photo{background:#2B2825 radial-gradient(ellipse at 50% 40%, rgba(244,239,230,.18), transparent 60%);filter:sepia(.4)}
+/* Emplacements photo : rectangle vide, étiquette « Photo de … » + nom de fichier attendu.
+   À remplacer par <img class="ph" src="assets/…"> une fois les fichiers reçus. */
+.ph{aspect-ratio:3/4;max-width:100%;border:1px dashed var(--or-55);margin-bottom:14px;background:var(--laque-2);position:relative;display:grid;place-items:center;padding:14px;text-align:center}
+.ph::before{content:attr(data-photo);font-family:var(--f-texte);font-size:.82rem;line-height:1.35;color:var(--ivoire);max-width:28ch}
+.ph::after{content:attr(data-slot);position:absolute;left:10px;bottom:8px;font-family:var(--f-mono);font-size:.62rem;color:var(--or);letter-spacing:.08em}
+img.ph{border:1px solid var(--or-25);object-fit:cover;padding:0;display:block}
+img.ph::before,img.ph::after{content:none}
+/* étiquette posée sur un emplacement déjà stylé (paravent, bain) */
+.ph-tag{position:absolute;inset:0;display:grid;place-items:center;padding:14px;text-align:center;pointer-events:none}
+.ph-tag::before{content:attr(data-photo);font-family:var(--f-texte);font-size:.82rem;line-height:1.35;color:var(--ivoire);max-width:26ch;background:rgba(15,13,11,.6);padding:8px 12px;border:1px dashed var(--or-55)}
+.ph-tag::after{content:attr(data-slot);position:absolute;left:10px;bottom:8px;font-family:var(--f-mono);font-size:.62rem;color:var(--or);letter-spacing:.08em}
+.ph-portrait{aspect-ratio:4/5;margin:0;width:100%}
+.hero{display:grid;grid-template-columns:1.3fr .9fr;gap:48px;align-items:center}
+.bal-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;max-width:420px}
+.bal-photos .ph{aspect-ratio:4/5;margin:0}
 
 /* le tirage qui se développe */
 .dev{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;border-top:1px solid var(--or-25);padding-block:72px}
@@ -148,6 +156,7 @@ p{margin:0}
   repeating-linear-gradient(0deg,transparent 0 3px,rgba(0,0,0,.05) 3px 4px),
   linear-gradient(90deg,rgba(0,0,0,.25),transparent 20% 80%,rgba(0,0,0,.25))}
 .bath.in .print{filter:contrast(1) brightness(.95) sepia(.45)}
+.bath.has-photo .ph-tag{display:none}
 .bath .lbl{position:absolute;left:12px;bottom:10px;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.1em;color:rgba(243,237,226,.85);mix-blend-mode:difference}
 
 /* timeline horizontale — l'envers d'une vente
@@ -165,19 +174,6 @@ p{margin:0}
 .tl li b{font-family:var(--f-titre);font-weight:300;font-size:1.1rem;color:var(--or);width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--or-55);border-radius:50%}
 .tl li h3{font-family:var(--f-titre);font-size:1.4rem;margin:0;align-self:center}
 .tl li p{grid-column:2;color:var(--dim);font-size:.92rem}
-/* photos d'étapes simulées */
-.ph-e1{background:linear-gradient(160deg,#2A221C,#0F0D0B)}
-.ph-e2{background:radial-gradient(ellipse at 30% 40%,rgba(201,162,75,.25),transparent 60%),#17130F}
-.ph-e3{background:#E6DFCD repeating-linear-gradient(0deg,transparent 0 14px,rgba(43,43,43,.15) 14px 15px)}
-.ph-e3::after{color:#4A3324}
-.ph-e4{background:radial-gradient(circle at 50% 50%,rgba(243,237,226,.3),transparent 50%),#0B0907}
-.ph-e5{background:linear-gradient(90deg,#F3EDE2 0 50%,#1B1B1B 50%)}
-.ph-e6{background:repeating-linear-gradient(45deg,#1A1511 0 20px,#241E19 20px 40px)}
-.ph-e7{background:linear-gradient(180deg,#16302B,#0B1526)}
-.ph-e8{background:#F3EDE2 repeating-linear-gradient(0deg,transparent 0 10px,rgba(27,27,27,.2) 10px 11px)}
-.ph-e8::after{color:#4A3324}
-.ph-e9{background:linear-gradient(160deg,#17130F,#2A1612)}
-.ph-e10{background:radial-gradient(ellipse at 70% 70%,rgba(179,52,30,.35),transparent 60%),#0F0D0B}
 .encart{border:1px solid var(--or-25);padding:20px 22px;max-width:62ch}
 .encart .mono{display:block;margin-bottom:8px}
 .encart p{color:var(--ivoire);font-size:.95rem}
@@ -234,7 +230,8 @@ p{margin:0}
   :root{--gutter-l:max(16px,env(safe-area-inset-left,0px));--gutter-r:max(16px,env(safe-area-inset-right,0px))}
   .top{font-size:.66rem}
   .top .sep + span:last-child{display:none}
-  .hero{padding-top:48px}
+  .hero{padding-top:48px;grid-template-columns:1fr;gap:28px}
+  .ph-portrait{max-width:320px}
   .pv{height:200vh}
   .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
   .dev,.bal{grid-template-columns:1fr}

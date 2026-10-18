@@ -1,25 +1,37 @@
-# Fichiers à déposer ici
+# Photos à fournir
 
-| Fichier | Usage | Format conseillé |
+Chaque rectangle vide du site porte son étiquette « Photo de … » et le nom de fichier attendu.
+
+| Fichier | Photo de… | Format conseillé |
 |---|---|---|
-| `paravent-recto.jpg` | Face avant du paravent Pham Hau (hero) | 2400 × 1800 px, JPG |
-| `paravent-verso.jpg` | Face arrière du paravent | 2400 × 1800 px, JPG |
-| `nadar.jpg` | Tirage Nadar (section « le tirage se révèle ») | 1600 × 2000 px, JPG |
-| `livres.jpg`, `lettres.jpg`, `asie.jpg` | Vignettes des spécialités | 900 × 1200 px, JPG |
+| `portrait.jpg` | Séphora — portrait sobre, lumière naturelle, idéalement en salle de vente | 1600 × 2000 px |
+| `paravent-recto.jpg` | Paravent Pham Hau — face recto, HD, fond neutre | 2400 × 1800 px |
+| `paravent-verso.jpg` | Paravent Pham Hau — face verso | 2400 × 1800 px |
+| `livres.jpg` | Un livre ancien ou une reliure vendu(e) par l'étude | 900 × 1200 px |
+| `lettres.jpg` | Une lettre autographe ou un manuscrit | 900 × 1200 px |
+| `asie.jpg` | Un objet d'art asiatique (laque, bronze, céramique) | 900 × 1200 px |
+| `photo-ancienne.jpg` | Un tirage ancien (album, daguerréotype…) | 900 × 1200 px |
+| `nadar.jpg` | Le tirage de Nadar pris pendant la Commune (vérifier les droits) | 1600 × 2000 px |
+| `etape-01.jpg` | Lots rassemblés à l'étude | 1600 × 1000 px |
+| `etape-02.jpg` | Un expert examinant un lot | 1600 × 1000 px |
+| `etape-03.jpg` | Un catalogue de vente de l'étude, ouvert | 1600 × 1000 px |
+| `etape-04.jpg` | La séance photo (studio, lot sous les lumières) | 1600 × 1000 px |
+| `etape-05.jpg` | Maquette de catalogue ou épreuves chez le graphiste | 1600 × 1000 px |
+| `etape-06.jpg` | Transport des lots (caisses, camion, emballage) | 1600 × 1000 px |
+| `etape-07.jpg` | La salle de vente scénographiée à l'Hôtel Drouot | 1600 × 1000 px |
+| `etape-08.jpg` | Le marteau ou le commissaire-priseur pendant la séance | 1600 × 1000 px |
+| `etape-09.jpg` | Un bordereau ou le bureau de facturation | 1600 × 1000 px |
+| `etape-10.jpg` | Le retrait des lots ou un acheteur après la vente | 1600 × 1000 px |
+| `bal.jpg` | Séphora au Bal des Parisiennes 2026 | 1200 × 1500 px |
+| `couture.jpg` | Une robe ou pièce cousue main | 1200 × 1500 px |
 | `cv-fr.pdf`, `cv-de.pdf`, `cv-en.pdf` | CV téléchargeables | PDF |
 
-Une fois les photos déposées, dans `css/style.css` (bloc `:root`), décommenter :
+## Brancher les photos
 
-```css
---pv-recto:url("../assets/paravent-recto.jpg");
---pv-verso:url("../assets/paravent-verso.jpg");
---nadar:url("../assets/nadar.jpg");
-```
+- **Rectangles simples** (`<div class="ph" …>`) : remplacer par `<img class="ph" src="assets/fichier.jpg" alt="…">`.
+- **Paravent et tirage Nadar** : dans `css/style.css` (bloc `:root`), décommenter
+  `--pv-recto`, `--pv-verso`, `--nadar` et supprimer les lignes `…:none;`.
+  Ajouter la classe `has-photo` sur `<div class="bath">` et retirer les deux `<div class="ph-tag">` du paravent.
 
-et supprimer les trois lignes `--pv-recto:none;` etc. juste en dessous.
-
-Pour les vignettes, remplacer dans `index.html` les `<div class="ph ph-…" data-slot="…">`
-par `<img class="ph" src="assets/livres.jpg" alt="…">`.
-
-Vérifier avant mise en ligne : droits sur les photos des lots (étude / photographe),
+Avant mise en ligne : droits sur les photos des lots (étude / photographe),
 accord d'Oger Blanchet pour citer les résultats et le nom de Guillaume Lemoine.
