@@ -42,6 +42,23 @@
   }, { threshold: 0.3 });
   document.querySelectorAll('.rv, .board, .adjs, .lustre, .temps').forEach(function (el) { io.observe(el); });
 
+  /* ---------- galerie : flèches ---------- */
+  var gal = document.getElementById('galerie');
+  var galPrev = document.getElementById('galPrev');
+  var galNext = document.getElementById('galNext');
+  if (gal && galPrev && galNext) {
+    function galStep() { var c = gal.firstElementChild; return c ? c.getBoundingClientRect().width + 16 : 300; }
+    function galState() {
+      galPrev.disabled = gal.scrollLeft <= 2;
+      galNext.disabled = gal.scrollLeft + gal.clientWidth >= gal.scrollWidth - 2;
+    }
+    galPrev.addEventListener('click', function () { gal.scrollBy({ left: -galStep(), behavior: 'smooth' }); });
+    galNext.addEventListener('click', function () { gal.scrollBy({ left: galStep(), behavior: 'smooth' }); });
+    gal.addEventListener('scroll', galState, { passive: true });
+    window.addEventListener('resize', galState);
+    galState();
+  }
+
   /* ---------- effets liés à la position de scroll ---------- */
   var pv = document.getElementById('pv');
   var screen = document.getElementById('screen');

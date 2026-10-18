@@ -41,4 +41,4 @@ Ajouts :
 | `asie-lots.jpg` | Lots d'art asiatique exposés avant la vente | 1600 × 1000 px |
 | `asie-catalogue.jpg` | Catalogue d'une vente d'art asiatique | 1600 × 1000 px |
 | `sephora-travail.jpg` | Séphora au travail (en salle de vente, à l'étude ou devant un lot) | 1200 × 1500 px |
-| `galerie-01.jpg` à `galerie-05.jpg` | Galerie sous le paravent : le paravent en salle le jour de la vente, deux détails de laque (recto, verso), la salle pendant les enchères, l'équipe ou le marteau à l'adjudication | 1600 × 1200 px (01 et 05 en format large 2400 × 900 px) |
+| `galerie-01.jpg` à `galerie-06.jpg` | Galerie sous le paravent : le paravent en salle le jour de la vente, deux détails de laque (recto, verso), la salle pendant les enchères, l’équipe ou le marteau à l’adjudication, un autre lot phare | 1600 × 1200 px |
