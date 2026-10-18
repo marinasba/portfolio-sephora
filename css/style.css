@@ -94,6 +94,8 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .part{padding-top:var(--partie);padding-bottom:40px;scroll-margin-top:64px;text-align:center}
 .part h2{font-size:clamp(2.2rem,4.6vw,3.4rem);font-weight:300;line-height:1.05;max-width:30ch;margin-inline:auto;text-wrap:balance}
 .part .lead{margin-top:14px;max-width:none;margin-inline:auto}
+.trait{display:block;width:48px;height:1px;background:var(--or-2);margin:26px auto 0}
+.band.vert .trait{background:var(--or)}
 .notice{text-align:center;padding-block:calc(var(--bloc)/2)}
 .notice > .rubrique{margin-bottom:12px}
 .notice h3{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px}
