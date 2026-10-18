@@ -54,7 +54,6 @@ window.I18N = {
     sk2_p: "Pack Office (Word, PowerPoint, Excel, Outlook&nbsp;365), E-Auction Live, Drouot Live, Interenchères Live, Brevo, Canva.",
     sk3_h: "Savoir-être",
     sk3_p: "Organisation et rigueur, relation avec les vendeurs, experts et acheteurs, encadrement et transmission.",
-    ct_sub: "Charenton-le-Pont (94) · Permis&nbsp;B",
     sp_p: "Et j'ai travaillé avec de nombreux autres types d'objets.",
     hv_h: "En-dehors de la vente, je suis polyvalente et maîtrise les autres tâches de l'étude.",
     hv1_h: "Inventaires",
@@ -65,6 +64,8 @@ window.I18N = {
     hv3_p: "À compléter.",
     bal_p: "Passionnée de valse, j'ai participé au Bal des&nbsp;Parisiennes&nbsp;2026 en tant que débutante. Cette année, j'ai l'honneur de faire de nouveau partie de l'aventure, mais cette fois-ci en tant que marraine de l'événement.",
     cou_p: "J'apprends également à coudre en autodidacte et je partage cette nouvelle passion sur mon compte Instagram, <a href=\"https://www.instagram.com/valsedufil\" target=\"_blank\" rel=\"noopener\">@valsedufil</a>.",
+    sk4_h: "Permis&nbsp;B",
+    sk4_p: "Véhiculée pour les inventaires et les rendez-vous.",
     cv: "assets/cv-fr.pdf"
   },
 
@@ -120,7 +121,6 @@ window.I18N = {
     sk2_p: "Pack Office (Word, PowerPoint, Excel, Outlook&nbsp;365), E-Auction Live, Drouot Live, Interenchères Live, Brevo, Canva.",
     sk3_h: "Soziale Kompetenzen",
     sk3_p: "Organisation und Sorgfalt, Umgang mit Einlieferern, Experten und Käufern, Anleitung und Wissensvermittlung.",
-    ct_sub: "Charenton-le-Pont (94) · Führerschein Klasse&nbsp;B",
     sp_p: "Und ich habe mit vielen weiteren Arten von Objekten gearbeitet.",
     hv_h: "Außerhalb der Auktion bin ich vielseitig und beherrsche die weiteren Aufgaben des Hauses.",
     hv1_h: "Inventare",
@@ -131,6 +131,8 @@ window.I18N = {
     hv3_p: "Zu ergänzen.",
     bal_p: "Als begeisterte Walzertänzerin habe ich 2026 als Debütantin am Bal des&nbsp;Parisiennes teilgenommen. Dieses Jahr habe ich die Ehre, erneut dabei zu sein, diesmal als Schirmherrin der Veranstaltung.",
     cou_p: "Außerdem bringe ich mir das Nähen selbst bei und teile diese neue Leidenschaft auf meinem Instagram-Konto, <a href=\"https://www.instagram.com/valsedufil\" target=\"_blank\" rel=\"noopener\">@valsedufil</a>.",
+    sk4_h: "Führerschein Klasse&nbsp;B",
+    sk4_p: "Mobil für Inventare und Termine.",
     cv: "assets/cv-de.pdf"
   },
 
@@ -186,7 +188,6 @@ window.I18N = {
     sk2_p: "Pack Office (Word, PowerPoint, Excel, Outlook&nbsp;365), E-Auction Live, Drouot Live, Interenchères Live, Brevo, Canva.",
     sk3_h: "Soft skills",
     sk3_p: "Organisation and rigour, relations with consignors, specialists and buyers, mentoring and knowledge transfer.",
-    ct_sub: "Charenton-le-Pont (94) · Driving licence&nbsp;B",
     sp_p: "And I have worked with many other types of objects.",
     hv_h: "Outside the sale, I am versatile and handle the other tasks of the house.",
     hv1_h: "Inventories",
@@ -197,6 +198,8 @@ window.I18N = {
     hv3_p: "To be completed.",
     bal_p: "A passionate waltzer, I took part in the Bal des&nbsp;Parisiennes&nbsp;2026 as a debutante. This year I have the honour of joining the adventure again, this time as patron of the event.",
     cou_p: "I am also teaching myself to sew and share this new passion on my Instagram account, <a href=\"https://www.instagram.com/valsedufil\" target=\"_blank\" rel=\"noopener\">@valsedufil</a>.",
+    sk4_h: "Driving licence&nbsp;B",
+    sk4_p: "Mobile for inventories and appointments.",
     cv: "assets/cv-en.pdf"
   }
 };
