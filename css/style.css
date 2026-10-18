@@ -162,7 +162,7 @@ img.ph::before,img.ph::after{content:none}
 
 /* ---------- le paravent (bande de laque, au scroll) ---------- */
 .pv{background:var(--papier);color:var(--encre);height:240vh;position:relative}
-.pv .stick{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center;align-content:center;max-width:var(--maxw);margin-inline:auto;padding:20px var(--gutter-r) 20px var(--gutter-l)}
+.pv .stick{position:sticky;top:0;display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center;max-width:var(--maxw);margin-inline:auto;padding:24px var(--gutter-r) 24px var(--gutter-l)}
 .scene{perspective:1500px;width:100%;max-width:100%;aspect-ratio:4/3}
 .screen{position:relative;width:100%;height:100%;transform-style:preserve-3d;will-change:transform}
 .face{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
@@ -208,7 +208,7 @@ img.ph::before,img.ph::after{content:none}
 
 /* ---------- organiser une vente : timeline horizontale ---------- */
 .envers{position:relative;--tl-w:380px;--tl-gap:32px}
-.envers .stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:flex-start;gap:32px;overflow:hidden;padding-top:64px}
+.envers .stick{position:sticky;top:0;display:flex;flex-direction:column;gap:32px;overflow:hidden;padding-block:24px}
 .envers-head{text-align:center;width:100%}
 .envers-head h3{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:14px;max-width:44ch;margin-inline:auto;text-wrap:balance}
 .envers-head .lead{margin-inline:auto}
@@ -298,9 +298,9 @@ img.ph::before,img.ph::after{content:none}
   .fleche.prev{left:calc(var(--gutter-l) - 10px)}
   .fleche.next{right:calc(var(--gutter-r) - 10px)}
   .pv{height:200vh}
-  .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
+  .pv .stick{grid-template-columns:1fr;gap:20px}
   .envers{--tl-w:min(78vw,340px);--tl-gap:18px}
-  .envers .stick{gap:18px;padding-top:40px}
+  .envers .stick{gap:18px}
   .tl{padding-left:var(--gutter-l)}
   .bal{grid-template-columns:1fr;padding-block:180px 96px}
 }

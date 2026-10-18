@@ -61,55 +61,54 @@
 
   /* ---------- effets liés à la position de scroll ---------- */
   var pv = document.getElementById('pv');
+  var pvStick = pv ? pv.querySelector('.stick') : null;
   var screen = document.getElementById('screen');
   var robe = document.getElementById('robe');
   var envers = document.getElementById('envers');
+  var enStick = envers ? envers.querySelector('.stick') : null;
   var tl = document.getElementById('tl');
   var tlprog = document.getElementById('tlprog');
   var tlDist = 0;
 
   function clamp(v) { return Math.min(1, Math.max(0, v)); }
 
-  // hauteur de la section = ce qu'il faut défiler pour voir toute la piste
-  function sizeEnvers() {
-    if (!envers || !tl) return;
-    tlDist = Math.max(0, tl.scrollWidth - window.innerWidth + 40);
-    envers.style.height = (window.innerHeight + tlDist) + 'px';
+  // les blocs fixés ont la hauteur de leur contenu, centré dans l'écran
+  function centerStick(stick) {
+    if (!stick) return 0;
+    var top = Math.max(0, Math.round((window.innerHeight - stick.offsetHeight) / 2));
+    stick.style.top = top + 'px';
+    return top;
   }
-  sizeEnvers();
+  function layout() {
+    centerStick(pvStick);
+    if (envers && tl && enStick) {
+      tlDist = Math.max(0, tl.scrollWidth - window.innerWidth + 40);
+      envers.style.height = (enStick.offsetHeight + tlDist) + 'px';
+      centerStick(enStick);
+    }
+  }
+  layout();
 
-  // sections collantes : récupérer le vide sous leur contenu pour rapprocher la section suivante
-  function pullNext() {
-    document.querySelectorAll('[data-pull]').forEach(function (sec) {
-      var stick = sec.querySelector('.stick');
-      if (!stick) return;
-      var sr = stick.getBoundingClientRect(), bottom = sr.top;
-      Array.prototype.forEach.call(stick.children, function (c) {
-        var r = c.getBoundingClientRect();
-        if (r.bottom > bottom) bottom = r.bottom;
-      });
-      var empty = sr.bottom - bottom; // vide sous le contenu, une fois la section passée
-      sec.style.marginBottom = (empty > 56 ? -(empty - 56) : 0) + 'px';
-    });
+  // progression 0 → 1 d'une section fixée : de l'accroche au relâchement
+  function progress(sec, stick) {
+    var r = sec.getBoundingClientRect();
+    var top = parseFloat(stick.style.top) || 0;
+    return clamp((top - r.top) / Math.max(1, r.height - stick.offsetHeight));
   }
-  pullNext();
 
   function onScroll() {
     var vh = window.innerHeight;
 
-    // paravent : 0° → 180° sur la hauteur de la section collante
-    if (pv && screen) {
-      var r = pv.getBoundingClientRect();
-      var p = clamp(-r.top / (r.height - vh));
-      var deg = p * 180;
+    // paravent : 0° → 180°
+    if (pv && pvStick && screen) {
+      var deg = progress(pv, pvStick) * 180;
       screen.style.transform = 'rotateY(' + deg + 'deg)';
       pv.classList.toggle('half', deg > 90);
     }
 
-    // timeline horizontale : la piste glisse vers la gauche pendant le défilement
-    if (envers && tl) {
-      var e = envers.getBoundingClientRect();
-      var ep = clamp(-e.top / Math.max(1, e.height - vh));
+    // timeline horizontale : la piste glisse vers la gauche
+    if (envers && enStick && tl) {
+      var ep = progress(envers, enStick);
       tl.style.transform = 'translateX(' + (-ep * tlDist) + 'px)';
       if (tlprog) tlprog.style.width = (ep * 100) + '%';
     }
@@ -125,7 +124,7 @@
   window.addEventListener('scroll', function () {
     if (!ticking) { requestAnimationFrame(function () { onScroll(); ticking = false; }); ticking = true; }
   }, { passive: true });
-  window.addEventListener('resize', function () { sizeEnvers(); pullNext(); onScroll(); });
-  window.addEventListener('load', function () { sizeEnvers(); pullNext(); onScroll(); });
+  window.addEventListener('resize', function () { layout(); onScroll(); });
+  window.addEventListener('load', function () { layout(); onScroll(); });
   onScroll();
 })();
