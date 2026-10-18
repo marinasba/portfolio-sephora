@@ -3,7 +3,7 @@
    DE et EN : à faire relire par un natif du milieu avant mise en ligne. */
 window.I18N = {
   fr: {
-    _html_title: "Séphora Nowicki — Administration de ventes aux enchères",
+    _html_title: "Séphora Nowicki, administration de ventes aux enchères",
     name: "Séphora Nowicki",
     title: "Administration de ventes aux enchères",
     hero_sub: "Administratrice de ventes aux enchères à Paris",
@@ -70,7 +70,7 @@ window.I18N = {
   },
 
   de: {
-    _html_title: "Séphora Nowicki — Auktionsadministration",
+    _html_title: "Séphora Nowicki, Auktionsadministration",
     name: "Séphora Nowicki",
     title: "Organisation von Auktionen",
     hero_sub: "Auktionsadministratorin in Paris",
@@ -137,7 +137,7 @@ window.I18N = {
   },
 
   en: {
-    _html_title: "Séphora Nowicki — Auction Administration",
+    _html_title: "Séphora Nowicki, auction administration",
     name: "Séphora Nowicki",
     title: "Auction sale coordination",
     hero_sub: "Auction administrator in Paris",
