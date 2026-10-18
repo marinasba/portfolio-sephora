@@ -157,7 +157,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .ph::after{content:attr(data-slot);position:absolute;left:12px;bottom:10px;font-size:.7rem;color:var(--gris)}
 img.ph{object-fit:cover;padding:0;display:block;background:none}
 img.ph::before,img.ph::after{content:none}
-.ph-portrait{aspect-ratio:4/5;width:100%}
+.ph-portrait{aspect-ratio:1;width:100%;max-width:380px;justify-self:end;height:auto}
 .ph-tag{position:absolute;inset:0;display:grid;place-items:center;padding:14px;text-align:center;pointer-events:none}
 .ph-tag::before{content:attr(data-photo);font-size:.85rem;line-height:1.4;color:var(--ivoire);max-width:26ch;background:rgba(19,17,16,.7);padding:8px 12px}
 .ph-tag::after{content:attr(data-slot);position:absolute;left:12px;bottom:10px;font-size:.7rem;color:var(--ivoire-dim)}
@@ -271,7 +271,7 @@ img.ph::before,img.ph::after{content:none}
   .menu{display:none}
   .hero-in{grid-template-columns:1fr;gap:28px;padding-block:40px 56px}
   .mono-l{width:64px;height:64px;margin-bottom:16px}
-  .ph-portrait{max-width:320px}
+  .ph-portrait{max-width:300px;justify-self:start}
   .notice h3,.dep h3,.envers-head h3{font-size:1.9rem}
   .qui{gap:40px}
   .qui-row{grid-template-columns:1fr;gap:32px}
