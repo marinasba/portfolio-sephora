@@ -63,6 +63,9 @@ window.I18N = {
     bal_p: "Passionnée de valse, j'ai participé au Bal des&nbsp;Parisiennes&nbsp;2026 en tant que débutante.<br>Cette année, j'ai l'honneur de faire de nouveau partie de l'aventure, mais cette fois-ci en tant que marraine de l'événement.",
     cou_p: "J'apprends également à coudre en autodidacte et je partage cette nouvelle passion sur mon compte Instagram, <a href=\"https://www.instagram.com/valsedufil\" target=\"_blank\" rel=\"noopener\">@valsedufil</a>.",
     sk4_h: "Permis&nbsp;B",
+    hero_btn: "Me contacter",
+    cv_btn: "Télécharger mon CV complet",
+    tampon: "Adjugé",
     cv: "assets/cv-fr.pdf"
   },
 
@@ -127,6 +130,9 @@ window.I18N = {
     bal_p: "Als begeisterte Walzertänzerin habe ich 2026 als Debütantin am Bal des&nbsp;Parisiennes teilgenommen.<br>Dieses Jahr habe ich die Ehre, erneut dabei zu sein, diesmal als Schirmherrin der Veranstaltung.",
     cou_p: "Außerdem bringe ich mir das Nähen selbst bei und teile diese neue Leidenschaft auf meinem Instagram-Konto, <a href=\"https://www.instagram.com/valsedufil\" target=\"_blank\" rel=\"noopener\">@valsedufil</a>.",
     sk4_h: "Führerschein Klasse&nbsp;B",
+    hero_btn: "Kontakt aufnehmen",
+    cv_btn: "Vollständigen Lebenslauf herunterladen",
+    tampon: "Zuschlag",
     cv: "assets/cv-de.pdf"
   },
 
@@ -191,6 +197,9 @@ window.I18N = {
     bal_p: "A passionate waltzer, I took part in the Bal des&nbsp;Parisiennes&nbsp;2026 as a debutante.<br>This year I have the honour of joining the adventure again, this time as patron of the event.",
     cou_p: "I am also teaching myself to sew and share this new passion on my Instagram account, <a href=\"https://www.instagram.com/valsedufil\" target=\"_blank\" rel=\"noopener\">@valsedufil</a>.",
     sk4_h: "Driving licence&nbsp;B",
+    hero_btn: "Get in touch",
+    cv_btn: "Download my full CV",
+    tampon: "Sold",
     cv: "assets/cv-en.pdf"
   }
 };

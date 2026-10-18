@@ -13,8 +13,7 @@
     });
     document.title = t._html_title;
     root.lang = l;
-    var cv = document.querySelector('[data-cv]');
-    if (cv) cv.setAttribute('href', t.cv);
+    document.querySelectorAll('[data-cv]').forEach(function (cv) { cv.setAttribute('href', t.cv); });
     document.querySelectorAll('.ed button').forEach(function (b) {
       b.setAttribute('aria-pressed', b.dataset.lang === l ? 'true' : 'false');
     });
@@ -110,6 +109,8 @@
       var ep = progress(envers, enStick);
       tl.style.transform = 'translateX(' + (-ep * tlDist) + 'px)';
       if (tlprog) tlprog.style.width = (ep * 100) + '%';
+      var tampon = document.getElementById('tampon');
+      if (tampon) tampon.classList.toggle('in', ep > 0.96);
     }
 
   }

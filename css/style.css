@@ -27,7 +27,7 @@
   --or-2:#B08D3F;         /* or sur papier (contraste) */
   --champagne:#E8DCC4;
   --ivoire-dim:#A9B5AD;
-  --vermillon:#B08D3F;    /* l'accent sur papier est l'or, pas le rouge */
+  --vermillon:#9E2F22;    /* uniquement pour le tampon « Adjugé » */
 
   --f-titre:"Cormorant Garamond",Garamond,"Times New Roman",serif;
   --f-texte:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
@@ -84,12 +84,18 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 /* ---------- bandes alternées ---------- */
 .band{padding-block:72px 80px}
 .band.vert{background:var(--vert);color:var(--ivoire);
-  --encre:var(--ivoire);--encre-2:var(--ivoire-dim);--gris:#7F9088;--papier-2:var(--vert-2);--or-2:var(--or);--vermillon:var(--or)}
+  --encre:var(--ivoire);--encre-2:var(--ivoire-dim);--gris:#7F9088;--papier-2:var(--vert-2);--or-2:var(--or)}
 .band.vert h2,.band.vert h3{color:var(--champagne)}
 .band.vert .rubrique{color:var(--ivoire-dim)}
 .band .part{padding-top:0;padding-bottom:36px}
 .band .ph::before{color:var(--ivoire-dim)}
 .band .ph::after{color:var(--or)}
+
+/* ---------- boutons ---------- */
+.btn{display:inline-block;margin-top:22px;padding:12px 24px;border:1px solid var(--or-2);color:var(--encre);font-weight:500;font-size:.95rem;letter-spacing:.04em;text-decoration:none;transition:background .25s,color .25s}
+.btn:hover,.btn:focus-visible{background:var(--or-2);color:var(--papier);outline:none}
+.btn-ivoire{border-color:var(--or);color:var(--ivoire)}
+.btn-ivoire:hover,.btn-ivoire:focus-visible{background:var(--or);color:var(--vert)}
 
 /* ---------- parties et notices ---------- */
 .part{padding-top:var(--partie);padding-bottom:40px;scroll-margin-top:64px;text-align:center}
@@ -125,7 +131,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 /* timeline verticale (formation) */
 .vtl{list-style:none;display:grid;gap:22px}
 .vtl li{display:grid;grid-template-columns:118px 1fr;gap:20px;align-items:baseline}
-.vtl .an{font-family:var(--f-titre);font-size:1.25rem;color:var(--vermillon);font-variant-numeric:tabular-nums;white-space:nowrap}
+.vtl .an{font-family:var(--f-titre);font-size:1.25rem;color:var(--or-2);font-variant-numeric:tabular-nums;white-space:nowrap}
 .vtl h3{font-size:1.35rem;margin-bottom:2px}
 .vtl p{font-size:.98rem}
 
@@ -219,9 +225,13 @@ img.ph::before,img.ph::after{content:none}
 .tl{list-style:none;padding:0 var(--gutter-r) 0 calc(var(--gutter-l) + max(0px,(100vw - var(--maxw))/2));display:flex;gap:var(--tl-gap);will-change:transform;width:max-content}
 .tl li{width:var(--tl-w);flex:none}
 .tl li .ph{aspect-ratio:16/10;margin-bottom:14px}
-.tl li b{font-family:var(--f-titre);font-weight:400;font-size:1.1rem;color:var(--vermillon);display:block;margin-bottom:2px}
+.tl li b{font-family:var(--f-titre);font-weight:400;font-size:1.1rem;color:var(--or-2);display:block;margin-bottom:2px}
 .tl li h3{font-size:1.4rem;margin-bottom:4px}
 .tl li p{color:var(--encre-2);font-size:.95rem}
+/* tampon « Adjugé » en fin de frise */
+.tl .tl-fin{width:260px;display:grid;place-items:center;align-self:center}
+.tampon{font-family:var(--f-titre);font-style:italic;font-size:2.4rem;color:var(--vermillon);border:2px solid var(--vermillon);border-radius:4px;padding:6px 22px 10px;line-height:1;transform:rotate(-8deg) scale(1.8);opacity:0;transition:transform .35s cubic-bezier(.2,1.3,.4,1),opacity .2s;box-shadow:inset 0 0 0 3px var(--papier),inset 0 0 0 4px var(--vermillon)}
+.tampon.in{transform:rotate(-8deg) scale(1);opacity:1}
 
 /* ---------- les hobbies (bande de velours, fil d'or au scroll) ---------- */
 .velours{background:linear-gradient(180deg,var(--vert) 0,#0C1E19 50px,#120F12 120px,#24121A 190px,var(--velours) 250px,var(--velours) 100%);color:var(--ivoire);position:relative;overflow:hidden}
