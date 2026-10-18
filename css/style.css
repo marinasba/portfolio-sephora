@@ -191,6 +191,11 @@ img.ph::before,img.ph::after{content:none}
 .pv .lead{color:var(--encre-2)}
 .pv .lead + .lead{margin-top:10px}
 
+/* ---------- galerie sous le paravent ---------- */
+.galerie{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-block:var(--bloc) var(--partie)}
+.galerie .ph{aspect-ratio:4/3}
+.galerie .g-wide{grid-column:span 2;aspect-ratio:8/3}
+
 /* ---------- organiser une vente : timeline horizontale ---------- */
 .envers{position:relative;--tl-w:380px;--tl-gap:32px}
 .envers .stick{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;gap:32px;overflow:hidden}
@@ -276,6 +281,8 @@ img.ph::before,img.ph::after{content:none}
   .ph-qui{justify-self:start;max-width:320px}
   .items{grid-template-columns:1fr}
   .photos3{grid-template-columns:1fr}
+  .galerie{grid-template-columns:1fr 1fr;gap:10px}
+  .galerie .g-wide{grid-column:span 2;aspect-ratio:16/9}
   .pv{height:200vh}
   .pv .stick{grid-template-columns:1fr;align-content:center;gap:20px}
   .envers{--tl-w:min(78vw,340px);--tl-gap:18px}
