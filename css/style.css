@@ -237,7 +237,11 @@ img.ph::before,img.ph::after{content:none}
 .mono-m{width:64px;height:64px;color:var(--or-2)}
 
 /* ---------- les hobbies (bande de velours) ---------- */
-.velours{background:var(--velours);color:var(--ivoire);position:relative;overflow:hidden;border-top:3px solid var(--or)}
+.velours{background:var(--velours);color:var(--ivoire);position:relative;overflow:hidden}
+/* liseré d'or lumineux : filet en dégradé champagne, avec un halo doux */
+.velours::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;z-index:2;
+  background:linear-gradient(90deg,var(--or) 0%,#F1DFA6 30%,#FFF4CF 50%,#F1DFA6 70%,var(--or) 100%);
+  box-shadow:0 0 10px 1px rgba(255,236,180,.55),0 0 28px 4px rgba(201,162,75,.35)}
 .velours .inner{position:relative;z-index:1}
 .lustre{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(520px,90%);height:150px;pointer-events:none}
 .lustre::before{content:"";position:absolute;left:50%;top:0;width:1px;height:18px;background:rgba(232,220,196,.4)}
