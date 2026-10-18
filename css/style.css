@@ -234,31 +234,15 @@ img.ph::before,img.ph::after{content:none}
 .lustre i:nth-child(6){left:44%;top:96px;transition-delay:.6s}.lustre i:nth-child(7){left:56%;top:96px;transition-delay:.65s}
 .lustre i:nth-child(8){left:14%;top:120px;transition-delay:.85s;width:4px;height:4px}.lustre i:nth-child(9){left:86%;top:120px;transition-delay:.9s;width:4px;height:4px}
 .lustre i:nth-child(10){left:34%;top:136px;transition-delay:1s;width:4px;height:4px}.lustre i:nth-child(11){left:66%;top:136px;transition-delay:1.05s;width:4px;height:4px}
-.bal{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:200px 120px}
-.bal .rubrique{color:var(--ivoire-dim)}
-.bal h3{font-style:italic;font-size:clamp(2.4rem,5vw,4rem);margin:8px 0 22px;line-height:1.05;color:var(--champagne)}
-.temps{list-style:none;margin-bottom:24px;display:grid;gap:10px}
-.temps li{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:baseline;font-size:1.02rem;transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
-.temps li b{font-family:var(--f-titre);font-weight:400;font-size:1.7rem;color:var(--or)}
-.temps li:nth-child(3n+1) b{font-size:2.1rem}
-.js .temps:not(.in) li{opacity:0;transform:translateX(-12px)}
-.temps.in li:nth-child(1){transition-delay:0s}.temps.in li:nth-child(2){transition-delay:.45s}.temps.in li:nth-child(3){transition-delay:.7s}
-.temps.in li:nth-child(4){transition-delay:1.35s}.temps.in li:nth-child(5){transition-delay:1.8s}.temps.in li:nth-child(6){transition-delay:2.05s}
-.bal-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;max-width:420px}
-.bal-photos .ph{aspect-ratio:4/5;background:var(--laque-2)}
-.bal-photos .ph::before{color:var(--ivoire-dim)}
-.lien{color:var(--ivoire-dim);font-size:.95rem}
-.lien a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(232,220,196,.4)}
-.robe-wrap{display:grid;place-items:center}
-.robe{width:min(380px,80vw);aspect-ratio:1;max-width:100%;border-radius:50%;position:relative;will-change:transform;
-  background:
-    radial-gradient(circle, var(--nuit) 0 7%, transparent 7.5%),
-    repeating-conic-gradient(from 0deg, rgba(232,220,196,.22) 0deg 4deg, rgba(232,220,196,.04) 4deg 10deg),
-    radial-gradient(circle, rgba(232,220,196,.35) 0%, rgba(232,220,196,.12) 45%, rgba(232,220,196,.02) 72%, transparent 73%);
-  box-shadow:0 0 80px 10px rgba(201,162,75,.08) inset}
-.robe::before{content:"";position:absolute;inset:14%;border-radius:50%;background:repeating-conic-gradient(from 7deg, rgba(201,162,75,.2) 0deg 3deg, transparent 3deg 12deg);
-  -webkit-mask:radial-gradient(circle, transparent 35%, #000 36%);mask:radial-gradient(circle, transparent 35%, #000 36%)}
-.robe::after{content:"";position:absolute;inset:30%;border-radius:50%;border:1px solid rgba(232,220,196,.35)}
+.hob{padding-block:150px 110px;max-width:860px;margin-inline:auto;text-align:center}
+.hob h3{font-style:italic;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.1;color:var(--champagne);margin-bottom:22px}
+.hob .lead{color:var(--ivoire-dim);margin-inline:auto;max-width:64ch}
+.hob .lead a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(232,220,196,.4)}
+.hob-gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:36px 0 64px}
+.hob-gal .ph{aspect-ratio:4/5;background:var(--laque-2)}
+.hob-gal .ph::before{color:var(--ivoire-dim)}
+.hob-gal .ph::after{color:var(--or)}
+.hob-gal:last-child{margin-bottom:0}
 
 /* ---------- contact ---------- */
 .adjs{padding-block:96px 72px;text-align:center}
@@ -302,14 +286,14 @@ img.ph::before,img.ph::after{content:none}
   .envers{--tl-w:min(78vw,340px);--tl-gap:18px}
   .envers .stick{gap:18px}
   .tl{padding-left:var(--gutter-l)}
-  .bal{grid-template-columns:1fr;padding-block:180px 96px}
+  .hob{padding-block:130px 80px}
+  .hob-gal{grid-template-columns:1fr;gap:12px}
 }
 @media (max-width:480px){
   .grid4{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion: reduce){
   *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
-  .js .temps:not(.in) li{opacity:1;transform:none}
   .lustre i{opacity:1}
   .adjs .word::after{transform:scaleX(1)}
 }

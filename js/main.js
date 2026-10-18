@@ -40,7 +40,7 @@
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
   }, { threshold: 0.3 });
-  document.querySelectorAll('.rv, .board, .adjs, .lustre, .temps').forEach(function (el) { io.observe(el); });
+  document.querySelectorAll('.adjs, .lustre').forEach(function (el) { io.observe(el); });
 
   /* ---------- galerie : flèches ---------- */
   var gal = document.getElementById('galerie');
@@ -63,7 +63,6 @@
   var pv = document.getElementById('pv');
   var pvStick = pv ? pv.querySelector('.stick') : null;
   var screen = document.getElementById('screen');
-  var robe = document.getElementById('robe');
   var envers = document.getElementById('envers');
   var enStick = envers ? envers.querySelector('.stick') : null;
   var tl = document.getElementById('tl');
@@ -113,11 +112,6 @@
       if (tlprog) tlprog.style.width = (ep * 100) + '%';
     }
 
-    // robe de bal : tourne avec le défilement
-    if (robe) {
-      var rr = robe.getBoundingClientRect();
-      robe.style.transform = 'rotate(' + ((vh - rr.top) * 0.12) + 'deg)';
-    }
   }
 
   var ticking = false;

@@ -21,8 +21,8 @@ Chaque rectangle vide du site porte son étiquette « Photo de … » et le nom 
 | `etape-08.jpg` | Le marteau ou le commissaire-priseur pendant la séance | 1600 × 1000 px |
 | `etape-09.jpg` | Un bordereau ou le bureau de facturation | 1600 × 1000 px |
 | `etape-10.jpg` | Le retrait des lots ou un acheteur après la vente | 1600 × 1000 px |
-| `bal.jpg` | Séphora au Bal des Parisiennes 2026 | 1200 × 1500 px |
-| `couture.jpg` | Une robe ou pièce cousue main | 1200 × 1500 px |
+| `bal-01.jpg` à `bal-03.jpg` | Séphora au Bal des Parisiennes 2026 (en robe, en salle) ; la salle, la valse ; Séphora marraine 2027 (affiche, annonce, portrait) | 1200 × 1500 px |
+| `couture-01.jpg` à `couture-03.jpg` | Une robe cousue main portée ; une pièce en cours (atelier) ; un détail de finition | 1200 × 1500 px |
 | `cv-fr.pdf`, `cv-de.pdf`, `cv-en.pdf` | CV téléchargeables | PDF |
 
 ## Brancher les photos
