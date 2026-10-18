@@ -119,7 +119,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 /* qui suis-je : texte à gauche, formation à droite */
 .qui{display:grid;gap:72px;padding-block:calc(var(--bloc)/2) var(--partie)}
 .qui-row{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
-.ph-qui{aspect-ratio:4/5;max-width:380px;justify-self:end;width:100%}
+.ph-qui{aspect-ratio:1;max-width:300px;justify-self:end;width:100%}
 .skills{list-style:none;display:grid;gap:18px}
 .skills li{display:grid;grid-template-columns:28px 1fr;gap:14px;align-items:start}
 .skills .pic-s{width:22px;height:22px;margin:5px 0 0}
