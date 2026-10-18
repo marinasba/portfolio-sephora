@@ -79,10 +79,6 @@
   }
   function layout() {
     centerStick(pvStick);
-    if (stage && stageStick) {
-      stage.style.height = (stageStick.offsetHeight + window.innerHeight * 0.7) + 'px';
-      centerStick(stageStick);
-    }
     if (envers && tl && enStick) {
       tlDist = Math.max(0, tl.scrollWidth - window.innerWidth + 40);
       envers.style.height = (enStick.offsetHeight + tlDist) + 'px';
@@ -98,27 +94,10 @@
     return clamp((top - r.top) / Math.max(1, r.height - stick.offsetHeight));
   }
 
-  var stage = document.getElementById('stage');
-  var stageStick = stage ? stage.querySelector('.stick') : null;
-  var drape = document.getElementById('drape');
-  var plis = drape ? drape.querySelector('.plis') : null;
-  var velours = document.getElementById('hobbies');
 
   function onScroll() {
     var vh = window.innerHeight;
 
-    // rideau : tombe sur la scène verte (contenu fixé), puis laisse place au velours
-    if (stage && stageStick && drape && velours) {
-      var rp = progress(stage, stageStick);
-      var vt = velours.getBoundingClientRect().top;
-      if (rp <= 0 || vt <= 0) {
-        drape.style.display = 'none';
-      } else {
-        drape.style.display = 'block';
-        drape.style.transform = 'translateY(' + ((rp - 1) * 100) + '%)';
-        if (plis) plis.style.opacity = clamp(vt / (vh * 0.5));
-      }
-    }
 
     // paravent : 0° → 180°
     if (pv && pvStick && screen) {
