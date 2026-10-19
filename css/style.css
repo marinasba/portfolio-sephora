@@ -148,7 +148,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 
 
 /* spécialités */
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 24px;text-align:center}
+.grid4{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px;text-align:center;max-width:780px;margin-inline:auto}
 .fiche{min-width:0}
 .fiche h3{font-size:1.35rem;margin:12px 0 4px}
 .fiche p{font-size:.95rem}
@@ -296,7 +296,6 @@ img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
   .tl li::before{width:calc(100% + 18px)}
   .items{grid-template-columns:repeat(2,1fr)}
   :root{--marge:150px}
-  .grid4{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:760px){
   :root{--gutter-l:max(18px,env(safe-area-inset-left,0px));--gutter-r:max(18px,env(safe-area-inset-right,0px));--partie:88px;--bloc:40px}

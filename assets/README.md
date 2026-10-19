@@ -39,6 +39,6 @@ Ajouts :
 
 - `sephora-travail.jpg` : Séphora devant le paravent Pham Hau, exposé à Drouot
 - `asie-lots.jpg` : lots d'art asiatique sur socles avant la vente
-- `objets.jpg` : exposition avant-vente, tableaux et mobilier (fiche « autres objets »)
+- `objets.jpg` : exposition avant-vente, tableaux et mobilier (reçue, non utilisée pour l'instant)
 - `travaux-02.jpg` : couverture du mémoire sur Arras
 - `bal-01.jpg` : Séphora valsant au Bal des Parisiennes 2026
