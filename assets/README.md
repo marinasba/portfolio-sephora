@@ -65,3 +65,4 @@ Ajouts :
 - `couture-robe-de-bal.jpg` : publication Instagram « Ma première robe de bal » (hobbies, couture)
 - `institut-francais-stuttgart.jpg` : Institut français de Stuttgart (Autres travaux)
 - `ministere-culture.jpg` : logo du ministère de la Culture (Autres travaux)
+- `monogramme.png`, `monogramme-s.png`, `favicon.png` : monogramme NS (blason doré), en-tête, haut de page, respiration, icône d'onglet
