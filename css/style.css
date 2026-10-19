@@ -211,7 +211,16 @@ img.ph::before,img.ph::after{content:none}
 .fleche.prev{left:calc(var(--gutter-l) - 22px)}
 .fleche.next{right:calc(var(--gutter-r) - 22px)}
 .fleche[disabled]{opacity:.3;cursor:default}
+.galerie-wrap.fixe .fleche{display:none}
 .fleche[disabled]:hover{background:var(--papier);color:var(--or-2)}
+/* autres travaux : cartels (photo + légende) qui défilent sur une ligne */
+.autres{padding-top:var(--partie);padding-bottom:0}
+.autres + .galerie-wrap{margin-top:36px}
+.cartels .cartel{flex:0 0 calc((100% - 32px)/3);scroll-snap-align:start;text-align:left}
+.cartel .an{display:block;margin-top:14px;font-family:var(--f-titre);font-size:1.15rem;color:var(--or-2);font-variant-numeric:tabular-nums}
+.cartel h3{font-size:1.3rem;margin:2px 0 6px;text-wrap:pretty}
+.cartel p{font-size:.95rem;color:var(--encre-2)}
+.cartel em{font-style:italic}
 
 /* ---------- organiser une vente : timeline horizontale ---------- */
 .envers{position:relative;--tl-w:380px;--tl-gap:32px}
@@ -297,6 +306,8 @@ img.ph::before,img.ph::after{content:none}
   .grid4 > .fiche{flex:0 0 72vw;scroll-snap-align:start;text-align:left}
   .hob-gal{max-width:none;margin-bottom:16px}
   .galerie .ph{flex-basis:calc((100% - 16px)/2)}
+  .cartels .cartel{flex-basis:80vw}
+  .cartels .ph{flex-basis:auto}
   .fleche{width:38px;height:38px}
   .fleche.prev{left:calc(var(--gutter-l) - 10px)}
   .fleche.next{right:calc(var(--gutter-r) - 10px)}

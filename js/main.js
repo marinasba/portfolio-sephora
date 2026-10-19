@@ -41,22 +41,27 @@
   }, { threshold: 0.3 });
   document.querySelectorAll('.adjs, .lustre').forEach(function (el) { io.observe(el); });
 
-  /* ---------- galerie : flèches ---------- */
-  var gal = document.getElementById('galerie');
-  var galPrev = document.getElementById('galPrev');
-  var galNext = document.getElementById('galNext');
-  if (gal && galPrev && galNext) {
-    function galStep() { var c = gal.firstElementChild; return c ? c.getBoundingClientRect().width + 16 : 300; }
-    function galState() {
-      galPrev.disabled = gal.scrollLeft <= 2;
-      galNext.disabled = gal.scrollLeft + gal.clientWidth >= gal.scrollWidth - 2;
+  /* ---------- galeries : flèches ---------- */
+  document.querySelectorAll('.galerie-wrap').forEach(function (wrap) {
+    var gal = wrap.querySelector('.galerie');
+    var prev = wrap.querySelector('.fleche.prev');
+    var next = wrap.querySelector('.fleche.next');
+    if (!gal || !prev || !next) return;
+    function step() { var c = gal.firstElementChild; return c ? c.getBoundingClientRect().width + 16 : 300; }
+    function state() {
+      prev.disabled = gal.scrollLeft <= 2;
+      next.disabled = gal.scrollLeft + gal.clientWidth >= gal.scrollWidth - 2;
+      // pas de flèches si tout tient sur la ligne ; sinon, flèches au milieu de la photo
+      wrap.classList.toggle('fixe', gal.scrollWidth <= gal.clientWidth + 2);
+      var ph = gal.querySelector('.ph');
+      if (ph) prev.style.top = next.style.top = (ph.offsetTop + ph.offsetHeight / 2) + 'px';
     }
-    galPrev.addEventListener('click', function () { gal.scrollBy({ left: -galStep(), behavior: 'smooth' }); });
-    galNext.addEventListener('click', function () { gal.scrollBy({ left: galStep(), behavior: 'smooth' }); });
-    gal.addEventListener('scroll', galState, { passive: true });
-    window.addEventListener('resize', galState);
-    galState();
-  }
+    prev.addEventListener('click', function () { gal.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    next.addEventListener('click', function () { gal.scrollBy({ left: step(), behavior: 'smooth' }); });
+    gal.addEventListener('scroll', state, { passive: true });
+    window.addEventListener('resize', state);
+    state();
+  });
 
   /* ---------- effets liés à la position de scroll ---------- */
   var pv = document.getElementById('pv');
