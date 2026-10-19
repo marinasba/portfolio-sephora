@@ -13,7 +13,7 @@ Chaque rectangle vide du site porte son étiquette « Photo de … » et le nom 
 | `daguerreotype-lyon.jpg` | Un tirage ancien (album, daguerréotype…) | 900 × 1200 px |
 | `bal-01.jpg` à `bal-03.jpg` | Séphora au Bal des Parisiennes 2026 (en robe, en salle) ; la salle, la valse ; Séphora marraine 2027 (affiche, annonce, portrait) | 1200 × 1500 px |
 | `couture-01.jpg` à `couture-03.jpg` | Une robe cousue main portée ; une pièce en cours (atelier) ; un détail de finition | 1200 × 1500 px |
-| `cv-fr.pdf`, `cv-de.pdf`, `cv-en.pdf` | CV téléchargeables | PDF |
+| `cv-sephora-nowicki.pdf` | CV téléchargeable (français, utilisé dans les trois langues) | PDF |
 
 ## Brancher les photos
 
