@@ -147,7 +147,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 
 
 /* spécialités */
-.grid4{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px;text-align:center;max-width:780px;margin-inline:auto}
+.grid4{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 24px;text-align:center;max-width:900px;margin-inline:auto}
 .fiche{min-width:0}
 .fiche h3{font-size:1.35rem;margin:12px 0 4px}
 .fiche p{font-size:.95rem}
