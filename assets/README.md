@@ -34,3 +34,11 @@ Ajouts :
 | `galerie-01.jpg` à `galerie-06.jpg` | Galerie sous le paravent : le paravent en salle le jour de la vente, deux détails de laque (recto, verso), la salle pendant les enchères, l’équipe ou le marteau à l’adjudication, un autre lot phare | 1600 × 1200 px |
 | `travaux-01.jpg` à `travaux-03.jpg` | Autres travaux : la Grand-Place d'Arras reconstruite ; la couverture du mémoire ; la revue Art&Fact n° 37 | 1600 × 1200 px |
 | `choeur-01.jpg` à `choeur-03.jpg` | Le chœur en concert ; Séphora en répétition ou en concert ; l'Académie du Palais Royal (orchestre, salle) | 1200 × 1500 px |
+
+## Photos déjà reçues (19 oct. 2026)
+
+- `sephora-travail.jpg` : Séphora devant le paravent Pham Hau, exposé à Drouot
+- `asie-lots.jpg` : lots d'art asiatique sur socles avant la vente
+- `objets.jpg` : exposition avant-vente, tableaux et mobilier (fiche « autres objets »)
+- `travaux-02.jpg` : couverture du mémoire sur Arras
+- `bal-01.jpg` : Séphora valsant au Bal des Parisiennes 2026
