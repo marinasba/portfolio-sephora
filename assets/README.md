@@ -60,3 +60,4 @@ Ajouts :
 - `couture-body-dentelle.jpg` : publication Instagram « Coudre un body en dentelle » (hobbies, couture)
 - `couture-instagram.jpg` : capture du compte Instagram @valsedufil, lien vers le profil (hobbies, couture)
 - `bal-entree.jpg` : entrée des débutantes sous les lustres (hobbies, bal)
+- `bal-entree-sephora.jpg` : recadrage sur Séphora et son cavalier (la photo entière s'ouvre au clic)

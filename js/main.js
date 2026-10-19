@@ -91,7 +91,7 @@
       im.setAttribute('tabindex', '0');
       im.setAttribute('role', 'button');
       function ouvrir() {
-        zimg.src = im.currentSrc || im.src; zimg.alt = im.alt;
+        zimg.src = im.dataset.full || im.currentSrc || im.src; zimg.alt = im.alt;
         zoom.showModal(); root.classList.add('pop-ouvert');
       }
       im.addEventListener('click', function (e) { e.stopPropagation(); ouvrir(); });
