@@ -180,6 +180,11 @@ figure.leg{margin:0;min-width:0;display:flex;flex-direction:column}
 figure.leg > .ph{width:100%}
 figure.leg figcaption{margin-top:8px;font-size:.82rem;line-height:1.45;color:var(--encre-2);text-align:left;text-wrap:pretty}
 .velours figure.leg figcaption{color:#C9B8B0}
+/* aperçu du compte Instagram, cliquable vers le profil */
+.ph.ph-insta{padding:0;overflow:hidden;background:#0B1014}
+.ph.ph-insta::before,.ph.ph-insta::after{content:none}
+.ph-insta img{width:100%;height:100%;object-fit:cover;object-position:50% 2%;display:block}
+.ph-insta:focus-visible{outline:2px solid var(--or);outline-offset:3px}
 /* deux catalogues côte à côte */
 .ph.duo{display:flex;justify-content:center;align-items:center;gap:14px;padding:12px;background:var(--vert-2)}
 .ph.duo::before,.ph.duo::after{content:none}
