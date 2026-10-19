@@ -42,3 +42,5 @@ Ajouts :
 - `objets.jpg` : exposition avant-vente, tableaux et mobilier (reçue, non utilisée pour l'instant)
 - `travaux-02.jpg` : couverture du mémoire sur Arras
 - `bal-01.jpg` : Séphora valsant au Bal des Parisiennes 2026
+- `catalogue-paravent.jpg` : couverture du catalogue de la vente Arts asiatiques du 1er octobre 2026 (galerie du paravent)
+- `livres.jpg` : couverture du catalogue Bibliothèque Jean Demaux, 18 et 19 juin 2026 (fiche Livres anciens)

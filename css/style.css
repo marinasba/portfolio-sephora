@@ -207,6 +207,7 @@ img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
 .galerie-wrap{position:relative;padding-block:0 var(--partie)}
 .galerie{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:4px}
 .galerie::-webkit-scrollbar{display:none}
+.galerie > *{min-width:0}
 .galerie .ph{flex:0 0 calc((100% - 32px)/3);aspect-ratio:4/3;scroll-snap-align:start}
 .fleche{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid var(--or-2);background:var(--papier);color:var(--or-2);cursor:pointer;display:grid;place-items:center;padding:0;z-index:2}
 .fleche svg{width:22px;height:22px}
