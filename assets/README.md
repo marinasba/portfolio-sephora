@@ -62,3 +62,4 @@ Ajouts :
 - `bal-entree.jpg` : entrée des débutantes sous les lustres (hobbies, bal)
 - `bal-entree-sephora.jpg` : recadrage sur Séphora et son cavalier (la photo entière s'ouvre au clic)
 - `bal-debutantes.jpg` et `bal-cavaliers.jpg` : entrée des débutantes et des cavaliers (hobbies, bal)
+- `couture-robe-de-bal.jpg` : publication Instagram « Ma première robe de bal » (hobbies, couture)
