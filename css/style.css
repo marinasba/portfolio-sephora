@@ -163,6 +163,10 @@ img.ph::before,img.ph::after{content:none}
 .ph.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;align-self:start}
 img.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;object-position:50% 40%;align-self:start}
 /* objet photographié en entier, posé sur le fond comme dans une vitrine */
+/* lots marquants, sous les fiches */
+.lots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:780px;margin:40px auto 0}
+.lots .ph{aspect-ratio:4/3}
+.band.vert figure.leg figcaption{color:var(--ivoire-dim)}
 /* légendes sous les photos, comme des cartels */
 figure.leg{margin:0;min-width:0;display:flex;flex-direction:column}
 figure.leg > .ph{width:100%}
@@ -356,6 +360,7 @@ img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
   .qui-row{grid-template-columns:1fr;gap:32px}
   .ph.ph-qui,img.ph-qui{justify-self:start;max-width:260px}
   .items{grid-template-columns:1fr}
+  .lots{grid-template-columns:1fr;gap:20px}
   /* sur mobile, les galeries défilent horizontalement (on voit le bord de la photo suivante) */
   .photos3,.grid4,.hob-gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:4px;margin-left:calc(-1 * var(--gutter-l));margin-right:calc(-1 * var(--gutter-r));padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
   .photos3::-webkit-scrollbar,.grid4::-webkit-scrollbar,.hob-gal::-webkit-scrollbar{display:none}

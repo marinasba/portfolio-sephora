@@ -48,3 +48,5 @@ Ajouts :
 À fournir : `sephora-presentation.jpg`, nouvelle photo de Séphora pour « Qui suis-je ? » (format portrait 4:5).
 - `lettres.jpg` : couverture du catalogue Manuscrits et autographes, 5 et 6 juin 2024 (fiche Lettres autographes)
 - `catalogue-asie-2024.jpg` : couverture du catalogue Arts d'Asie, 12 mars 2024 (photos du département d'art asiatique)
+- `lot-livre-heures.jpg` : Livre d'heures à l'usage de Rome, vente du 8 novembre 2023 (lot 374)
+- `lot-goethe.jpg` : livre signé par Goethe, adjugé 80 000 €
