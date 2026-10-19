@@ -163,6 +163,10 @@ img.ph::before,img.ph::after{content:none}
 .ph.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;align-self:start}
 img.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;object-position:50% 40%;align-self:start}
 /* objet photographié en entier, posé sur le fond comme dans une vitrine */
+/* deux catalogues côte à côte */
+.ph.duo{display:flex;justify-content:center;align-items:center;gap:14px;padding:12px;background:var(--vert-2)}
+.ph.duo::before,.ph.duo::after{content:none}
+.duo img{height:100%;width:auto;max-width:calc(50% - 7px);object-fit:contain;box-shadow:0 6px 18px rgba(0,0,0,.35)}
 /* deux catalogues posés l'un sur l'autre */
 .ph.pile{background:none;padding:0}
 .ph.pile::before,.ph.pile::after{content:none}
