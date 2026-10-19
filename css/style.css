@@ -163,6 +163,12 @@ img.ph{object-fit:cover;padding:0;display:block;background:none}
 img.ph::before,img.ph::after{content:none}
 img.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;object-position:50% 40%;align-self:start}
 /* objet photographié en entier, posé sur le fond comme dans une vitrine */
+/* deux catalogues posés l'un sur l'autre */
+.ph.pile{background:none;padding:0}
+.ph.pile::before,.ph.pile::after{content:none}
+.pile img{position:absolute;width:74%;aspect-ratio:1080/1531;object-fit:cover;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+.pile img:first-child{left:0;top:2%;transform:rotate(-4deg)}
+.pile img:last-child{right:0;bottom:2%;transform:rotate(3deg)}
 img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
 .ph-portrait{aspect-ratio:1;width:100%;max-width:380px;justify-self:end;height:auto}
 .ph-tag{position:absolute;inset:0;display:grid;place-items:center;padding:14px;text-align:center;pointer-events:none}
