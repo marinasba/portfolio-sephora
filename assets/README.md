@@ -45,10 +45,12 @@ Ajouts :
 - `catalogue-livres-2026.jpg` : couverture du catalogue Bibliothèque Jean Demaux, 18 et 19 juin 2026 (fiche Livres anciens)
 - `catalogue-livres-2025.jpg` : couverture du catalogue Livres anciens et modernes, bandes dessinées, 18 décembre 2025 (fiche Livres anciens)
 
-À fournir : `sephora-presentation.jpg`, nouvelle photo de Séphora pour « Qui suis-je ? » (format portrait 4:5).
+- `sephora-garde-meuble.jpg` : Séphora au garde-meuble, en plein travail (Qui suis-je)
 - `catalogue-autographes-2024.jpg` : couverture du catalogue Manuscrits et autographes, 5 et 6 juin 2024 (fiche Lettres autographes)
 - `catalogue-asie-2024.jpg` : couverture du catalogue Arts d'Asie, 12 mars 2024 (photos du département d'art asiatique)
 - `lot-livre-heures.jpg` : Livre d’heures à l’usage de Rome, novembre 2023 (fiche Livres anciens)
 - `lot-goethe.jpg` : livre signé par Goethe, adjugé 80 000 €
 - `daguerreotype-lyon.jpg` : daguerréotype de Félix Richard, le vieux pont du Change à Lyon (fiche Photographies anciennes)
 - `catalogue-art-nouveau-2026.jpg` : catalogue Art nouveau, trois collections, 19 mai 2026 (fiche Autres)
+- `salle-asie-2025.jpg` : salle d'exposition d'une vente d'art asiatique, octobre 2025 (département d'art asiatique)
+- `exposition-art-nouveau-2026.jpg` : exposition de la vente Art nouveau, mai 2026 (fiche Autres)
