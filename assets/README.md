@@ -31,7 +31,6 @@ Ajouts :
 | `asie-lots.jpg` | Lots d'art asiatique exposés avant la vente | 1600 × 1000 px |
 | `asie-catalogue.jpg` | Catalogue d'une vente d'art asiatique | 1600 × 1000 px |
 | `sephora-travail.jpg` | Séphora au travail (en salle de vente, à l'étude ou devant un lot) | 1200 × 1500 px |
-| `galerie-01.jpg` à `galerie-06.jpg` | Galerie sous le paravent : le paravent en salle le jour de la vente, deux détails de laque (recto, verso), la salle pendant les enchères, l’équipe ou le marteau à l’adjudication, un autre lot phare | 1600 × 1200 px |
 | `travaux-01.jpg` à `travaux-03.jpg` | Autres travaux : la Grand-Place d'Arras reconstruite ; la couverture du mémoire ; l'Institut français de Stuttgart (travaux-03) | 1600 × 1200 px |
 | `choeur-01.jpg` à `choeur-03.jpg` | Le chœur en concert ; Séphora en répétition ou en concert ; l'Académie du Palais Royal (orchestre, salle) | 1200 × 1500 px |
 
