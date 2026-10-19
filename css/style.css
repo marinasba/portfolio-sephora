@@ -164,6 +164,12 @@ img.ph::before,img.ph::after{content:none}
 figure.fig-qui{max-width:300px;width:100%;justify-self:start;align-self:start}
 img.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;object-position:50% 40%;align-self:start}
 /* objet photographié en entier, posé sur le fond comme dans une vitrine */
+/* liens vers la presse */
+.presse{margin-top:6px;font-size:.85rem;color:var(--ivoire-dim)}
+.presse a{color:var(--champagne);text-decoration:none;border-bottom:1px solid var(--or);white-space:nowrap}
+.presse a:hover,.presse a:focus-visible{color:var(--or);outline:none}
+.vignettes .presse{margin-top:4px;font-size:.76rem;text-align:left}
+.vignettes .presse a{white-space:normal}
 /* vignettes de lots dans une fiche */
 .vignettes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
 .vignettes .ph{aspect-ratio:1}
