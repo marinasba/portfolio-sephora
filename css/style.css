@@ -196,6 +196,7 @@ figure.leg figcaption{margin-top:8px;font-size:.82rem;line-height:1.45;color:var
 .pile img:first-child{left:0;top:2%;transform:rotate(-4deg)}
 .pile img:last-child{right:0;bottom:2%;transform:rotate(3deg)}
 .pile img.devant{z-index:1}
+img.ph-logo{object-fit:contain;background:#fff;padding:28px 36px}
 img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
 img.ph-objet.ph-sombre{background:var(--vert-2);padding:12px}
 .ph-portrait{aspect-ratio:1;width:100%;max-width:380px;justify-self:end;height:auto}
