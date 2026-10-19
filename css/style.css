@@ -161,7 +161,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .ph::after{content:attr(data-slot);position:absolute;left:12px;bottom:10px;font-size:.7rem;color:var(--gris)}
 img.ph{object-fit:cover;padding:0;display:block;background:none}
 img.ph::before,img.ph::after{content:none}
-img.ph-qui{object-position:50% 38%;align-self:start}
+img.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:end;object-position:50% 40%;align-self:start}
 /* objet photographié en entier, posé sur le fond comme dans une vitrine */
 img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
 .ph-portrait{aspect-ratio:1;width:100%;max-width:380px;justify-self:end;height:auto}
@@ -331,7 +331,7 @@ html.pop-ouvert{overflow:hidden}
   .notice h3,.dep h3,.envers-head h3{font-size:1.9rem}
   .qui{gap:40px}
   .qui-row{grid-template-columns:1fr;gap:32px}
-  .ph-qui{justify-self:start;max-width:320px}
+  .ph-qui,img.ph-qui{justify-self:start;max-width:260px}
   .items{grid-template-columns:1fr}
   /* sur mobile, les galeries défilent horizontalement (on voit le bord de la photo suivante) */
   .photos3,.grid4,.hob-gal{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:4px;margin-left:calc(-1 * var(--gutter-l));margin-right:calc(-1 * var(--gutter-r));padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
