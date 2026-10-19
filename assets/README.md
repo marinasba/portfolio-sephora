@@ -61,3 +61,4 @@ Ajouts :
 - `couture-instagram.jpg` : capture du compte Instagram @valsedufil, lien vers le profil (hobbies, couture)
 - `bal-entree.jpg` : entrée des débutantes sous les lustres (hobbies, bal)
 - `bal-entree-sephora.jpg` : recadrage sur Séphora et son cavalier (la photo entière s'ouvre au clic)
+- `bal-debutantes.jpg` et `bal-cavaliers.jpg` : entrée des débutantes et des cavaliers (hobbies, bal)

@@ -339,6 +339,7 @@ img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
 .hob-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:32px auto 64px;max-width:720px}
 .hob-gal .ph{aspect-ratio:4/5;background:var(--velours-2)}
 .hob-gal img.ph{width:100%;height:auto}
+.hob-gal.quatre{grid-template-columns:repeat(4,minmax(0,1fr));max-width:920px}
 .hob-gal .ph::before{color:#C9B8B0}
 .hob-gal .ph::after{color:var(--or)}
 .hob-gal:last-child{margin-bottom:0}
