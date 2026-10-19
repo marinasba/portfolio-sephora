@@ -167,8 +167,6 @@ img.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;object
 /* vignettes de lots dans une fiche */
 .vignettes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
 .vignettes .ph{aspect-ratio:1}
-.vignettes.une{grid-template-columns:1fr}
-.vignettes.une .ph{aspect-ratio:4/3}
 .vignettes figcaption{font-size:.76rem;margin-top:6px}
 .band.vert figure.leg figcaption{color:var(--ivoire-dim)}
 /* légendes sous les photos, comme des cartels */
