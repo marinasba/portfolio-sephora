@@ -56,3 +56,4 @@ Ajouts :
 - `exposition-art-nouveau-2026.jpg` : exposition de la vente Art nouveau, mai 2026 (fiche Autres)
 - `choeur-concert.jpg` : le chœur et l'orchestre en concert (hobbies, chœur)
 - `choeur-eglise.jpg` : le chœur et l'orchestre en concert dans une église, noir et blanc (hobbies, chœur)
+- `choeur-lustres.jpg` : le chœur en concert sous les lustres (hobbies, chœur)
