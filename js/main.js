@@ -13,6 +13,7 @@
     });
     document.title = t._html_title;
     root.lang = l;
+    document.querySelectorAll('.pop-x').forEach(function (x) { x.setAttribute('aria-label', t.fermer); });
     document.querySelectorAll('[data-cv]').forEach(function (cv) { cv.setAttribute('href', t.cv); });
     document.querySelectorAll('.ed button').forEach(function (b) {
       b.setAttribute('aria-pressed', b.dataset.lang === l ? 'true' : 'false');
@@ -61,6 +62,25 @@
     gal.addEventListener('scroll', state, { passive: true });
     window.addEventListener('resize', state);
     state();
+  });
+
+  /* ---------- autres travaux : fenêtres de détails ---------- */
+  function fermer(d) { d.close(); }
+  document.querySelectorAll('[data-pop]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var d = document.getElementById(b.dataset.pop);
+      if (!d || !d.showModal) return;
+      d.showModal(); root.classList.add('pop-ouvert');
+    });
+  });
+  document.querySelectorAll('dialog.pop').forEach(function (d) {
+    d.querySelector('.pop-x').addEventListener('click', function () { fermer(d); });
+    // un clic hors de la fenêtre la ferme
+    d.addEventListener('click', function (e) {
+      var r = d.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) fermer(d);
+    });
+    d.addEventListener('close', function () { root.classList.remove('pop-ouvert'); });
   });
 
   /* ---------- effets liés à la position de scroll ---------- */

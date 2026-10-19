@@ -226,6 +226,29 @@ img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
 .cartel h3{font-size:1.3rem;margin:2px 0 6px;text-wrap:pretty}
 .cartel p{font-size:.95rem;color:var(--encre-2)}
 .cartel em{font-style:italic}
+.cartel .ph + h3{margin-top:14px}
+/* la fiche entière est cliquable ; le lien « En savoir plus » reste visible */
+.cartel{position:relative}
+.cartel .plus{margin-top:12px;padding:0 0 2px;background:none;border:0;border-bottom:1px solid var(--or-2);font:inherit;font-size:.92rem;color:var(--encre);cursor:pointer}
+.cartel .plus::after{content:"";position:absolute;inset:0}
+.cartel .plus:focus-visible{outline:2px solid var(--or-2);outline-offset:4px}
+.cartel:hover .plus{color:var(--or-2)}
+.galerie-wrap.fixe .cartels{justify-content:center}
+/* fenêtre de détails */
+.pop{width:min(680px,calc(100% - 32px));max-height:calc(100% - 48px);margin:auto;padding:44px 44px 40px;border:1px solid var(--or-2);background:var(--papier);color:var(--encre);box-shadow:0 30px 80px rgba(7,37,28,.35)}
+.pop::backdrop{background:rgba(7,37,28,.62)}
+.pop[open]{display:grid;gap:28px;animation:popin .25s ease-out}
+.pop-img[open]{grid-template-columns:180px 1fr;align-items:start;width:min(820px,calc(100% - 32px))}
+.pop-img img{width:100%;height:auto;display:block;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.pop .an{display:block;font-family:var(--f-titre);font-size:1.15rem;color:var(--or-2)}
+.pop h3{font-size:clamp(1.6rem,3vw,2rem);line-height:1.15;margin:4px 0 14px;text-wrap:balance}
+.pop h4{font-family:var(--f-titre);font-style:italic;font-weight:400;font-size:1.2rem;color:var(--or-2);margin:18px 0 4px}
+.pop p{color:var(--encre-2);font-size:.98rem;margin-bottom:10px}
+.pop-x{position:absolute;top:12px;right:12px;width:40px;height:40px;display:grid;place-items:center;padding:0;background:none;border:0;color:var(--encre-2);cursor:pointer}
+.pop-x svg{width:22px;height:22px}
+.pop-x:hover,.pop-x:focus-visible{color:var(--or-2);outline:none}
+@keyframes popin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+html.pop-ouvert{overflow:hidden}
 
 /* ---------- organiser une vente : timeline, deux rangées de cinq étapes ---------- */
 .envers{padding-block:var(--partie)}
@@ -319,6 +342,9 @@ img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
   .hob-gal{max-width:none;margin-bottom:16px}
   .galerie .ph{flex-basis:calc((100% - 16px)/2)}
   .cartels .cartel{flex-basis:80vw}
+  .pop{padding:40px 22px 28px}
+  .pop-img[open]{grid-template-columns:1fr}
+  .pop-img img{width:120px}
   .cartels .ph{flex-basis:auto}
   .fleche{width:38px;height:38px}
   .fleche.prev{left:calc(var(--gutter-l) - 10px)}
