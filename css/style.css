@@ -142,7 +142,7 @@ h1,h2,h3{font-family:var(--f-titre);font-weight:400;line-height:1.1;text-wrap:pr
 .dep h3{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px}
 .dep .lead{max-width:70ch;margin-inline:auto}
 
-.photos3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.photos3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px}
 .photos3 .ph{aspect-ratio:16/10}
 
 
@@ -163,6 +163,11 @@ img.ph::before,img.ph::after{content:none}
 .ph.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;align-self:start}
 img.ph-qui{aspect-ratio:4/5;max-width:300px;width:100%;justify-self:start;object-position:50% 40%;align-self:start}
 /* objet photographié en entier, posé sur le fond comme dans une vitrine */
+/* légendes sous les photos, comme des cartels */
+figure.leg{margin:0;min-width:0;display:flex;flex-direction:column}
+figure.leg > .ph{width:100%}
+figure.leg figcaption{margin-top:8px;font-size:.82rem;line-height:1.45;color:var(--encre-2);text-align:left;text-wrap:pretty}
+.velours figure.leg figcaption{color:#C9B8B0}
 /* deux catalogues côte à côte */
 .ph.duo{display:flex;justify-content:center;align-items:center;gap:14px;padding:12px;background:var(--vert-2)}
 .ph.duo::before,.ph.duo::after{content:none}
@@ -259,6 +264,14 @@ img.ph-objet.ph-sombre{background:var(--vert-2);padding:12px}
 .pop-x:hover,.pop-x:focus-visible{color:var(--or-2);outline:none}
 @keyframes popin{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 html.pop-ouvert{overflow:hidden}
+/* agrandissement des catalogues */
+img[data-zoom]{cursor:zoom-in}
+img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
+.pop.zoom{width:fit-content;height:fit-content;inset:0;max-width:calc(100% - 32px);max-height:calc(100% - 32px);padding:0;border:0;background:none;box-shadow:none;overflow:visible}
+.pop.zoom[open]{display:block}
+.pop.zoom img{display:block;max-width:calc(100vw - 32px);max-height:calc(100vh - 32px);width:auto;height:auto;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.pop.zoom .pop-x{top:-6px;right:-6px;transform:translate(50%,-50%);background:var(--papier);border-radius:50%;color:var(--encre)}
+@media (max-width:760px){.pop.zoom .pop-x{transform:none;top:8px;right:8px}}
 
 /* ---------- organiser une vente : timeline, deux rangées de cinq étapes ---------- */
 .envers{padding-block:var(--partie)}
@@ -305,7 +318,7 @@ html.pop-ouvert{overflow:hidden}
 .hob h3{font-style:italic;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.1;color:var(--champagne);margin-bottom:22px}
 .hob .lead{color:#C9B8B0;margin-inline:auto;max-width:none;font-size:1rem}
 .hob .lead a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(232,220,196,.4)}
-.hob-gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:32px auto 64px;max-width:720px}
+.hob-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:32px auto 64px;max-width:720px}
 .hob-gal .ph{aspect-ratio:4/5;background:var(--velours-2)}
 .hob-gal .ph::before{color:#C9B8B0}
 .hob-gal .ph::after{color:var(--or)}

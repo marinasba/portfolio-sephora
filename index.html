@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=202610191409">
+<link rel="stylesheet" href="css/style.css?v=202610191411">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -100,9 +100,9 @@
       <h3 data-i18n="dep_h">J'ai co-créé le département d'art asiatique de la maison Oger&nbsp;Blanchet.</h3>
       <p class="lead" data-i18n="dep_p">Avec mon collègue Guillaume&nbsp;Lemoine. La première vente avait une estimation totale de 30&nbsp;000&nbsp;euros. Aujourd'hui, deux ans plus tard, nous avons atteint le million. Nous y vendons des objets issus de toute l'Asie, de l'Antiquité à nos jours.</p>
       <div class="photos3">
-        <img class="ph" src="assets/sephora-travail.jpg" alt="Séphora Nowicki devant le paravent de Pham Hau, exposé à l'Hôtel Drouot" loading="lazy" style="object-position:50% 42%">
-        <img class="ph" src="assets/asie-lots.jpg" alt="Lots d'art asiatique exposés sur socles avant la vente" loading="lazy" style="object-position:50% 42%">
-        <div class="ph duo"><img src="assets/catalogue-asie-2024.jpg" alt="Catalogue de la vente Arts d'Asie, Oger Blanchet, 12 mars 2024" loading="lazy"><img src="assets/catalogue-paravent.jpg" alt="Catalogue de la vente Arts asiatiques, Oger Blanchet, Hôtel Drouot, 1er octobre 2026" loading="lazy"></div>
+        <figure class="leg"><img class="ph" src="assets/sephora-travail.jpg" alt="Séphora Nowicki devant le paravent de Pham Hau, exposé à l'Hôtel Drouot" loading="lazy" style="object-position:50% 42%"><figcaption data-i18n="lg1">Devant le paravent de Pham&nbsp;Hau, exposé à l'Hôtel&nbsp;Drouot avant la vente.</figcaption></figure>
+        <figure class="leg"><img class="ph" src="assets/asie-lots.jpg" alt="Lots d'art asiatique exposés sur socles avant la vente" loading="lazy" style="object-position:50% 42%"><figcaption data-i18n="lg2">Exposition avant-vente d'art asiatique.</figcaption></figure>
+        <figure class="leg"><div class="ph duo"><img data-zoom src="assets/catalogue-asie-2024.jpg" alt="Catalogue de la vente Arts d'Asie, Oger Blanchet, 12 mars 2024" loading="lazy"><img data-zoom src="assets/catalogue-paravent.jpg" alt="Catalogue de la vente Arts asiatiques, Oger Blanchet, Hôtel Drouot, 1er octobre 2026" loading="lazy"></div><figcaption data-i18n="lg3">Catalogues des ventes d'art asiatique de mars&nbsp;2024 et d'octobre&nbsp;2026.</figcaption></figure>
       </div>
     </div>
   </section>
@@ -152,12 +152,12 @@
     <div><h3 data-i18n="sp_h">Je suis aussi experte en livres anciens</h3><p class="lead" data-i18n="sp_p">Et j'ai travaillé avec de nombreux autres types d'objets.</p></div>
     <div class="grid4">
       <article class="fiche">
-        <div class="ph pile"><img src="assets/livres-2.jpg" alt="Catalogue de la vente Livres anciens et modernes, bandes dessinées, Oger Blanchet, décembre 2025" loading="lazy"><img src="assets/livres.jpg" alt="Catalogue de la vente Bibliothèque Jean Demaux, Oger Blanchet, juin 2026" loading="lazy"></div>
+        <div class="ph pile"><img data-zoom src="assets/livres-2.jpg" alt="Catalogue de la vente Livres anciens et modernes, bandes dessinées, Oger Blanchet, décembre 2025" loading="lazy"><img data-zoom src="assets/livres.jpg" alt="Catalogue de la vente Bibliothèque Jean Demaux, Oger Blanchet, juin 2026" loading="lazy"></div>
         <h3 data-i18n="sp1_h">Livres anciens</h3>
         <p data-i18n="sp1_p">À compléter.</p>
       </article>
       <article class="fiche">
-        <img class="ph" src="assets/lettres.jpg" alt="Catalogue de la vente Manuscrits et autographes, Oger Blanchet, juin 2024" loading="lazy">
+        <img class="ph" data-zoom src="assets/lettres.jpg" alt="Catalogue de la vente Manuscrits et autographes, Oger Blanchet, juin 2024" loading="lazy">
         <h3 data-i18n="sp2_h">Lettres autographes</h3>
         <p data-i18n="sp2_p">À compléter.</p>
       </article>
@@ -262,6 +262,11 @@
     </div>
   </dialog>
 
+  <dialog class="pop zoom" id="zoom" aria-label="Image agrandie">
+    <button type="button" class="pop-x" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <img alt="">
+  </dialog>
+
   <!-- ===================== MES HOBBIES ===================== -->
   <section class="souffle" aria-hidden="true">
     <svg class="mono-m"><use href="#monogramme"/></svg>
@@ -274,7 +279,7 @@
         <h3 data-i18n="bal_h">Le Beau et l'Art font partie de mon quotidien.</h3>
         <p class="lead" data-i18n="bal_p">Passionnée de valse, j'ai participé au Bal des&nbsp;Parisiennes&nbsp;2026 en tant que débutante.<br>Cette année, j'ai l'honneur d'en être la marraine, en partenariat avec l'ambassade d'Autriche.</p>
         <div class="hob-gal">
-          <img class="ph" src="assets/bal-01.jpg" alt="Séphora valsant au Bal des Parisiennes 2026" loading="lazy" style="object-position:50% 45%">
+          <figure class="leg"><img class="ph" src="assets/bal-01.jpg" alt="Séphora valsant au Bal des Parisiennes 2026" loading="lazy" style="object-position:50% 45%"><figcaption data-i18n="lg4">Au Bal des&nbsp;Parisiennes&nbsp;2026.</figcaption></figure>
           <div class="ph" data-photo="Photo du bal : la salle, la valse" data-slot="assets/bal-02.jpg"></div>
           <div class="ph" data-photo="Photo de Séphora marraine de l'édition 2027 (affiche, annonce, portrait)" data-slot="assets/bal-03.jpg"></div>
         </div>
@@ -310,7 +315,7 @@
 </main>
 
 
-<script src="js/i18n.js?v=202610191409"></script>
-<script src="js/main.js?v=202610191409"></script>
+<script src="js/i18n.js?v=202610191411"></script>
+<script src="js/main.js?v=202610191411"></script>
 </body>
 </html>

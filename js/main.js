@@ -83,6 +83,24 @@
     d.addEventListener('close', function () { root.classList.remove('pop-ouvert'); });
   });
 
+  /* ---------- catalogues : agrandissement au clic ---------- */
+  var zoom = document.getElementById('zoom');
+  if (zoom && zoom.showModal) {
+    var zimg = zoom.querySelector('img');
+    document.querySelectorAll('img[data-zoom]').forEach(function (im) {
+      im.setAttribute('tabindex', '0');
+      im.setAttribute('role', 'button');
+      function ouvrir() {
+        zimg.src = im.currentSrc || im.src; zimg.alt = im.alt;
+        zoom.showModal(); root.classList.add('pop-ouvert');
+      }
+      im.addEventListener('click', function (e) { e.stopPropagation(); ouvrir(); });
+      im.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); ouvrir(); }
+      });
+    });
+  }
+
   /* ---------- effets liés à la position de scroll ---------- */
   var pv = document.getElementById('pv');
   var pvStick = pv ? pv.querySelector('.stick') : null;
