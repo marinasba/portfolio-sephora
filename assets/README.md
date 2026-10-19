@@ -54,3 +54,5 @@ Ajouts :
 - `catalogue-art-nouveau-2026.jpg` : catalogue Art nouveau, trois collections, 19 mai 2026 (fiche Autres)
 - `salle-asie-2025.jpg` : salle d'exposition d'une vente d'art asiatique, octobre 2025 (département d'art asiatique)
 - `exposition-art-nouveau-2026.jpg` : exposition de la vente Art nouveau, mai 2026 (fiche Autres)
+- `choeur-concert.jpg` : le chœur et l'orchestre en concert (hobbies, chœur)
+- `choeur-eglise.jpg` : le chœur et l'orchestre en concert dans une église, noir et blanc (hobbies, chœur)
