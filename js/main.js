@@ -73,6 +73,8 @@
   var tlprog = document.getElementById('tlprog');
   var tlDist = 0;
 
+  var mobile = window.matchMedia('(max-width:760px)');
+
   function clamp(v) { return Math.min(1, Math.max(0, v)); }
 
   // les blocs fixés ont la hauteur de leur contenu, centré dans l'écran
@@ -84,7 +86,10 @@
   }
   function layout() {
     centerStick(pvStick);
-    if (envers && tl && enStick) {
+    if (envers && tl && enStick && mobile.matches) {
+      // mobile : timeline verticale simple, aucun blocage du scroll
+      envers.style.height = ''; enStick.style.top = ''; tl.style.transform = '';
+    } else if (envers && tl && enStick) {
       tlDist = Math.max(0, tl.scrollWidth - window.innerWidth + 40);
       envers.style.height = (enStick.offsetHeight + tlDist) + 'px';
       centerStick(enStick);
@@ -112,7 +117,10 @@
     }
 
     // timeline horizontale : la piste glisse vers la gauche
-    if (envers && enStick && tl) {
+    if (envers && tl && mobile.matches) {
+      var tp = document.getElementById('tampon');
+      if (tp && tp.getBoundingClientRect().top < vh * 0.85) tp.classList.add('in');
+    } else if (envers && enStick && tl) {
       var ep = progress(envers, enStick);
       tl.style.transform = 'translateX(' + (-ep * tlDist) + 'px)';
       if (tlprog) tlprog.style.width = (ep * 100) + '%';
