@@ -57,3 +57,4 @@ Ajouts :
 - `choeur-concert.jpg` : le chœur et l'orchestre en concert (hobbies, chœur)
 - `choeur-eglise.jpg` : le chœur et l'orchestre en concert dans une église, noir et blanc (hobbies, chœur)
 - `choeur-lustres.jpg` : le chœur en concert sous les lustres (hobbies, chœur)
+- `couture-body-dentelle.jpg` : publication Instagram « Coudre un body en dentelle » (hobbies, couture)
