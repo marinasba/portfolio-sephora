@@ -66,3 +66,5 @@ Ajouts :
 - `institut-francais-stuttgart.jpg` : Institut français de Stuttgart (Autres travaux)
 - `ministere-culture.jpg` : logo du ministère de la Culture (Autres travaux)
 - `monogramme.svg` : monogramme SN vectoriel (en-tête, haut de page, respiration, icône d'onglet) ; `favicon.png` : icône de secours
+- bal-promotion-2026.jpg : promotion 2026 des débutantes devant le pavillon (20260620_183408.jpg)
+- choeur-madeleine.jpg : chœur en concert à la Madeleine (_MG_9447.JPG)
