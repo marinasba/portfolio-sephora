@@ -51,3 +51,4 @@ Ajouts :
 - `lot-livre-heures.jpg` : Livre d’heures à l’usage de Rome, novembre 2023 (fiche Livres anciens)
 - `lot-goethe.jpg` : livre signé par Goethe, adjugé 80 000 €
 - `photo-ancienne.jpg` : daguerréotype de Félix Richard, le vieux pont du Change à Lyon (fiche Photographies anciennes)
+- `art-nouveau.jpg` : catalogue Art nouveau, trois collections, 19 mai 2026 (fiche Autres)
