@@ -217,7 +217,7 @@ img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
 .galerie-wrap.fixe .fleche{display:none}
 .fleche[disabled]:hover{background:var(--papier);color:var(--or-2)}
 /* autres travaux : cartels (photo + légende) qui défilent sur une ligne */
-.autres{padding-top:var(--partie);padding-bottom:0}
+.autres{padding-top:calc(var(--partie) * .7);padding-bottom:0}
 .autres + .galerie-wrap{margin-top:36px;padding-bottom:24px}
 .cartels .cartel{flex:0 0 calc((100% - 32px)/3);scroll-snap-align:start;text-align:left}
 .cartel .an{display:block;margin-top:14px;font-family:var(--f-titre);font-size:1.15rem;color:var(--or-2);font-variant-numeric:tabular-nums}
