@@ -59,3 +59,4 @@ Ajouts :
 - `choeur-lustres.jpg` : le chœur en concert sous les lustres (hobbies, chœur)
 - `couture-body-dentelle.jpg` : publication Instagram « Coudre un body en dentelle » (hobbies, couture)
 - `couture-instagram.jpg` : capture du compte Instagram @valsedufil, lien vers le profil (hobbies, couture)
+- `bal-entree.jpg` : entrée des débutantes sous les lustres (hobbies, bal)
