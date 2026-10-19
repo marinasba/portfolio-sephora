@@ -37,11 +37,14 @@ Ajouts :
 
 ## Photos déjà reçues (19 oct. 2026)
 
-- `sephora-travail.jpg` : Séphora devant le paravent Pham Hau, exposé à Drouot
+- `sephora-travail.jpg` : Séphora devant le paravent Pham Hau, exposé à Drouot (photos du département d'art asiatique)
 - `asie-lots.jpg` : lots d'art asiatique sur socles avant la vente
 - `objets.jpg` : exposition avant-vente, tableaux et mobilier (reçue, non utilisée pour l'instant)
 - `travaux-02.jpg` : couverture du mémoire sur Arras
 - `bal-01.jpg` : Séphora valsant au Bal des Parisiennes 2026
-- `catalogue-paravent.jpg` : couverture du catalogue de la vente Arts asiatiques du 1er octobre 2026 (galerie du paravent)
+- `catalogue-paravent.jpg` : couverture du catalogue de la vente Arts asiatiques du 1er octobre 2026 (photos du département d'art asiatique)
 - `livres.jpg` : couverture du catalogue Bibliothèque Jean Demaux, 18 et 19 juin 2026 (fiche Livres anciens)
 - `livres-2.jpg` : couverture du catalogue Livres anciens et modernes, bandes dessinées, 18 décembre 2025 (fiche Livres anciens)
+
+À fournir : `sephora-presentation.jpg`, nouvelle photo de Séphora pour « Qui suis-je ? » (format portrait 4:5).
+- `lettres.jpg` : couverture du catalogue Manuscrits et autographes, 5 et 6 juin 2024 (fiche Lettres autographes)
