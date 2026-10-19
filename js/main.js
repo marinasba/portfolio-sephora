@@ -67,13 +67,8 @@
   var pv = document.getElementById('pv');
   var pvStick = pv ? pv.querySelector('.stick') : null;
   var screen = document.getElementById('screen');
-  var envers = document.getElementById('envers');
-  var enStick = envers ? envers.querySelector('.stick') : null;
-  var tl = document.getElementById('tl');
-  var tlprog = document.getElementById('tlprog');
-  var tlDist = 0;
-
-  var mobile = window.matchMedia('(max-width:760px)');
+  var tlSteps = document.querySelectorAll('#tl li:not(.tl-fin)');
+  var tampon = document.getElementById('tampon');
 
   function clamp(v) { return Math.min(1, Math.max(0, v)); }
 
@@ -86,14 +81,6 @@
   }
   function layout() {
     centerStick(pvStick);
-    if (envers && tl && enStick && mobile.matches) {
-      // mobile : timeline verticale simple, aucun blocage du scroll
-      envers.style.height = ''; enStick.style.top = ''; tl.style.transform = '';
-    } else if (envers && tl && enStick) {
-      tlDist = Math.max(0, tl.scrollWidth - window.innerWidth + 40);
-      envers.style.height = (enStick.offsetHeight + tlDist) + 'px';
-      centerStick(enStick);
-    }
   }
   layout();
 
@@ -116,17 +103,11 @@
       pv.classList.toggle('half', deg > 90);
     }
 
-    // timeline horizontale : la piste glisse vers la gauche
-    if (envers && tl && mobile.matches) {
-      var tp = document.getElementById('tampon');
-      if (tp && tp.getBoundingClientRect().top < vh * 0.85) tp.classList.add('in');
-    } else if (envers && enStick && tl) {
-      var ep = progress(envers, enStick);
-      tl.style.transform = 'translateX(' + (-ep * tlDist) + 'px)';
-      if (tlprog) tlprog.style.width = (ep * 100) + '%';
-      var tampon = document.getElementById('tampon');
-      if (tampon) tampon.classList.toggle('in', ep > 0.96);
-    }
+    // timeline : chaque étape s'allume quand elle passe aux deux tiers de l'écran
+    tlSteps.forEach(function (li) {
+      li.classList.toggle('on', li.getBoundingClientRect().top < vh * 0.7);
+    });
+    if (tampon && tampon.getBoundingClientRect().top < vh * 0.85) tampon.classList.add('in');
 
   }
 

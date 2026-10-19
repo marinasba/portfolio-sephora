@@ -11,16 +11,6 @@ Chaque rectangle vide du site porte son étiquette « Photo de … » et le nom 
 | `lettres.jpg` | Une lettre autographe ou un manuscrit | 900 × 1200 px |
 | `asie.jpg` | Un objet d'art asiatique (laque, bronze, céramique) | 900 × 1200 px |
 | `photo-ancienne.jpg` | Un tirage ancien (album, daguerréotype…) | 900 × 1200 px |
-| `etape-01.jpg` | Lots rassemblés à l'étude | 1600 × 1000 px |
-| `etape-02.jpg` | Un expert examinant un lot | 1600 × 1000 px |
-| `etape-03.jpg` | Un catalogue de vente de l'étude, ouvert | 1600 × 1000 px |
-| `etape-04.jpg` | La séance photo (studio, lot sous les lumières) | 1600 × 1000 px |
-| `etape-05.jpg` | Maquette de catalogue ou épreuves chez le graphiste | 1600 × 1000 px |
-| `etape-06.jpg` | Transport des lots (caisses, camion, emballage) | 1600 × 1000 px |
-| `etape-07.jpg` | La salle de vente scénographiée à l'Hôtel Drouot | 1600 × 1000 px |
-| `etape-08.jpg` | Le marteau ou le commissaire-priseur pendant la séance | 1600 × 1000 px |
-| `etape-09.jpg` | Un bordereau ou le bureau de facturation | 1600 × 1000 px |
-| `etape-10.jpg` | Le retrait des lots ou un acheteur après la vente | 1600 × 1000 px |
 | `bal-01.jpg` à `bal-03.jpg` | Séphora au Bal des Parisiennes 2026 (en robe, en salle) ; la salle, la valse ; Séphora marraine 2027 (affiche, annonce, portrait) | 1200 × 1500 px |
 | `couture-01.jpg` à `couture-03.jpg` | Une robe cousue main portée ; une pièce en cours (atelier) ; un détail de finition | 1200 × 1500 px |
 | `cv-fr.pdf`, `cv-de.pdf`, `cv-en.pdf` | CV téléchargeables | PDF |

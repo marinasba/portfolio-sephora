@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=202610191341">
+<link rel="stylesheet" href="css/style.css?v=202610191345">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -178,24 +178,23 @@
 
   <!-- organiser une vente (timeline horizontale) -->
   <section class="envers" id="envers">
-    <div class="stick">
+    <div class="tl-box">
       <div class="inner envers-head">
         <div>
           <h3 data-i18n="tl_h">Je gère tout le processus de vente, de la première estimation au dernier bordereau.</h3>
         </div>
-        <div class="tl-prog"><span id="tlprog"></span></div>
       </div>
       <ol class="tl" id="tl">
-        <li><div class="ph" data-photo="Photo de lots rassemblés à l'étude (tables, caisses, objets en attente)" data-slot="assets/etape-01.jpg"></div><b>I</b><h3 data-i18n="t1_h">Rassembler les lots</h3><p data-i18n="t1_p">Prospection, rendez-vous, prise en dépôt, fiches descriptives.</p></li>
-        <li><div class="ph" data-photo="Photo d'un expert examinant un lot (loupe, gants)" data-slot="assets/etape-02.jpg"></div><b>II</b><h3 data-i18n="t2_h">Faire venir les experts</h3><p data-i18n="t2_p">Choix de l'expert, organisation des examens, validation des estimations.</p></li>
-        <li><div class="ph" data-photo="Photo d'un catalogue de vente de l'étude, ouvert" data-slot="assets/etape-03.jpg"></div><b>III</b><h3 data-i18n="t3_h">Superviser le catalogue</h3><p data-i18n="t3_p">Notices, ordre des lots, relecture, cohérence des estimations.</p></li>
-        <li><div class="ph" data-photo="Photo de la séance photo (studio, lot sous les lumières)" data-slot="assets/etape-04.jpg"></div><b>IV</b><h3 data-i18n="t4_h">Diriger la séance photo</h3><p data-i18n="t4_p">Sélection des lots, prises de vue, retouches, droits.</p></li>
-        <li><div class="ph" data-photo="Photo d'une maquette de catalogue ou d'épreuves chez le graphiste" data-slot="assets/etape-05.jpg"></div><b>V</b><h3 data-i18n="t5_h">Travailler avec le graphiste</h3><p data-i18n="t5_p">Maquette du catalogue, couverture, épreuves, bon à tirer.</p></li>
-        <li><div class="ph" data-photo="Photo du transport des lots (caisses, camion, emballage)" data-slot="assets/etape-06.jpg"></div><b>VI</b><h3 data-i18n="t6_h">Organiser le transport</h3><p data-i18n="t6_p">Transporteurs, emballage, assurance, arrivée des lots le jour J.</p></li>
-        <li><div class="ph" data-photo="Photo de la salle de vente scénographiée à l'Hôtel Drouot" data-slot="assets/etape-07.jpg"></div><b>VII</b><h3 data-i18n="t7_h">Mettre en scène la salle</h3><p data-i18n="t7_p">Scénographie, accrochage, vitrines, location de matériel.</p></li>
-        <li><div class="ph" data-photo="Photo du marteau ou du commissaire-priseur pendant la séance" data-slot="assets/etape-08.jpg"></div><b>VIII</b><h3 data-i18n="t8_h">Tenir le procès-verbal</h3><p data-i18n="t8_p">Enregistrement des adjudications pendant la séance.</p></li>
-        <li><div class="ph" data-photo="Photo d'un bordereau ou du bureau de facturation" data-slot="assets/etape-09.jpg"></div><b>IX</b><h3 data-i18n="t9_h">Facturer</h3><p data-i18n="t9_p">Factures acheteurs, décomptes vendeurs, suivi des règlements.</p></li>
-        <li><div class="ph" data-photo="Photo du retrait des lots ou d'un acheteur après la vente" data-slot="assets/etape-10.jpg"></div><b>X</b><h3 data-i18n="t10_h">Assurer l'après-vente</h3><p data-i18n="t10_p">Bordereaux d'achat, retrait des lots, relation avec les acheteurs.</p></li>
+        <li><b>I</b><h3 data-i18n="t1_h">Rassembler les lots</h3><p data-i18n="t1_p">Prospection, rendez-vous, prise en dépôt, fiches descriptives.</p></li>
+        <li><b>II</b><h3 data-i18n="t2_h">Faire venir les experts</h3><p data-i18n="t2_p">Choix de l'expert, organisation des examens, validation des estimations.</p></li>
+        <li><b>III</b><h3 data-i18n="t3_h">Superviser le catalogue</h3><p data-i18n="t3_p">Notices, ordre des lots, relecture, cohérence des estimations.</p></li>
+        <li><b>IV</b><h3 data-i18n="t4_h">Diriger la séance photo</h3><p data-i18n="t4_p">Sélection des lots, prises de vue, retouches, droits.</p></li>
+        <li><b>V</b><h3 data-i18n="t5_h">Travailler avec le graphiste</h3><p data-i18n="t5_p">Maquette du catalogue, couverture, épreuves, bon à tirer.</p></li>
+        <li><b>VI</b><h3 data-i18n="t6_h">Organiser le transport</h3><p data-i18n="t6_p">Transporteurs, emballage, assurance, arrivée des lots le jour J.</p></li>
+        <li><b>VII</b><h3 data-i18n="t7_h">Mettre en scène la salle</h3><p data-i18n="t7_p">Scénographie, accrochage, vitrines, location de matériel.</p></li>
+        <li><b>VIII</b><h3 data-i18n="t8_h">Tenir le procès-verbal</h3><p data-i18n="t8_p">Enregistrement des adjudications pendant la séance.</p></li>
+        <li><b>IX</b><h3 data-i18n="t9_h">Facturer</h3><p data-i18n="t9_p">Factures acheteurs, décomptes vendeurs, suivi des règlements.</p></li>
+        <li><b>X</b><h3 data-i18n="t10_h">Assurer l'après-vente</h3><p data-i18n="t10_p">Bordereaux d'achat, retrait des lots, relation avec les acheteurs.</p></li>
         <li class="tl-fin" aria-hidden="true"><span class="tampon" id="tampon" data-i18n="tampon">Adjugé</span></li>
       </ol>
     </div>
@@ -292,7 +291,7 @@
 </main>
 
 
-<script src="js/i18n.js?v=202610191341"></script>
-<script src="js/main.js?v=202610191341"></script>
+<script src="js/i18n.js?v=202610191345"></script>
+<script src="js/main.js?v=202610191345"></script>
 </body>
 </html>
