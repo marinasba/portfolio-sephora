@@ -462,3 +462,4 @@ sup{font-size:.6em;line-height:0;vertical-align:super}
 
 .notice .pa-lead{margin-top:-4px}
 .notice h3.lots-h.pa-h{margin-top:140px}
+.notice h3[data-i18n="hv_h"] + .items{margin-top:72px}
