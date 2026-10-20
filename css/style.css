@@ -452,3 +452,6 @@ sup{font-size:.6em;line-height:0;vertical-align:super}
 .notice .items.partenaires h3{font-size:1.3rem;text-wrap:balance}
 .notice .items.partenaires p{font-size:.92rem}
 @media (max-width:640px){.notice .items.partenaires{grid-template-columns:repeat(2,1fr);gap:28px 18px}}
+/* logos des partenaires sur une tuile ivoire (le fond blanc des logos s'y fond) */
+.partenaires .logo-p{display:flex;align-items:center;justify-content:center;height:120px;margin-bottom:16px;padding:16px 24px;background:var(--papier)}
+.partenaires .logo-p img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
