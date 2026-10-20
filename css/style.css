@@ -460,6 +460,6 @@ sup{font-size:.6em;line-height:0;vertical-align:super}
 .partenaires .logo-p{display:flex;align-items:center;justify-content:center;height:120px;margin-bottom:16px;padding:16px 24px;background:var(--papier)}
 .partenaires .logo-p img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
 
-.notice .pa-lead{margin-top:-4px}
+.notice .pa-lead{margin-top:14px}
 .notice h3.lots-h.pa-h{margin-top:140px}
 .notice h3[data-i18n="hv_h"] + .items{margin-top:72px}
