@@ -13,7 +13,7 @@ window.I18N = {
     pv_p1: "Adjugé le 1er&nbsp;octobre&nbsp;2026 à l'hôtel&nbsp;Drouot. Deuxième vente la plus importante de l’histoire de l’étude.",
     pv_k2: "Un objet exceptionnel",
     pv_h2: "Décoré sur ses deux faces, fait rarissime.",
-    dep_h: "J'ai co-créé le département d'art asiatique de la maison Oger&nbsp;&amp;&nbsp;Blanchet.",
+    dep_h: "J'ai co-créé le département d'arts asiatiques de la maison Oger&nbsp;&amp;&nbsp;Blanchet.",
     dep_p: "Sous la direction de Maître Guillaume&nbsp;Lemoine. La première vente avait une estimation totale de 30&nbsp;000&nbsp;euros et s’est tenue à l’étude en&nbsp;2024. Deux ans plus tard, nous avons atteint le million à l’hôtel Drouot. Nous y vendons des objets issus de toute l'Asie, de l'Antiquité à nos jours.",
     sp_h: "Mon autre domaine d’expertise, les livres anciens",
     sp1_h: "Livres anciens", sp1_p: "À compléter.",
