@@ -244,7 +244,7 @@ img.ph-objet.ph-sombre{background:var(--vert-2);padding:12px}
 .pv .side.verso{position:absolute;inset:0;opacity:0}
 .pv.half .side.recto{opacity:0}
 .pv.half .side.verso{opacity:1}
-.pv .rubrique{color:var(--encre-2)}
+.pv .rubrique{color:var(--encre-2);font-size:clamp(1.6rem,2.6vw,2rem)}
 .pv h3{font-size:clamp(1.9rem,3.8vw,3rem);margin:8px 0 10px;color:var(--encre)}
 .pv .big{font-family:var(--f-titre);font-weight:300;font-size:clamp(3rem,7vw,5.4rem);color:var(--or-2);line-height:1;margin:4px 0 16px;font-variant-numeric:tabular-nums}
 .pv .lead{color:var(--encre-2)}
