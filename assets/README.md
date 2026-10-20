@@ -73,3 +73,4 @@ Ajouts :
 - bal-drapeaux.jpg : drapeaux autrichien, européen et français (IMG-20261019-WA0055(1).jpg)
 - paravent-recto.png / paravent-verso.png : paravent détouré, fond transparent
 - logo-*.png : logos des partenaires (fond rendu transparent)
+- art-fact-37.png : couverture Art&Fact n° 37 (capture 173746)

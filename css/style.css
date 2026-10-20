@@ -205,7 +205,9 @@ figure.leg figcaption{margin-top:8px;font-size:.82rem;line-height:1.45;color:var
 img.ph-logo{object-fit:contain;background:#fff;padding:28px 36px}
 img.ph-objet{object-fit:contain;background:var(--papier-2);padding:18px}
 img.ph-objet.ph-sombre{background:var(--vert-2);padding:12px}
-.ph-portrait{aspect-ratio:1;width:100%;max-width:380px;justify-self:end;height:auto}
+.ph-portrait{aspect-ratio:1;width:100%;height:auto}
+.fig-portrait{margin:0;width:100%;max-width:380px;justify-self:end}
+.fig-portrait figcaption{margin-top:8px;font-size:.78rem;color:var(--ivoire-dim);text-align:right}
 .ph-tag{position:absolute;inset:0;display:grid;place-items:center;padding:14px;text-align:center;pointer-events:none}
 .ph-tag::before{content:attr(data-photo);font-size:.85rem;line-height:1.4;color:var(--ivoire);max-width:26ch;background:rgba(19,17,16,.7);padding:8px 12px}
 .ph-tag::after{content:attr(data-slot);position:absolute;left:12px;bottom:10px;font-size:.7rem;color:var(--ivoire-dim)}
@@ -313,8 +315,10 @@ img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
 .tl-box{display:flex;flex-direction:column;gap:48px}
 .envers-head{text-align:center;width:100%}
 .envers-head h3{font-size:clamp(1.9rem,3.6vw,2.6rem);max-width:44ch;margin-inline:auto;text-wrap:balance}
-.tl{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:56px 28px;width:min(var(--maxw),100% - var(--gutter-l) - var(--gutter-r));margin-inline:auto;padding:0}
-.tl li{position:relative;padding-top:50px}
+.tl{list-style:none;display:grid;grid-template-columns:repeat(8,1fr);gap:56px 28px;width:min(var(--maxw),100% - var(--gutter-l) - var(--gutter-r));margin-inline:auto;padding:0}
+.tl li{position:relative;padding-top:50px;grid-column:span 2}
+/* dernière rangée (IX, X, XI) centrée */
+.tl li:nth-child(9){grid-column:2/span 2}
 /* le fil relie chaque point au suivant, sur la rangée */
 .tl li::before{content:"";position:absolute;left:5px;top:35px;width:calc(100% + 28px);height:1px;background:var(--or-2);opacity:.3;transition:opacity .6s}
 .tl li:nth-child(4n)::before,.tl li:nth-last-child(2)::before{display:none}
@@ -378,7 +382,7 @@ img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
 @media (max-width:980px){
   .photos3{grid-template-columns:repeat(3,minmax(0,1fr))}
   .grid4{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .tl{grid-template-columns:repeat(4,1fr);gap:48px 18px}
+  .tl{grid-template-columns:repeat(8,1fr);gap:48px 18px}
   .tl li::before{width:calc(100% + 18px)}
   .items{grid-template-columns:repeat(2,1fr)}
   :root{--marge:150px}
@@ -390,7 +394,8 @@ img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
   .menu{display:none}
   .hero-in{grid-template-columns:1fr;gap:28px;padding-block:40px 56px}
   .mono-l{height:110px;margin-bottom:16px}
-  .ph-portrait{max-width:300px;justify-self:start}
+  .fig-portrait{max-width:300px;justify-self:start}
+  .fig-portrait figcaption{text-align:left}
   .notice h3,.dep h3,.envers-head h3{font-size:1.9rem}
   .qui{gap:64px}
   .qui-row{grid-template-columns:1fr;gap:32px}
@@ -456,3 +461,5 @@ sup{font-size:.6em;line-height:0;vertical-align:super}
 /* logos des partenaires sur une tuile ivoire (le fond blanc des logos s'y fond) */
 .partenaires .logo-p{display:flex;align-items:center;justify-content:center;height:120px;margin-bottom:16px;padding:16px 24px;background:var(--papier)}
 .partenaires .logo-p img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+
+.notice .pa-lead{margin-top:-4px}
