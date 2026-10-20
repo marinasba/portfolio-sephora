@@ -430,6 +430,9 @@ img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
   .adjs .word::after{transform:scaleX(1)}
 }
 .qui .oeuvre{margin-top:28px;padding-top:18px;border-top:1px solid var(--or-2);max-width:62ch}
+.qui .oeuvre{display:flex;gap:18px;align-items:center}
+.qui .oeuvre-img{width:64px;height:auto;flex:none;box-shadow:0 4px 12px rgba(0,0,0,.18);transition:transform .3s}
+.qui .oeuvre-img:hover,.qui .oeuvre-img:focus-visible{transform:scale(1.05)}
 .qui .oeuvre .rubrique{margin-bottom:4px}
 .qui .oeuvre p:not(.rubrique){color:var(--encre-2)}
 sup{font-size:.6em;line-height:0;vertical-align:super}

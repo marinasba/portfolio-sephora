@@ -69,3 +69,4 @@ Ajouts :
 - bal-promotion-2026.jpg : promotion 2026 des débutantes devant le pavillon (20260620_183408.jpg)
 - choeur-madeleine.jpg : chœur en concert à la Madeleine (_MG_9447.JPG)
 - portrait-hd.jpg : portrait HD de la première photo (portraits 0224-0242222.jpg)
+- boucher-le-dejeuner.jpg (vignette, envoyée par Marina) + boucher-le-dejeuner-hd.jpg (Wikimedia Commons, domaine public)
