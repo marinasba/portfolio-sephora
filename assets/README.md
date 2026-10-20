@@ -68,3 +68,4 @@ Ajouts :
 - `monogramme.svg` : monogramme SN vectoriel (en-tête, haut de page, respiration, icône d'onglet) ; `favicon.png` : icône de secours
 - bal-promotion-2026.jpg : promotion 2026 des débutantes devant le pavillon (20260620_183408.jpg)
 - choeur-madeleine.jpg : chœur en concert à la Madeleine (_MG_9447.JPG)
+- portrait-hd.jpg : portrait HD de la première photo (portraits 0224-0242222.jpg)
