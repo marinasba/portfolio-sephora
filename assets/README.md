@@ -70,3 +70,5 @@ Ajouts :
 - choeur-madeleine.jpg : chœur en concert à la Madeleine (_MG_9447.JPG)
 - portrait-hd.jpg : portrait HD de la première photo (portraits 0224-0242222.jpg)
 - boucher-le-dejeuner.jpg (vignette, envoyée par Marina) + boucher-le-dejeuner-hd.jpg (Wikimedia Commons, domaine public)
+- bal-drapeaux.jpg : drapeaux autrichien, européen et français (IMG-20261019-WA0055(1).jpg)
+- paravent-recto.png / paravent-verso.png : paravent détouré, fond transparent
