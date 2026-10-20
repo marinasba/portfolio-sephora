@@ -213,7 +213,7 @@ img.ph-objet.ph-sombre{background:var(--vert-2);padding:12px}
 .ph-tag::after{content:attr(data-slot);position:absolute;left:12px;bottom:10px;font-size:.7rem;color:var(--ivoire-dim)}
 
 /* ---------- le paravent (bande de laque, au scroll) ---------- */
-.pv{background:var(--papier);color:var(--encre);height:240vh;position:relative;padding-bottom:var(--bloc)}
+.pv{background:var(--papier);color:var(--encre);height:240vh;position:relative;padding-top:72px;padding-bottom:var(--bloc)}
 .pv .stick{position:sticky;top:0;display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center;max-width:var(--maxw);margin-inline:auto;padding:24px var(--gutter-r) 24px var(--gutter-l)}
 .scene{perspective:1500px;width:100%;max-width:100%;aspect-ratio:1200/937}
 .screen{position:relative;width:100%;height:100%;transform-style:preserve-3d;will-change:transform}
