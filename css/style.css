@@ -317,8 +317,6 @@ img[data-zoom]:focus-visible{outline:2px solid var(--or);outline-offset:3px}
 .envers-head h3{font-size:clamp(1.9rem,3.6vw,2.6rem);max-width:44ch;margin-inline:auto;text-wrap:balance}
 .tl{list-style:none;display:grid;grid-template-columns:repeat(8,1fr);gap:56px 28px;width:min(var(--maxw),100% - var(--gutter-l) - var(--gutter-r));margin-inline:auto;padding:0}
 .tl li{position:relative;padding-top:50px;grid-column:span 2}
-/* dernière rangée (IX, X, XI) centrée */
-.tl li:nth-child(9){grid-column:2/span 2}
 /* le fil relie chaque point au suivant, sur la rangée */
 .tl li::before{content:"";position:absolute;left:5px;top:35px;width:calc(100% + 28px);height:1px;background:var(--or-2);opacity:.3;transition:opacity .6s}
 .tl li:nth-child(4n)::before,.tl li:nth-last-child(2)::before{display:none}
