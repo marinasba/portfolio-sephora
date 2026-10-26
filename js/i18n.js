@@ -117,7 +117,7 @@ window.I18N = {
     hero_btn: "Me contacter",
     cv_btn: "Télécharger mon CV complet",
     tampon: "Adjugé",
-    cv: "assets/cv-sephora-nowicki.pdf?v=202610191712"
+    cv: "assets/cv-sephora-nowicki.pdf?v=202610261440"
   },
 
   de: {
@@ -235,7 +235,7 @@ window.I18N = {
     hero_btn: "Kontakt aufnehmen",
     cv_btn: "Vollständigen Lebenslauf herunterladen",
     tampon: "Zuschlag",
-    cv: "assets/cv-sephora-nowicki.pdf?v=202610191712"
+    cv: "assets/cv-sephora-nowicki.pdf?v=202610261440"
   },
 
   en: {
@@ -353,6 +353,6 @@ window.I18N = {
     hero_btn: "Get in touch",
     cv_btn: "Download my full CV",
     tampon: "Sold",
-    cv: "assets/cv-sephora-nowicki.pdf?v=202610191712"
+    cv: "assets/cv-sephora-nowicki.pdf?v=202610261440"
   }
 };
